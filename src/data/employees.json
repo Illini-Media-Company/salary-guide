@@ -1,0 +1,408 @@
+[
+  {
+    "Name": "John Smith",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 382500 },
+      { "Year": 2021, "Salary": 405000 },
+      { "Year": 2022, "Salary": 427500 },
+      { "Year": 2023, "Salary": 441000 },
+      { "Year": 2024, "Salary": 450000 }
+    ],
+    "Positions": [
+      { "Title": "Head Coach", "Department": "Athletics", "College": "Div I Athletics", "positionSalary": 450000, "Tenure": "Tenured", "payType": "9-month" }
+    ]
+  },
+  {
+    "Name": "Jane Doe",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 330000 },
+      { "Year": 2021, "Salary": 350000 },
+      { "Year": 2022, "Salary": 365000 },
+      { "Year": 2023, "Salary": 375000 },
+      { "Year": 2024, "Salary": 380000 }
+    ],
+    "Positions": [
+      { "Title": "Athletic Director", "Department": "Athletics", "College": "Div I Athletics", "positionSalary": 380000, "Tenure": "Admin", "payType": "12-month" }
+    ]
+  },
+  {
+    "Name": "Robert Johnson",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 240000 },
+      { "Year": 2021, "Salary": 250000 },
+      { "Year": 2022, "Salary": 260000 },
+      { "Year": 2023, "Salary": 270000 },
+      { "Year": 2024, "Salary": 275000 }
+    ],
+    "Positions": [
+      { "Title": "Dean", "Department": "Engineering", "College": "College of Engineering", "positionSalary": 275000, "Tenure": "Tenured", "payType": "12-month" }
+    ]
+  },
+  {
+    "Name": "Sarah Williams",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 170000 },
+      { "Year": 2021, "Salary": 175000 },
+      { "Year": 2022, "Salary": 180000 },
+      { "Year": 2023, "Salary": 183000 },
+      { "Year": 2024, "Salary": 185000 }
+    ],
+    "Positions": [
+      { "Title": "Professor", "Department": "Engineering", "College": "College of Engineering", "positionSalary": 185000, "Tenure": "Tenured", "payType": "9-month" }
+    ]
+  },
+  {
+    "Name": "Patricia Wilson",
+    "Campus": "North",
+    "Salaries": [
+      { "Year": 2020, "Salary": 170000 },
+      { "Year": 2021, "Salary": 180000 },
+      { "Year": 2022, "Salary": 185000 },
+      { "Year": 2023, "Salary": 190000 },
+      { "Year": 2024, "Salary": 195000 }
+    ],
+    "Positions": [
+      { "Title": "Department Chair", "Department": "Liberal Arts", "College": "Liberal Arts", "positionSalary": 195000, "Tenure": "Tenured", "payType": "9-month" }
+    ]
+  },
+  {
+    "Name": "James Taylor",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 160000 },
+      { "Year": 2021, "Salary": 165000 },
+      { "Year": 2022, "Salary": 170000 },
+      { "Year": 2023, "Salary": 172000 },
+      { "Year": 2024, "Salary": 175000 }
+    ],
+    "Positions": [
+      { "Title": "Professor", "Department": "Liberal Arts", "College": "Liberal Arts", "positionSalary": 175000, "Tenure": "Tenured", "payType": "9-month" }
+    ]
+  },
+  {
+    "Name": "David Martinez",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 260000 },
+      { "Year": 2021, "Salary": 270000 },
+      { "Year": 2022, "Salary": 278000 },
+      { "Year": 2023, "Salary": 282000 },
+      { "Year": 2024, "Salary": 285000 }
+    ],
+    "Positions": [
+      { "Title": "Dean", "Department": "Business", "College": "Business School", "positionSalary": 285000, "Tenure": "Tenured", "payType": "12-month" }
+    ]
+  },
+  {
+    "Name": "Lisa Anderson",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 190000 },
+      { "Year": 2021, "Salary": 195000 },
+      { "Year": 2022, "Salary": 200000 },
+      { "Year": 2023, "Salary": 205000 },
+      { "Year": 2024, "Salary": 210000 }
+    ],
+    "Positions": [
+      { "Title": "Professor", "Department": "Business", "College": "Business School", "positionSalary": 210000, "Tenure": "Tenured", "payType": "9-month" }
+    ]
+  },
+  {
+    "Name": "Isabella Thompson",
+    "Campus": "Main",
+    "Salaries": [
+      { "Year": 2020, "Salary": 220000 },
+      { "Year": 2021, "Salary": 230000 },
+      { "Year": 2022, "Salary": 240000 },
+      { "Year": 2023, "Salary": 250000 },
+      { "Year": 2024, "Salary": 260000 }
+    ],
+    "Positions": [
+      { "Title": "Department Chair", "Department": "Computer Science", "College": "Computer Science", "positionSalary": 260000, "Tenure": "Tenured", "payType": "12-month" }
+    ]
+  },
+  {
+    "Name": "Lucas White",
+    "Campus": "North",
+    "Salaries": [
+      { "Year": 2020, "Salary": 180000 },
+      { "Year": 2021, "Salary": 190000 },
+      { "Year": 2022, "Salary": 195000 },
+      { "Year": 2023, "Salary": 200000 },
+      { "Year": 2024, "Salary": 205000 }
+    ],
+    "Positions": [
+      { "Title": "Professor", "Department": "Computer Science", "College": "Computer Science", "positionSalary": 205000, "Tenure": "Tenured", "payType": "9-month" }
+    ]
+  },
+{
+  "Name": "Olivia Chen",
+  "Campus": "South",
+  "Salaries": [
+    { "Year": 2020, "Salary": 92000 },
+    { "Year": 2021, "Salary": 96000 },
+    { "Year": 2022, "Salary": 99000 },
+    { "Year": 2023, "Salary": 101000 },
+    { "Year": 2024, "Salary": 105000 }
+  ],
+  "Positions": [
+    { "Title": "Research Assistant", "Department": "Vet Med", "College": "Vet Med", "positionSalary": 105000, "Tenure": "Non-Tenured", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Jason Miller",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 112000 },
+    { "Year": 2021, "Salary": 115000 },
+    { "Year": 2022, "Salary": 117000 },
+    { "Year": 2023, "Salary": 118000 },
+    { "Year": 2024, "Salary": 119000 }
+  ],
+  "Positions": [
+    { "Title": "Animal Researcher", "Department": "Vet Med", "College": "Vet Med", "positionSalary": 119000, "Tenure": "Research", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Ethan Hall",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 110000 },
+    { "Year": 2021, "Salary": 114000 },
+    { "Year": 2022, "Salary": 116000 },
+    { "Year": 2023, "Salary": 117000 },
+    { "Year": 2024, "Salary": 118000 }
+  ],
+  "Positions": [
+    { "Title": "Lecturer", "Department": "Liberal Arts", "College": "Liberal Arts", "positionSalary": 118000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Ava Parker",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 88000 },
+    { "Year": 2021, "Salary": 92000 },
+    { "Year": 2022, "Salary": 95000 },
+    { "Year": 2023, "Salary": 97000 },
+    { "Year": 2024, "Salary": 99000 }
+  ],
+  "Positions": [
+    { "Title": "Teaching Assistant", "Department": "Liberal Arts", "College": "Liberal Arts", "positionSalary": 99000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Harper Ng",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 130000 },
+    { "Year": 2021, "Salary": 140000 },
+    { "Year": 2022, "Salary": 150000 },
+    { "Year": 2023, "Salary": 153000 },
+    { "Year": 2024, "Salary": 155000 }
+  ],
+  "Positions": [
+    { "Title": "Research Scientist", "Department": "Computer Science", "College": "Computer Science", "positionSalary": 155000, "Tenure": "Research", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Benjamin Carter",
+  "Campus": "South",
+  "Salaries": [
+    { "Year": 2020, "Salary": 115000 },
+    { "Year": 2021, "Salary": 118000 },
+    { "Year": 2022, "Salary": 120000 },
+    { "Year": 2023, "Salary": 121000 },
+    { "Year": 2024, "Salary": 122000 }
+  ],
+  "Positions": [
+    { "Title": "Lecturer", "Department": "Computer Science", "College": "Computer Science", "positionSalary": 122000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Charlotte Rossi",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 87000 },
+    { "Year": 2021, "Salary": 91000 },
+    { "Year": 2022, "Salary": 94000 },
+    { "Year": 2023, "Salary": 96000 },
+    { "Year": 2024, "Salary": 97000 }
+  ],
+  "Positions": [
+    { "Title": "Teaching Assistant", "Department": "Computer Science", "College": "Computer Science", "positionSalary": 97000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Maria Lopez",
+  "Campus": "North",
+  "Salaries": [
+    { "Year": 2020, "Salary": 145000 },
+    { "Year": 2021, "Salary": 148000 },
+    { "Year": 2022, "Salary": 150000 },
+    { "Year": 2023, "Salary": 151000 },
+    { "Year": 2024, "Salary": 152000 }
+  ],
+  "Positions": [
+    { "Title": "Sports Nutritionist", "Department": "Athletics", "College": "Div I Athletics", "positionSalary": 152000, "Tenure": "Staff", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Tyler Nguyen",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 160000 },
+    { "Year": 2021, "Salary": 165000 },
+    { "Year": 2022, "Salary": 170000 },
+    { "Year": 2023, "Salary": 173000 },
+    { "Year": 2024, "Salary": 175000 }
+  ],
+  "Positions": [
+    { "Title": "Assistant Coach", "Department": "Athletics", "College": "Div I Athletics", "positionSalary": 175000, "Tenure": "Staff", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "David Kim",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 110000 },
+    { "Year": 2021, "Salary": 118000 },
+    { "Year": 2022, "Salary": 122000 },
+    { "Year": 2023, "Salary": 125000 },
+    { "Year": 2024, "Salary": 127000 }
+  ],
+  "Positions": [
+    { "Title": "Strength Trainer", "Department": "Athletics", "College": "Div I Athletics", "positionSalary": 127000, "Tenure": "Staff", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Kevin Patel",
+  "Campus": "North",
+  "Salaries": [
+    { "Year": 2020, "Salary": 155000 },
+    { "Year": 2021, "Salary": 160000 },
+    { "Year": 2022, "Salary": 162000 },
+    { "Year": 2023, "Salary": 164000 },
+    { "Year": 2024, "Salary": 165000 }
+  ],
+  "Positions": [
+    { "Title": "Associate Professor", "Department": "Engineering", "College": "College of Engineering", "positionSalary": 165000, "Tenure": "Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Emily Tran",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 130000 },
+    { "Year": 2021, "Salary": 136000 },
+    { "Year": 2022, "Salary": 140000 },
+    { "Year": 2023, "Salary": 141000 },
+    { "Year": 2024, "Salary": 142000 }
+  ],
+  "Positions": [
+    { "Title": "Assistant Professor", "Department": "Engineering", "College": "College of Engineering", "positionSalary": 142000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Michael O'Brien",
+  "Campus": "South",
+  "Salaries": [
+    { "Year": 2020, "Salary": 90000 },
+    { "Year": 2021, "Salary": 94000 },
+    { "Year": 2022, "Salary": 96000 },
+    { "Year": 2023, "Salary": 97000 },
+    { "Year": 2024, "Salary": 98000 }
+  ],
+  "Positions": [
+    { "Title": "Lab Instructor", "Department": "Engineering", "College": "College of Engineering", "positionSalary": 98000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Grace Kumar",
+  "Campus": "Main",
+  "Salaries": [
+    { "Year": 2020, "Salary": 130000 },
+    { "Year": 2021, "Salary": 135000 },
+    { "Year": 2022, "Salary": 138000 },
+    { "Year": 2023, "Salary": 140000 },
+    { "Year": 2024, "Salary": 142000 }
+  ],
+  "Positions": [
+    { "Title": "Assistant Professor", "Department": "Business", "College": "Business School", "positionSalary": 142000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Samuel Peterson",
+  "Campus": "South",
+  "Salaries": [
+    { "Year": 2020, "Salary": 88000 },
+    { "Year": 2021, "Salary": 91000 },
+    { "Year": 2022, "Salary": 93000 },
+    { "Year": 2023, "Salary": 94000 },
+    { "Year": 2024, "Salary": 95000 }
+  ],
+  "Positions": [
+    { "Title": "Teaching Fellow", "Department": "Business", "College": "Business School", "positionSalary": 95000, "Tenure": "Non-Tenured", "payType": "9-month" }
+  ]
+},
+{
+  "Name": "Hannah Singh",
+  "Campus": "North",
+  "Salaries": [
+    { "Year": 2020, "Salary": 120000 },
+    { "Year": 2021, "Salary": 126000 },
+    { "Year": 2022, "Salary": 129000 },
+    { "Year": 2023, "Salary": 131000 },
+    { "Year": 2024, "Salary": 132000 }
+  ],
+  "Positions": [
+    { "Title": "Vet Tech", "Department": "Vet Med", "College": "Vet Med", "positionSalary": 132000, "Tenure": "Staff", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Michael Brown",
+  "Campus": "South",
+  "Salaries": [
+    { "Year": 2020, "Salary": 150000 },
+    { "Year": 2021, "Salary": 156000 },
+    { "Year": 2022, "Salary": 160000 },
+    { "Year": 2023, "Salary": 163000 },
+    { "Year": 2024, "Salary": 165000 }
+  ],
+  "Positions": [
+    { "Title": "Veterinarian", "Department": "Vet Med", "College": "Vet Med", "positionSalary": 165000, "Tenure": "Staff", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Emily Davis",
+  "Campus": "South",
+  "Salaries": [
+    { "Year": 2020, "Salary": 135000 },
+    { "Year": 2021, "Salary": 140000 },
+    { "Year": 2022, "Salary": 142000 },
+    { "Year": 2023, "Salary": 144000 },
+    { "Year": 2024, "Salary": 145000 }
+  ],
+  "Positions": [
+    { "Title": "Senior Vet", "Department": "Vet Med", "College": "Vet Med", "positionSalary": 145000, "Tenure": "Staff", "payType": "12-month" }
+  ]
+},
+{
+  "Name": "Nathan Brooks",
+  "Campus": "North",
+  "Salaries": [
+    { "Year": 2020, "Salary": 150000 },
+    { "Year": 2021, "Salary": 157000 },
+    { "Year": 2022, "Salary": 160000 },
+    { "Year": 2023, "Salary": 163000 },
+    { "Year": 2024, "Salary": 165000 }
+  ],
+  "Positions": [
+    { "Title": "Associate Professor", "Department": "Business", "College": "Business School", "positionSalary": 165000, "Tenure": "Tenured", "payType": "9-month" }
+  ]
+}
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "College": "Div I Athletics",
+    "Budgets": [
+      { "Year": 2020, "Budget": 7000000 },
+      { "Year": 2021, "Budget": 7100000 },
+      { "Year": 2022, "Budget": 7200000 },
+      { "Year": 2023, "Budget": 7300000 },
+      { "Year": 2024, "Budget": 8400000 }
+    ]
+  },
+  {
+    "College": "College of Engineering",
+    "Budgets": [
+      { "Year": 2020, "Budget": 1300000 },
+      { "Year": 2021, "Budget": 1350000 },
+      { "Year": 2022, "Budget": 1400000 },
+      { "Year": 2023, "Budget": 1450000 },
+      { "Year": 2024, "Budget": 1500000 }
+    ]
+  },
+  {
+    "College": "Vet Med",
+    "Budgets": [
+      { "Year": 2020, "Budget": 280000 },
+      { "Year": 2021, "Budget": 285000 },
+      { "Year": 2022, "Budget": 290000 },
+      { "Year": 2023, "Budget": 295000 },
+      { "Year": 2024, "Budget": 300000 }
+    ]
+  },
+  {
+    "College": "Liberal Arts",
+    "Budgets": [
+      { "Year": 2020, "Budget": 1900000 },
+      { "Year": 2021, "Budget": 1950000 },
+      { "Year": 2022, "Budget": 2000000 },
+      { "Year": 2023, "Budget": 2050000 },
+      { "Year": 2024, "Budget": 2100000 }
+    ]
+  },
+  {
+    "College": "Business School",
+    "Budgets": [
+      { "Year": 2020, "Budget": 1100000 },
+      { "Year": 2021, "Budget": 1150000 },
+      { "Year": 2022, "Budget": 1175000 },
+      { "Year": 2023, "Budget": 1190000 },
+      { "Year": 2024, "Budget": 1200000 }
+    ]
+  },
+  {
+    "College": "Computer Science",
+    "Budgets": [
+      { "Year": 2020, "Budget": 950000 },
+      { "Year": 2021, "Budget": 1000000 },
+      { "Year": 2022, "Budget": 1050000 },
+      { "Year": 2023, "Budget": 1100000 },
+      { "Year": 2024, "Budget": 1150000 }
+    ]
+  }
+]
