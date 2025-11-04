@@ -1,21 +1,39 @@
 @import "tailwindcss";
 
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  background: white; /* or whatever */
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   margin: 0;
   padding: 0;
 }
 
 :root {
+  color-scheme: light dark;
+  color: #000;
+  background-color: #fff;
   font-family: canada-type-gibson, sans-serif;
-
   line-height: 1.5;
   font-weight: 250;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,7 +72,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -66,30 +84,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #121212;
+    background-color: #fff;
   }
-  a:hover {
-    color: #747bff;
+
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    color: #121212;
   }
+
   button {
-    background-color: #f9f9f9;
-    color: #000000;
+    background-color: #fff;
+    color: #121212;
   }
-
-  p {
-    color:#000000
-  }
-
-  h3 {
-    color:#000000
-  }
-
-  h4 {
-    color:#000000
-  }
-  
-
 }

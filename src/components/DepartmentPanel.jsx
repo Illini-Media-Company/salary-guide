@@ -8,9 +8,9 @@ import { Histogram } from "./Histogram";
 import {X} from "lucide-react";
 
 
-function StatCard({ label, value, bg }) {
+function StatCard({ label, value }) {
   return (
-    <div className={`${bg} rounded-lg p-3`}>
+    <div className={`rounded-lg p-3`}>
       <div className="flex items-center gap-2 mb-1">
         <span className="text-xs"><p>{label}</p></span>
       </div>

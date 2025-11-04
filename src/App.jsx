@@ -93,7 +93,7 @@ const staffRows = React.useMemo(() => {
         id: idx + 1,
         firstName,
         lastName,
-        campus: e.campus || "Main",
+        campus: e.campus || "UIUC",
         department,
         college,
         position: title,
@@ -155,7 +155,7 @@ const staffRows = React.useMemo(() => {
 
   // UI
   return (
-    <div className="min-h-screen p-6">
+    <div className="w-full h-full min-h-screen p-6">
       {/* Top: Sankey + Department */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {/* Sankey card */}
@@ -214,7 +214,7 @@ const staffRows = React.useMemo(() => {
                   />
                 </svg>
                 <p className="mt-2 font-medium">Select a department</p>
-                <p className="text-sm">Click any segment in the Sankey to view details.</p>
+                <p className="text-sm">Click any department to view details.</p>
               </div>
             </div>
           )}
