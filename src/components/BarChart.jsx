@@ -59,7 +59,7 @@ export function BarChart({
       .attr("y", d => y(+d[yKey]))
       .attr("width", x.bandwidth())
       .attr("height", d => H - y(+d[yKey]))
-      .attr("fill", "currentColor")
+      .attr("fill", "#FF6400")
       .attr("rx", barRadius);
 
     // tooltip group

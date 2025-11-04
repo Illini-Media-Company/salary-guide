@@ -42,9 +42,7 @@ export function Histogram({
     const vmin = d3.min(vals), vmax = d3.max(vals);
 
     // choose a constant step
-    const step =
-      binStep ??
-      d3.tickStep(vmin, vmax, Math.max(1, desiredBins)); // "nice" constant step
+    const step = binStep ?? d3.tickStep(vmin, vmax, Math.max(1, desiredBins));
 
     // align to step so edges are exact multiples
     const minEdge = Math.floor(vmin / step) * step;
@@ -82,7 +80,7 @@ export function Histogram({
       .attr("y", (d) => y(d.length))
       .attr("width", (d) => Math.max(0, x(d.x1) - x(d.x0) - barGapPx))
       .attr("height", (d) => H - y(d.length))
-      .attr("fill", "currentColor")
+      .attr("fill", "#FF6400")
       .attr("opacity", (d) => (d.length === 0 ? emptyBinOpacity : 1))
       .attr("rx", barRadius);
 
@@ -125,4 +123,3 @@ export function Histogram({
     </div>
   );
 }
-

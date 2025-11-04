@@ -4,14 +4,14 @@ export function SortHeader({ label, active, dir, onClick, alignRight = false }) 
   // Only the arrow button is interactive; the label is static text
   return (
     <div className={`flex items-center gap-1 ${alignRight ? "justify-end" : ""}`}>
-      {!alignRight && <span className="text-slate-700">{label}</span>}
+      {!alignRight && <span> <p>{label}</p></span>}
 
       <button
         type="button"
         onClick={onClick}
         aria-label={`Sort by ${label} ${active ? (dir === "asc" ? "descending" : "ascending") : ""}`}
         aria-pressed={active}
-        className="p-1 -m-1 rounded text-slate-500 hover:text-slate-900 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="p-1 -m-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         {active ? (
           dir === "asc" ? <ArrowUp size={16} /> : <ArrowDown size={16} />
@@ -20,7 +20,7 @@ export function SortHeader({ label, active, dir, onClick, alignRight = false }) 
         )}
       </button>
 
-      {alignRight && <span className="text-slate-700">{label}</span>}
+      {alignRight && <span> <p>{label}</p></span>}
     </div>
   );
 }

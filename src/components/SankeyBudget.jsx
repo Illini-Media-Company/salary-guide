@@ -16,7 +16,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
     if (!bounds.width) return;
 
     const width = Math.max(640, bounds.width);
-    const height = 560;
+    const height = 600;
     const nodeW = 20;
     const nodePad = 12;
 
@@ -61,9 +61,9 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
       .data(graph.links)
       .join("path")
       .attr("d", sankeyLinkHorizontal())
-        .attr("stroke", d => d.target.name === selectedDept ? "#3b82f6" : "#94a3b8")
-        .attr("stroke-opacity", 0.45)
-        .attr("stroke-width", d => Math.max(1, d.width))
+      .attr("stroke", d => d.target.name === selectedDept ? "#FF6400" : "#ff660087")
+      // .attr("stroke-opacity", 0.45)
+      .attr("stroke-width", d => Math.max(1, d.width))
       .style("cursor", "pointer")
       .on("click", (_e, d) => onNodeClick(d.target.name))
       .append("title")
@@ -81,11 +81,8 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
     node.append("rect")
       .attr("height", d => d.y1 - d.y0)
       .attr("width", d => d.x1 - d.x0)
-      .attr("rx", 4)
-      .attr("fill", d =>
-        d.name === "University Budget" ? "#1e293b" :
-        d.name === selectedDept ? "#3b82f6" : "#475569"
-      )
+      // .attr("rx", 4)
+      .attr("fill", "#FF6400")
       .append("title")
       .text(d => `${d.name}\n${d3.format("$.3s")(d.value)} (${year})`);
 
@@ -96,7 +93,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
       .attr("y", d => (d.y1 - d.y0) / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", d => (d.x0 < width / 2 ? "start" : "end"))
-      .attr("class", "fill-slate-900 text-[12px]")
+      .attr("class", "font-normal fill-slate-900 text-[13px]")
       .text(d => `${d.name}  ${fmt(d.value)}`);
 
   }, [bounds.width, sankeyData, selectedDept, onNodeClick, year]);
