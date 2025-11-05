@@ -109,3 +109,17 @@ button:focus-visible {
     color: #121212;
   }
 }
+
+/* quick fix to make all borders gray...prob not best practice rip */
+*,
+::before,
+::after {
+  border-color: #BDBDBD !important;
+}
+
+.sort-header-btn {
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+  box-shadow: none;
+}

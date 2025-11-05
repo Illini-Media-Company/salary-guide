@@ -24,7 +24,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
     const height = 750;
 
     const margin = { top: 24, right: 24, bottom: 24, left: 24 };
-    const labelGutter = 200; // space on the right for two-line labels
+    const labelGutter = 250; // space on the right for two-line labels
     const innerWidth = width - margin.left - margin.right - labelGutter;
     const innerHeight = height - margin.top - margin.bottom;
 

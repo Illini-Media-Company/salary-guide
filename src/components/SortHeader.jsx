@@ -11,7 +11,7 @@ export function SortHeader({ label, active, dir, onClick, alignRight = false }) 
         onClick={onClick}
         aria-label={`Sort by ${label} ${active ? (dir === "asc" ? "descending" : "ascending") : ""}`}
         aria-pressed={active}
-        className="p-1 -m-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="sort-header-btn p-1 -m-1 rounded"
       >
         {active ? (
           dir === "asc" ? <ArrowUp size={16} /> : <ArrowDown size={16} />
