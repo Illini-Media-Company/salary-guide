@@ -3,39 +3,48 @@ import * as d3 from "d3";
 import employees from "../data/UIUC_salaries.json";
 
 import { BarChart } from "./BarChart";
-
 import {X} from "lucide-react";
 
-
-export function PersonPanel({ person, onClose }) {
+export function PersonPanel({ person, onClose, tableYear }) {
   if (!person) return null;
 
   // Find the real record in employees.json
   const match = React.useMemo(() => {
     const name = `${person.firstName} ${person.lastName}`.trim().toLowerCase();
-    return employees.find(e => e.name.trim().toLowerCase() === name);
+    return employees.find((e) => e.name.trim().toLowerCase() === name);
   }, [person]);
 
+  // Full history (keep zeros)
   const salaryHistory = React.useMemo(() => {
-    if (!match?.salaries?.length)
-      return [{ year: new Date().getFullYear(), salary: person.salary ?? 0 }];
-
     return match.salaries
-      .map(s => ({ year: Number(s.year), salary: Number(s.salary ?? 0) }))  // keep zeros
+      .map((s) => ({ year: Number(s.year), salary: Number(s.salary ?? 0), positions: s.positions || [] }))
       .sort((a, b) => a.year - b.year);
-  }, [match, person]);
+  }, [match]);
 
-  const currentPositions = match?.salaries?.[match.salaries.length - 1]?.positions || [];
+  // Get the record for the selected table year (or fallback to latest)
+  const selectedYearRecord = React.useMemo(() => {
+    if (!salaryHistory.length) return null;
+    if (tableYear) {
+      const rec = salaryHistory.find((r) => r.year === Number(tableYear));
+      if (rec) return rec;
+    }
+    return salaryHistory.at(-1); // fallback to most recent
+  }, [salaryHistory, tableYear]);
+
+  const positionsForYear = selectedYearRecord?.positions ?? [];
+  const departmentsForYear = Array.from(new Set(positionsForYear.map((p) => p.department))).filter(Boolean);
+  const recordedSalaryForYear = selectedYearRecord?.salary ?? 0;
 
   return (
     <div className="bg-white rounded-lg border p-5">
-      {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>
-          <h3 className="text-xl font-semibold">{match?.name || `${person.firstName} ${person.lastName}`}</h3>
-          {currentPositions.length > 0 && (
+          <h3 className="text-xl font-semibold">
+            {match?.name || `${person.firstName} ${person.lastName}`}
+          </h3>
+          {positionsForYear.length > 0 && (
             <p className="text-sm">
-              {currentPositions.map(p => p.title).join(", ")}
+              {positionsForYear.map((p) => p.title).join(", ")}
             </p>
           )}
         </div>
@@ -44,23 +53,21 @@ export function PersonPanel({ person, onClose }) {
         </button>
       </div>
 
-      {/* Salary info */}
+      {/* Salary + meta for the selected year */}
       <div className="space-y-2 mb-4">
         <div className="text-sm">
-          <strong>Last Recorded Salary:</strong>{" "}
-          {d3.format("$,.0f")(salaryHistory.at(-1)?.salary ?? 0)}
+          <strong>Recorded Salary ({selectedYearRecord?.year ?? "—"}):</strong>{" "}
+          {d3.format("$,.0f")(recordedSalaryForYear)}
         </div>
         <div className="text-sm">
-          <strong>Departments:</strong>{" "}
-          {Array.from(new Set(currentPositions.map(p => p.department))).join(", ") || "—"}
+          <strong>Departments ({selectedYearRecord?.year ?? "—"}):</strong>{" "}
+          {departmentsForYear.length ? departmentsForYear.join(", ") : "—"}
         </div>
       </div>
 
-      <h4 className="text-sm font-semibold mb-2">
-        Salary History
-      </h4>
+      <h4 className="text-sm font-semibold mb-2">Salary History</h4>
       <BarChart
-        data={salaryHistory}
+        data={salaryHistory}             // [{year, salary, positions?}]
         xKey="year"
         yKey="salary"
         height={200}
@@ -70,18 +77,21 @@ export function PersonPanel({ person, onClose }) {
       />
 
       <h4 className="text-sm font-semibold mt-4 mb-2">
-        Last Recorded Positions
+        Positions ({selectedYearRecord?.year ?? "—"})
       </h4>
-      {currentPositions.map((p, i) => (
-        <div key={i} className="p-3 bg-slate-50 rounded-lg mb-2">
-          <div className="font-medium">{p.title}</div>
-          <div className="text-sm ">{p.department}</div>
-          <div className="text-xs">
-            {p.college} • ${d3.format(",.0f")(p.positionSalary)} •{" "}
-            {p.tenure || "N/A"}
+      {positionsForYear.length === 0 ? (
+        <div className="text-sm">No positions recorded.</div>
+      ) : (
+        positionsForYear.map((p, i) => (
+          <div key={i} className="p-3 bg-slate-50 rounded-lg mb-2">
+            <div className="font-medium">{p.title}</div>
+            <div className="text-sm">{p.department}</div>
+            <div className="text-xs">
+              {p.college} • ${d3.format(",.0f")(Number(p.positionSalary ?? 0))} • {p.tenure || "N/A"}
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      )}
     </div>
   );
 }

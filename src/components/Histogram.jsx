@@ -99,7 +99,7 @@ export function Histogram({
         tip.style("display", "none");
       })
       .on("mousemove", function (event, d) {
-        const label = `${xTickFormat(d.x0)} – ${xTickFormat(d.x1)}\n${d.length} ${d.length === 1 ? "person" : "people"}`;
+        const label = `${xTickFormat(d.x0)} - ${xTickFormat(d.x1)} ${d.length} ${d.length === 1 ? "person" : "people"}`;
         tipText.text(label);
         const bb = tipText.node().getBBox();
         tipBg

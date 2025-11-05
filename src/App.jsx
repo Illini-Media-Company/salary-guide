@@ -296,10 +296,7 @@ const staffRows = React.useMemo(() => {
                   {y}
                 </option>
               ))}
-
           </select>
-
-
         </div>
 
         {/* Results + Person detail */}
@@ -347,8 +344,8 @@ const staffRows = React.useMemo(() => {
                   {pageRows.map((p) => (
                     <tr
                       key={p.id}
-                      className={`cursor-pointer hover:bg-blue-50 ${selectedPerson?.id === p.id ? "bg-blue-100" : ""}`}
-                      onClick={() => setSelectedPerson(p)}
+                      className={`cursor-pointer hover:bg-orange-300 ${selectedPerson?.id === p.id ? "bg-orange-400" : ""}`}
+                      onClick={() => setSelectedPerson(p)}  
                     >
                       <td className="px-4 py-2">
                         <div className="font-medium text-slate-900">
@@ -393,7 +390,7 @@ const staffRows = React.useMemo(() => {
           {/* Person details */}
           <div>
             {selectedPerson ? (
-              <PersonPanel person={selectedPerson} onClose={() => setSelectedPerson(null)} />
+              <PersonPanel person={selectedPerson} onClose={() => setSelectedPerson(null)} tableYear={selectedTableYear ? Number(selectedTableYear) : undefined} />
             ) : (
               <div className="h-full min-h-[260px] grid place-items-center rounded-lg border-2 border-dashed">
                 <div className="text-center text-slate-500">
