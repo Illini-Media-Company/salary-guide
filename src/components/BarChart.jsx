@@ -1,9 +1,8 @@
 import React from "react";
 import * as d3 from "d3";
 import { useResizeObserver } from "../utils";
-
 export function BarChart({
-  data,             // [{ year: 2020, value: 1_000_000 }, ...]
+  data,
   xKey = "year",
   yKey = "value",
   height = 240,
@@ -11,6 +10,13 @@ export function BarChart({
   tooltipFormat = (d) => `${d[xKey]}: ${yTickFormat(d[yKey])}`,
   ariaLabel = "Bar chart",
   barRadius = 4,
+
+  minBarWidth = 28,       // min width per bar
+  barGap = 6,             // gap between bars (px)
+  rotateThreshold = 420,  // rotate labels when inner width below this
+  rotateAngle = -35,      // rotation angle
+  smallFont = 11,         // label font when rotated
+  normalFont = 12,
 }) {
   const [wrapRef, bounds] = useResizeObserver();
   const svgRef = React.useRef(null);
@@ -18,13 +24,19 @@ export function BarChart({
   React.useEffect(() => {
     if (!bounds.width || !data?.length) return;
 
-    const width = bounds.width;
-    const m = { t: 16, r: 16, b: 36, l: 56 };
-    const W = width - m.l - m.r;
+    const m = { t: 16, r: 10, b: 48, l: 48 };
+
+    // Width we need to respect minBarWidth (causes horizontal scroll if needed)
+    const innerNeeded = data.length * minBarWidth + (data.length - 1) * barGap;
+    const innerAvail = Math.max(bounds.width - m.l - m.r, 60);
+    const W = Math.max(innerAvail, innerNeeded);
+    const width = W + m.l + m.r;
     const H = height - m.t - m.b;
 
-    const svg = d3.select(svgRef.current)
-      .attr("viewBox", `0 0 ${width} ${height}`)
+    const svg = d3
+      .select(svgRef.current)
+      .attr("width", width)
+      .attr("height", height)
       .attr("role", "img")
       .attr("aria-label", ariaLabel);
 
@@ -32,48 +44,55 @@ export function BarChart({
 
     const g = svg.append("g").attr("transform", `translate(${m.l},${m.t})`);
 
-    // scales
-    const x = d3.scaleBand()
-      .domain(data.map(d => String(d[xKey])))
+    // Scales
+    const x = d3
+      .scaleBand()
+      .domain(data.map((d) => String(d[xKey])))
       .range([0, W])
-      .padding(0.2);
+      .paddingInner(barGap / (minBarWidth + barGap))
+      .paddingOuter(0.1);
 
-    const y = d3.scaleLinear()
-      .domain([0, d3.max(data, d => +d[yKey]) || 0]).nice()
+    const y = d3
+      .scaleLinear()
+      .domain([0, d3.max(data, (d) => +d[yKey]) || 0])
+      .nice()
       .range([H, 0]);
 
-    // axes
-    g.append("g")
-      .attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).tickFormat(d => d).tickSizeOuter(0));
+    const xAxis = d3.axisBottom(x).tickSizeOuter(0);
+    const yAxis = d3.axisLeft(y).ticks(4).tickFormat(yTickFormat);
 
-    g.append("g")
-      .call(d3.axisLeft(y).ticks(4).tickFormat(yTickFormat));
+    const xg = g.append("g").attr("transform", `translate(0,${H})`).call(xAxis);
+    g.append("g").call(yAxis).selectAll("text").attr("font-size", 11);
 
-    // bars
-    const bars = g.selectAll("rect.bar")
+    // Rotate labels if space is tight
+    const rotate = W < rotateThreshold || x.bandwidth() < minBarWidth + 2;
+    xg.selectAll("text")
+      .attr("font-size", rotate ? smallFont : normalFont)
+      .attr("text-anchor", rotate ? "end" : "middle")
+      .attr("transform", rotate ? `rotate(${rotateAngle})` : null)
+      .attr("dx", rotate ? "-0.4em" : null)
+      .attr("dy", rotate ? "0.15em" : "0.71em");
+
+    // Bars
+    const bars = g
+      .selectAll("rect.bar")
       .data(data)
       .join("rect")
       .attr("class", "bar")
-      .attr("x", d => x(String(d[xKey])))
-      .attr("y", d => y(+d[yKey]))
-      .attr("width", x.bandwidth())
-      .attr("height", d => H - y(+d[yKey]))
+      .attr("x", (d) => x(String(d[xKey])))
+      .attr("y", (d) => y(+d[yKey]))
+      .attr("width", Math.max(1, x.bandwidth()))
+      .attr("height", (d) => H - y(+d[yKey]))
       .attr("fill", "#FF6400")
       .attr("rx", barRadius);
 
-    // tooltip group
+    // Tooltip
     const tip = g.append("g").style("display", "none");
-    const tipBg = tip.append("rect")
-      .attr("rx", 4).attr("ry", 4)
-      .attr("fill", "black").attr("opacity", 0.9);
-    const tipText = tip.append("text")
-      .attr("fill", "white")
-      .attr("font-size", 11)
-      .attr("dy", "0.35em");
+    const tipBg = tip.append("rect").attr("rx", 4).attr("ry", 4).attr("fill", "black").attr("opacity", 0.9);
+    const tipText = tip.append("text").attr("fill", "white").attr("font-size", 11).attr("dy", "0.35em");
 
-    // hover interaction
-    bars.on("mouseenter", function (event, d) {
+    bars
+      .on("mouseenter", function () {
         tip.style("display", null);
         d3.select(this).attr("opacity", 0.85);
       })
@@ -94,22 +113,39 @@ export function BarChart({
           .attr("width", bb.width + 12)
           .attr("height", bb.height + 8);
 
-        // position tooltip above the bar, with clamping
         let tx = xCenter - (bb.width + 12) / 2;
         let ty = yTop - (bb.height + 14);
         if (tx < 0) tx = 0;
         if (tx + bb.width + 12 > W) tx = W - (bb.width + 12);
-        if (ty < 0) ty = yTop + 10; // if too high, place under the bar
+        if (ty < 0) ty = yTop + 10;
 
         tip.attr("transform", `translate(${tx},${ty})`);
       });
-
-  }, [bounds.width, height, data, xKey, yKey, ariaLabel, yTickFormat, tooltipFormat, barRadius]);
+  }, [
+    bounds.width,
+    data,
+    xKey,
+    yKey,
+    height,
+    yTickFormat,
+    tooltipFormat,
+    barRadius,
+    minBarWidth,
+    barGap,
+    rotateThreshold,
+    rotateAngle,
+    smallFont,
+    normalFont,
+    ariaLabel
+  ]);
 
   return (
-    <div ref={wrapRef} className="w-full" style={{ minHeight: height }}>
-      <svg ref={svgRef} className="w-full" style={{ height }} />
+    <div
+      ref={wrapRef}
+      className="w-full overflow-x-auto"
+      style={{ minHeight: height, WebkitOverflowScrolling: "touch" }}
+    >
+      <svg ref={svgRef} />
     </div>
   );
 }
-

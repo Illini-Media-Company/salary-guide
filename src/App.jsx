@@ -75,34 +75,35 @@ export default function SalaryVisualization() {
 
   // pagination
   const [page, setPage] = React.useState(1);
-  const pageSize = 10;
+  const pageSize = 5;
 
   // Build year-aware table rows from employees.json
   const yearCollegeIndex = React.useMemo(() => makeYearCollegeIndex(employees), [employees]);
+  const isActiveInYear = (emp, year) => getPositionsForYear(emp, year).length > 0;
 
+  const staffRows = React.useMemo(() => {
+    return employees
+      .filter((e) => isActiveInYear(e, selectedTableYear))   // keep only active employees that year
+      .map((e, idx) => {
+        const { firstName, lastName } = splitName(e.name);
+        const positions = getPositionsForYear(e, selectedTableYear);     // guaranteed non-empty from filter
+        const { department, college, title } = pickPrimaryOrg(positions);
+        const salary = getSalaryForYear(e, selectedTableYear) ?? 0;      // allow 0 salaries
 
-const staffRows = React.useMemo(() => {
-  return employees
-    .map((e, idx) => {
-      const { firstName, lastName } = splitName(e.name);
-      const positions = getPositionsForYear(e, selectedTableYear);
-      const { department, college, title } = pickPrimaryOrg(positions);
-      const salary = getSalaryForYear(e, selectedTableYear);
+        return {
+          id: idx + 1,
+          firstName,
+          lastName,
+          campus: e.campus || "UIUC",
+          department,
+          college,
+          position: title,
+          salary,                    // may be 0 (still active!)
+          _fullName: e.name,
+        };
+      });
+  }, [employees, selectedTableYear]);
 
-      return {
-        id: idx + 1,
-        firstName,
-        lastName,
-        campus: e.campus || "UIUC",
-        department,
-        college,
-        position: title,
-        salary,
-        _fullName: e.name,
-      };
-    })
-    .filter((e) => e.salary > 0); // hides ex-employees with no pay that year
-}, [selectedTableYear]);
 
   // dropdown options
   const campuses = React.useMemo(
@@ -222,7 +223,7 @@ const staffRows = React.useMemo(() => {
       </div>
 
       {/* Bottom: People Search */}
-      <div className="bg-white rounded-xl shadow-sm border p-6">
+      <div className="bg-white rounded-xl shadow-sm border p-6 ">
         <h2 className="text-xl font-semibold text-slate-900 mb-4">Search Individuals</h2>
 
         {/* Filters */}
@@ -297,42 +298,45 @@ const staffRows = React.useMemo(() => {
                 </option>
               ))}
           </select>
-        </div>
+          </div>
 
-        {/* Results + Person detail */}
+          {/* Results + Person detail */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Table */}
-          <div>
-            <div className="border rounded-lg overflow-hidden max-h-[420px]">
-              <table className="w-full border-separate border-spacing-0">
+          {/* Table column */}
+          <div className="min-w-0">
+            {/* fixed-height scroll container: header(44) + 5 rows * 64 = 364px */}
+            <div
+              className="border rounded-lg overflow-y-auto"
+              style={{ height: 44 + pageSize * 64 }} // pageSize = 5, row h-16
+            >
+              <table className="w-full table-fixed border-collapse">
+                <colgroup>
+                  <col className="w-[70%]" />
+                  <col className="w-[30%]" />
+                </colgroup>
+
                 <thead className="bg-slate-50 sticky top-0 z-10">
-                  <tr>
-                    <th className="px-4 py-2 text-left">
+                  <tr className="h-11">
+                    <th className="px-4 text-left align-middle">
                       <SortHeader
                         label="Name"
                         active={sortBy === "name"}
                         dir={sortDir}
                         onClick={() => {
-                          if (sortBy === "name") setSortDir((d) => (d === "asc" ? "desc" : "asc"));
-                          else {
-                            setSortBy("name");
-                            setSortDir("asc");
-                          }
+                          if (sortBy === "name") setSortDir(d => (d === "asc" ? "desc" : "asc"));
+                          else { setSortBy("name"); setSortDir("asc"); }
                           setPage(1);
                         }}
                       />
                     </th>
-                    <th className="px-4 py-2">
+                    <th className="px-4 text-right align-middle">
                       <SortHeader
                         label="Salary"
                         active={sortBy === "salary"}
                         dir={sortDir}
                         onClick={() => {
-                          if (sortBy === "salary") setSortDir((d) => (d === "asc" ? "desc" : "asc"));
-                          else {
-                            setSortBy("salary");
-                            setSortDir("desc"); // default salary desc
-                          }
+                          if (sortBy === "salary") setSortDir(d => (d === "asc" ? "desc" : "asc"));
+                          else { setSortBy("salary"); setSortDir("desc"); }
                           setPage(1);
                         }}
                         alignRight
@@ -340,20 +344,25 @@ const staffRows = React.useMemo(() => {
                     </th>
                   </tr>
                 </thead>
+
                 <tbody>
                   {pageRows.map((p) => (
                     <tr
                       key={p.id}
-                      className={`cursor-pointer hover:bg-orange-300 ${selectedPerson?.id === p.id ? "bg-orange-400" : ""}`}
-                      onClick={() => setSelectedPerson(p)}  
+                      className={`h-16 cursor-pointer hover:bg-orange-300 ${
+                        selectedPerson?.id === p.id ? "bg-orange-400" : ""
+                      }`}
+                      onClick={() => setSelectedPerson(p)}
                     >
-                      <td className="px-4 py-2">
-                        <div className="font-medium text-slate-900">
+                      <td className="px-4 align-middle">
+                        <div className="font-medium truncate">
                           {p.firstName} {p.lastName}
                         </div>
-                        <div className="text-sm text-slate-500">{p.department}</div>
+                        <div className="text-sm text-slate-500 truncate">
+                          {p.department}
+                        </div>
                       </td>
-                      <td className="px-4 py-2 text-right font-medium text-slate-900">
+                      <td className="px-4 text-right font-medium align-middle">
                         {d3.format("$.2s")(p.salary)}
                       </td>
                     </tr>
@@ -387,10 +396,14 @@ const staffRows = React.useMemo(() => {
             </div>
           </div>
 
-          {/* Person details */}
-          <div>
+          {/* Person details column */}
+          <div className="min-w-0">
             {selectedPerson ? (
-              <PersonPanel person={selectedPerson} onClose={() => setSelectedPerson(null)} tableYear={selectedTableYear ? Number(selectedTableYear) : undefined} />
+              <PersonPanel
+                person={selectedPerson}
+                onClose={() => setSelectedPerson(null)}
+                tableYear={selectedTableYear ? Number(selectedTableYear) : undefined}
+              />
             ) : (
               <div className="h-full min-h-[260px] grid place-items-center rounded-lg border-2 border-dashed">
                 <div className="text-center text-slate-500">
@@ -401,7 +414,7 @@ const staffRows = React.useMemo(() => {
             )}
           </div>
         </div>
-      </div>
-    </div>
+        </div>        
+  </div>
   );
 }
