@@ -1,6 +1,6 @@
 import React from "react";
 import * as d3 from "d3";
-import colleges from "../data/budget.json";
+import colleges from "../data/UIUC_budget25.json";
 
 import { BarChart } from "./BarChart";
 import { Histogram } from "./Histogram";

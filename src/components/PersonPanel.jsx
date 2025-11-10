@@ -1,6 +1,6 @@
 import React from "react";
 import * as d3 from "d3";
-import employees from "../data/UIUC_salaries.json";
+import employees from "../data/UIUC_salaries25.json";
 
 import { BarChart } from "./BarChart";
 import {X} from "lucide-react";

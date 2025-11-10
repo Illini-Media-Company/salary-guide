@@ -1,4 +1,4 @@
-import React, {useMemo, useRef, useEffect } from "react";
+import {useMemo, useRef, useEffect } from "react";
 import * as d3 from "d3";
 import { useResizeObserver } from "../utils";
 import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";

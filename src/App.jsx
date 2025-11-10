@@ -9,8 +9,8 @@ import { SankeyBudget } from "./components/SankeyBudget";
 import { DepartmentPanel } from "./components/DepartmentPanel";
 import { PersonPanel } from "./components/PersonPanel";
 
-import colleges from "./data/budget.json";
-import employees from "./data/UIUC_salaries.json";
+import colleges from "./data/UIUC_budget25.json";
+import employees from "./data/UIUC_salaries25.json";
 
 // Union of all years in colleges.json
 const allYears = Array.from(
