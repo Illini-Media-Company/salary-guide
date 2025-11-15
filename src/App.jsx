@@ -9,8 +9,8 @@ import { SankeyBudget } from "./components/SankeyBudget";
 import { DepartmentPanel } from "./components/DepartmentPanel";
 import { PersonPanel } from "./components/PersonPanel";
 
-import colleges from "./data/UIUC_budget25.json";
-import employees from "./data/UIUC_salaries25.json";
+import colleges from "./data/budget25(proposed).json";
+import employees from "./data/UIUC_salaries25(proposed).json";
 
 // Union of all years in colleges.json
 const allYears = Array.from(
@@ -190,35 +190,17 @@ export default function SalaryVisualization() {
 
         {/* Department details */}
         <div className="bg-white rounded-xl shadow-sm border p-4 min-h-[620px]">
-          {selectedDepartment ? (
             <DepartmentPanel
-              department={selectedDepartment}
-              data={selectedDepartment}
+              department={selectedDepartment || "Total University"}
               year={selectedYear}
-              onClose={() => setSelectedDepartment(null)}
+              onClose={
+                selectedDepartment
+                  ? () => setSelectedDepartment(null)
+                  : undefined
+              }
               yearCollegeIndex={yearCollegeIndex}
+              isTotal={!selectedDepartment}
             />
-          ) : (
-            <div className="h-full grid place-items-center text-slate-500">
-              <div className="text-center">
-                <svg
-                  className="mx-auto h-20 w-20 text-slate-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  />
-                </svg>
-                <p className="mt-2 font-medium">Select a department</p>
-                <p className="text-sm">Click any department to view details.</p>
-              </div>
-            </div>
-          )}
         </div>
       </div>
 
@@ -363,7 +345,7 @@ export default function SalaryVisualization() {
                         </div>
                       </td>
                       <td className="px-4 text-right font-medium align-middle">
-                        {d3.format("$.2s")(p.salary)}
+                        {d3.format("$.3s")(p.salary)}
                       </td>
                     </tr>
                   ))}

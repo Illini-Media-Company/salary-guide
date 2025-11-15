@@ -1,6 +1,6 @@
 import React from "react";
 import * as d3 from "d3";
-import employees from "../data/UIUC_salaries25.json";
+import employees from "../data/UIUC_salaries25(proposed).json";
 
 import { BarChart } from "./BarChart";
 import {X} from "lucide-react";
@@ -67,7 +67,7 @@ export function PersonPanel({ person, onClose, tableYear }) {
 
       <h4 className="text-sm font-semibold mb-2">Salary History</h4>
       <BarChart
-        data={salaryHistory}             // [{year, salary, positions?}]
+        data={salaryHistory}
         xKey="year"
         yKey="salary"
         height={200}

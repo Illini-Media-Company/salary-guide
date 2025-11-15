@@ -3,7 +3,6 @@ import * as d3 from "d3";
 import { useResizeObserver } from "../utils";
 import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";
 
-
 export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
   const [wrapRef, bounds] = useResizeObserver();
   const svgRef = useRef(null);
@@ -19,12 +18,12 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
   useEffect(() => {
     if (!bounds.width) return;
 
-    // --- sizing & layout ---
+    // sizing and layout
     const width = Math.max(900, bounds.width);
     const height = 750;
 
     const margin = { top: 24, right: 24, bottom: 24, left: 24 };
-    const labelGutter = 250; // space on the right for two-line labels
+    const labelGutter = 250;
     const innerWidth = width - margin.left - margin.right - labelGutter;
     const innerHeight = height - margin.top - margin.bottom;
 
@@ -53,13 +52,13 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
       .nodePadding(nodePad)
       .extent([
         [0, 0],
-        [innerWidth, innerHeight], // <= use reduced width so links don't overlap labels
+        [innerWidth, innerHeight],
       ])
       .nodeSort((a, b) => 0);
 
     const graph = sk(sankeyData);
 
-    // --- center the single left/root node vertically (your logic preserved) ---
+    // center the single left/root node vertically
     const leftX = d3.min(graph.nodes, (d) => d.x0);
     const sourceNodes = graph.nodes.filter((n) => n.x0 === leftX);
     if (sourceNodes.length === 1) {
@@ -108,7 +107,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
       .attr("height", (d) => d.y1 - d.y0) // keep layout height (don't override) so links match
       .attr("width", (d) => d.x1 - d.x0)
       .attr("fill", (d) => (d.name === selectedDept ? "#FF6400" : "#FF6400"))
-      .attr("stroke", (d) => ((d.y1 - d.y0) < 6 ? "#FF6400" : "none")) // optional: outline tiny nodes
+      .attr("stroke", (d) => ((d.y1 - d.y0) < 6 ? "#FF6400" : "none"))
       .attr("stroke-width", (d) => ((d.y1 - d.y0) < 6 ? 1 : 0))
       .append("title")
       .text((d) => `${d.name}\n${d3.format("$.3s")(d.value)} (${year})`);
@@ -134,7 +133,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
     const fmt = d3.format("$,.0f");
     const nodesForLabels = graph.nodes
       .filter((d) => d.name !== "University Budget")
-      .sort((a, b) => ((a.y0 + a.y1) / 2) - ((b.y0 + b.y1) / 2)); // sort top → bottom
+      .sort((a, b) => ((a.y0 + a.y1) / 2) - ((b.y0 + b.y1) / 2));
 
     // collision avoidance: enforce a minimum vertical gap between label centers
     const minGap = 14; // px between label centers
@@ -149,7 +148,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
     });
 
     // add a transparent hitbox for easier clicking
-    const hitH = 18; // clickable height
+    const hitH = 18;
     gLabels
       .selectAll("rect.hit")
       .data(nodesForLabels)
@@ -157,7 +156,7 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
       .attr("class", "hit")
       .attr("x", -6)
       .attr("y", (_d, i) => labelPositions[i] - hitH / 2)
-      .attr("width", labelGutter) // full gutter click area; shrink if you prefer
+      .attr("width", labelGutter)
       .attr("height", hitH)
       .attr("fill", "transparent")
       .style("cursor", "pointer")
