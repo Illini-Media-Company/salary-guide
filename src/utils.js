@@ -2,89 +2,183 @@ import { useState, useRef, useEffect } from "react";
 
 export const toNum = (v) => (v == null ? 0 : Number(v));
 
-// Return the salary for a person in a given year.
-// Uses top-level `salary` if present; otherwise sums `positions[].positionSalary`.
-export function getSalaryForYear(emp, year) {
-  const y = Number(year);
-  const rec = (emp?.salaries || []).find((s) => Number(s.year) === y);
-  if (!rec) return 0;
+export const CAMPUSES = ["UIUC", "UIC", "UIS", "UI System"];
+export const YEARS = Array.from({ length: 10 }, (_, i) => 2016 + i); // THIS NEEDS TO CHANGE WHEN NEW DATA IS ADDED
 
-  const top = toNum(rec.salary);
+export async function loadSalaryData(year, campus) {
+  try {
+    const url = `${import.meta.env.BASE_URL}/data/${year}/${campus}.json`;
+    
+    console.log(`Fetching salary data from: ${url}`);
+    
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+    
+    const data = await response.json();
+    console.log(`Loaded ${data?.length || 0} employees from ${url}`);
+    return data;
+  } catch (error) {
+    console.error(`Failed to load salary data for ${year}/${campus}:`, error);
+    return [];
+  }
+}
+
+export function useSalaryData(year, campus) {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function fetchData() {
+      setData([]);
+      setLoading(true);
+      setError(null);
+
+      try {
+        const result = await loadSalaryData(year, campus);
+        if (!cancelled) {
+          setData(result);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setError(err);
+          setData([]);
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    if (year && campus) {
+      fetchData();
+    } else {
+      setData([]);
+      setLoading(false);
+    }
+
+    return () => {
+      cancelled = true;
+    };
+  }, [year, campus]);
+
+  return { data, loading, error };
+}
+
+export function getSalary(emp) {
+  if (!emp) return 0;
+
+  const top = toNum(emp.salary);
   if (top > 0) return top;
 
-  const sum = (rec.positions || []).reduce(
+  // Fallback: sum position salaries
+  return (emp.positions || []).reduce(
     (acc, p) => acc + toNum(p.positionSalary),
     0
   );
-  return sum;
 }
 
-// Get all positions for a given year; returns [] if none
-export function getPositionsForYear(emp, year) {
-  const y = Number(year);
-  const rec = (emp?.salaries || []).find((s) => Number(s.year) === y);
-  return rec?.positions || [];
+export function getPositions(emp) {
+  return emp?.positions || [];
 }
 
-// Choose a "primary" org from a set of positions (prefers paid positions)
 export function pickPrimaryOrg(positions) {
-  if (!positions?.length) return { department: "—", college: "—", title: "—" };
+  if (!positions?.length) {
+    return { department: "—", college: "—", title: "—", campus: "—" };
+  }
+
   const withPay = positions.filter((p) => toNum(p.positionSalary) > 0);
   const chosen = withPay[0] || positions[0];
+
   return {
     department: chosen.department || chosen.college || "—",
     college: chosen.college || "—",
     title: chosen.title || "—",
+    campus: chosen.campus || "—",
   };
 }
 
-// Split "First Last [etc]" → naive first/last for table display
 export function splitName(full) {
   if (!full) return { firstName: "", lastName: "" };
+
   const parts = String(full).trim().split(/\s+/);
   if (parts.length === 1) return { firstName: parts[0], lastName: "" };
+
   const lastName = parts.pop();
   const firstName = parts.join(" ");
   return { firstName, lastName };
 }
 
-export function makeYearCollegeIndex(employees) {
+
+/**
+ * Build an index keyed by "Campus|College" for loaded employee data.
+ * Only call this on data that's already in memory.
+ * 
+ * Returns: Map<"Campus|College", Array<{ name, salary, titles[] }>>
+ */
+export function makeCollegeCampusIndex(employees) {
   const idx = new Map();
-  for (const e of employees || []) {
-    const personName = e.name || e.Name; // tolerate both, just in case
-    for (const s of e.salaries || e.Salaries || []) {
-      const y = Number(s.year || s.Year);
-      if (!idx.has(y)) idx.set(y, new Map());
-      const byCollege = idx.get(y);
-      for (const p of s.positions || s.Positions || []) {
-        const college = p.college || p.College;
-        const pay = toNum(p.positionSalary ?? p.PositionSalary);
-        if (!college || pay <= 0) continue;
-        if (!byCollege.has(college)) byCollege.set(college, []);
-        byCollege.get(college).push({
-          name: personName,
-          title: p.title || p.Title || "—",
-          salary: pay,
-        });
+
+  for (const emp of employees || []) {
+    const personName = emp.name;
+    const totalSalary = getSalary(emp);
+
+    if (totalSalary <= 0) continue;
+
+    // Track unique Campus|College keys for this person
+    const keysForPerson = new Map();
+
+    for (const p of emp.positions || []) {
+      const campus = p.campus;
+      const college = p.college;
+      if (!campus || !college) continue;
+
+      const compositeKey = `${campus}|${college}`;
+
+      let entry = keysForPerson.get(compositeKey);
+      if (!entry) {
+        entry = { titles: new Set() };
+        keysForPerson.set(compositeKey, entry);
       }
+      if (p.title) entry.titles.add(p.title);
+    }
+
+    for (const [compositeKey, { titles }] of keysForPerson.entries()) {
+      if (!idx.has(compositeKey)) {
+        idx.set(compositeKey, []);
+      }
+
+      idx.get(compositeKey).push({
+        name: personName,
+        salary: totalSalary,
+        titles: Array.from(titles),
+      });
     }
   }
+
   return idx;
 }
-
 
 export function useResizeObserver() {
   const ref = useRef(null);
   const [bounds, setBounds] = useState({ width: 1, height: 1 });
+
   useEffect(() => {
     if (!ref.current) return;
+
     const obs = new ResizeObserver(([entry]) => {
       const { width, height } = entry.contentRect;
       setBounds({ width, height });
     });
+
     obs.observe(ref.current);
     return () => obs.disconnect();
   }, []);
+
   return [ref, bounds];
 }
-

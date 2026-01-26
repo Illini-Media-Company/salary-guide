@@ -1,7 +1,7 @@
 import {useMemo, useRef, useEffect } from "react";
 import * as d3 from "d3";
 import { useResizeObserver } from "../utils";
-import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";
+import { sankey as d3Sankey, sankeyLinkHorizontal, sankeyLeft } from "d3-sankey";
 
 export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
   const [wrapRef, bounds] = useResizeObserver();
@@ -20,14 +20,14 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
 
     // sizing and layout
     const width = Math.max(900, bounds.width);
-    const height = 750;
+    const height = 1000;
 
     const margin = { top: 24, right: 24, bottom: 24, left: 24 };
-    const labelGutter = 250;
+    const labelGutter = 275;
     const innerWidth = width - margin.left - margin.right - labelGutter;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const nodeW = 24;
+    const nodeW = 30;
     const nodePad = 15;
 
     const svg = d3
@@ -54,7 +54,9 @@ export function SankeyBudget({ data, selectedDept, onNodeClick, year }) {
         [0, 0],
         [innerWidth, innerHeight],
       ])
-      .nodeSort((a, b) => 0);
+      .nodeSort((a, b) => 0)
+      .iterations(25)
+      .nodeAlign(sankeyLeft);
 
     const graph = sk(sankeyData);
 

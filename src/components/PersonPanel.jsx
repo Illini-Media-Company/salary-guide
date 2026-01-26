@@ -1,50 +1,188 @@
 import React from "react";
 import * as d3 from "d3";
-import employees from "../data/UIUC_salaries25(proposed).json";
+import { X } from "lucide-react";
 
 import { BarChart } from "./BarChart";
-import {X} from "lucide-react";
+import { YEARS, CAMPUSES } from "../utils";
+
+async function fetchPersonHistory(personName, campus) {
+  const normalizedName = personName.trim().toLowerCase();
+
+  // Fetch each year in parallel
+  const results = await Promise.all(
+    YEARS.map(async (year) => {
+      try {
+        const response = await fetch(`/salary-guide/data/${year}/${campus}.json`);
+        if (!response.ok) return null;
+        
+        const employees = await response.json();
+        const match = employees.find(
+          (e) => e.name?.trim().toLowerCase() === normalizedName
+        );
+        
+        if (match) {
+          return {
+            year,
+            salary: Number(match.salary ?? 0),
+            positions: match.positions || [],
+          };
+        }
+        return null;
+      } catch {
+        return null;
+      }
+    })
+  );
+
+  return results
+    .filter((r) => r !== null)
+    .sort((a, b) => a.year - b.year);
+}
+
+
+async function fetchPersonAllCampuses(personName, year) {
+  const normalizedName = personName.trim().toLowerCase();
+
+  const results = await Promise.all(
+    CAMPUSES.map(async (campus) => {
+      try {
+        const response = await fetch(`/salary-guide/data/${year}/${campus}.json`);
+        if (!response.ok) return null;
+        
+        const employees = await response.json();
+        const match = employees.find(
+          (e) => e.name?.trim().toLowerCase() === normalizedName
+        );
+        
+        if (match) {
+          return {
+            campus,
+            salary: Number(match.salary ?? 0),
+            positions: (match.positions || []).map(p => ({
+              ...p,
+              campus: p.campus || campus, // ensure campus is set
+            })),
+          };
+        }
+        return null;
+      } catch {
+        return null;
+      }
+    })
+  );
+
+  return results.filter((r) => r !== null);
+}
 
 export function PersonPanel({ person, onClose, tableYear }) {
   if (!person) return null;
 
-  // Find the real record in employees.json
-  const match = React.useMemo(() => {
-    const name = `${person.firstName} ${person.lastName}`.trim().toLowerCase();
-    return employees.find((e) => e.name.trim().toLowerCase() === name);
-  }, [person]);
+  const fullName = `${person.firstName} ${person.lastName}`.trim();
+  const primaryCampus = person.campus || "UIUC";
 
-  // Full history (keep zeros)
-  const salaryHistory = React.useMemo(() => {
-    return match.salaries
-      .map((s) => ({ year: Number(s.year), salary: Number(s.salary ?? 0), positions: s.positions || [] }))
-      .sort((a, b) => a.year - b.year);
-  }, [match]);
+  const [salaryHistory, setSalaryHistory] = React.useState(null);
+  const [historyLoading, setHistoryLoading] = React.useState(false);
 
-  // Get the record for the selected table year (or fallback to latest)
-  const selectedYearRecord = React.useMemo(() => {
-    if (!salaryHistory.length) return null;
-    if (tableYear) {
-      const rec = salaryHistory.find((r) => r.year === Number(tableYear));
-      if (rec) return rec;
+  const [allCampusData, setAllCampusData] = React.useState(null);
+  const [allCampusLoading, setAllCampusLoading] = React.useState(false);
+
+  // Fetch salary history when person changes
+  React.useEffect(() => {
+    let cancelled = false;
+    
+    async function loadHistory() {
+      setHistoryLoading(true);
+      setSalaryHistory(null);
+      
+      try {
+        const history = await fetchPersonHistory(fullName, primaryCampus);
+        if (!cancelled) {
+          setSalaryHistory(history);
+        }
+      } catch (err) {
+        console.error("Failed to load salary history:", err);
+        if (!cancelled) {
+          setSalaryHistory([]);
+        }
+      } finally {
+        if (!cancelled) {
+          setHistoryLoading(false);
+        }
+      }
     }
-    return salaryHistory.at(-1); // fallback to most recent
-  }, [salaryHistory, tableYear]);
 
-  const positionsForYear = selectedYearRecord?.positions ?? [];
-  const departmentsForYear = Array.from(new Set(positionsForYear.map((p) => p.department))).filter(Boolean);
-  const recordedSalaryForYear = selectedYearRecord?.salary ?? 0;
+    loadHistory();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [fullName, primaryCampus]);
+
+  // Fetch all-campus data when person or year changes
+  React.useEffect(() => {
+    let cancelled = false;
+    
+    async function loadAllCampuses() {
+      setAllCampusLoading(true);
+      setAllCampusData(null);
+      
+      try {
+        const data = await fetchPersonAllCampuses(fullName, tableYear);
+        if (!cancelled) {
+          setAllCampusData(data);
+        }
+      } catch (err) {
+        console.error("Failed to load all-campus data:", err);
+        if (!cancelled) {
+          setAllCampusData([]);
+        }
+      } finally {
+        if (!cancelled) {
+          setAllCampusLoading(false);
+        }
+      }
+    }
+
+    loadAllCampuses();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [fullName, tableYear]);
+
+  const allPositionsForYear = React.useMemo(() => {
+    if (!allCampusData) return person._emp?.positions || [];
+    
+    const positions = [];
+    for (const campusData of allCampusData) {
+      positions.push(...campusData.positions);
+    }
+    return positions;
+  }, [allCampusData, person]);
+
+  const departmentsForYear = React.useMemo(() => 
+    Array.from(new Set(allPositionsForYear.map((p) => p.department))).filter(Boolean),
+    [allPositionsForYear]
+  );
+
+  const campusesForYear = React.useMemo(() =>
+    Array.from(new Set(allPositionsForYear.map((p) => p.campus))).filter(Boolean),
+    [allPositionsForYear]
+  );
+
+  const totalSalaryForYear = React.useMemo(() => {
+    if (!allCampusData || allCampusData.length === 0) return person.salary ?? 0;
+    return Math.max(...allCampusData.map(d => d.salary));
+  }, [allCampusData, person]);
 
   return (
     <div className="bg-white rounded-lg border p-5">
       <div className="flex items-start justify-between mb-4">
         <div>
-          <h3 className="text-xl font-semibold">
-            {match?.name || `${person.firstName} ${person.lastName}`}
-          </h3>
-          {positionsForYear.length > 0 && (
-            <p className="text-sm">
-              {positionsForYear.map((p) => p.title).join(", ")}
+          <h3 className="text-xl font-semibold">{fullName}</h3>
+          {allPositionsForYear.length > 0 && (
+            <p className="text-sm text-slate-600">
+              {[...new Set(allPositionsForYear.map((p) => p.title))].join(", ")}
             </p>
           )}
         </div>
@@ -56,38 +194,80 @@ export function PersonPanel({ person, onClose, tableYear }) {
       {/* Salary + meta for the selected year */}
       <div className="space-y-2 mb-4">
         <div className="text-sm">
-          <strong>Recorded Salary ({selectedYearRecord?.year ?? "—"}):</strong>{" "}
-          {d3.format("$,.0f")(recordedSalaryForYear)}
+          <strong>Salary ({tableYear}):</strong>{" "}
+          {d3.format("$,.0f")(totalSalaryForYear)}
         </div>
         <div className="text-sm">
-          <strong>Departments ({selectedYearRecord?.year ?? "—"}):</strong>{" "}
-          {departmentsForYear.length ? departmentsForYear.join(", ") : "—"}
+          <strong>Departments ({tableYear}):</strong>{" "}
+          {allCampusLoading ? (
+            <span className="text-slate-400">loading...</span>
+          ) : departmentsForYear.length ? (
+            departmentsForYear.join(", ")
+          ) : (
+            "—"
+          )}
+        </div>
+        <div className="text-sm">
+          <strong>Campus{campusesForYear.length > 1 ? "es" : ""} ({tableYear}):</strong>{" "}
+          {allCampusLoading ? (
+            <span className="text-slate-400">loading...</span>
+          ) : campusesForYear.length ? (
+            campusesForYear.join(", ")
+          ) : (
+            primaryCampus
+          )}
         </div>
       </div>
 
-      <h4 className="text-sm font-semibold mb-2">Salary History</h4>
-      <BarChart
-        data={salaryHistory}
-        xKey="year"
-        yKey="salary"
-        height={200}
-        yTickFormat={d3.format("$.2s")}
-        tooltipFormat={(d) => `${d.year}: ${d3.format("$.3s")(d.salary)}`}
-        ariaLabel={`Salary history for ${match?.name}`}
-      />
-
-      <h4 className="text-sm font-semibold mt-4 mb-2">
-        Positions ({selectedYearRecord?.year ?? "—"})
-      </h4>
-      {positionsForYear.length === 0 ? (
-        <div className="text-sm">No positions recorded.</div>
+      {/* Salary History */}
+      <div className="flex items-center gap-2 mb-2">
+        <h4 className="text-sm font-semibold">Salary History</h4>
+        {historyLoading && (
+          <span className="text-xs text-slate-400">(loading...)</span>
+        )}
+      </div>
+      
+      {historyLoading ? (
+        <div className="h-[200px] flex items-center justify-center text-slate-400 text-sm">
+          Loading salary history...
+        </div>
+      ) : salaryHistory && salaryHistory.length > 0 ? (
+        <BarChart
+          data={salaryHistory}
+          xKey="year"
+          yKey="salary"
+          height={200}
+          yTickFormat={d3.format("$.2s")}
+          tooltipFormat={(d) => `${d.year}: ${d3.format("$.3s")(d.salary)}`}
+          ariaLabel={`Salary history for ${fullName}`}
+        />
       ) : (
-        positionsForYear.map((p, i) => (
+        <div className="text-sm text-slate-500 py-4">
+          No salary history available.
+        </div>
+      )}
+
+      {/* Positions for current year - all campuses */}
+      <div className="flex items-center gap-2 mt-4 mb-2">
+        <h4 className="text-sm font-semibold">Positions ({tableYear})</h4>
+        {allCampusLoading && (
+          <span className="text-xs text-slate-400">(loading...)</span>
+        )}
+      </div>
+      
+      {allCampusLoading ? (
+        <div className="text-sm text-slate-400 py-2">Loading positions...</div>
+      ) : allPositionsForYear.length === 0 ? (
+        <div className="text-sm text-slate-500">No positions recorded.</div>
+      ) : (
+        allPositionsForYear.map((p, i) => (
           <div key={i} className="p-3 bg-slate-50 rounded-lg mb-2">
             <div className="font-medium">{p.title}</div>
-            <div className="text-sm">{p.department}</div>
-            <div className="text-xs">
-              {p.college} • ${d3.format(",.0f")(Number(p.positionSalary ?? 0))} • {p.tenure || "N/A"}
+            <div className="text-sm text-slate-600">{p.department}</div>
+            <div className="text-xs text-slate-500">
+              {p.campus} • {p.college} •{" "}
+              {d3.format("$,.0f")(Number(p.positionSalary ?? 0))}
+              {p.tenure ? ` • ${p.tenure}` : ""}
             </div>
           </div>
         ))

@@ -1,6 +1,5 @@
 import React from "react";
 import * as d3 from "d3";
-import colleges from "../data/budget25(proposed).json";
 
 import { BarChart } from "./BarChart";
 import { Histogram } from "./Histogram";
@@ -29,45 +28,75 @@ export function DepartmentPanel({
   department: collegeName,
   year,
   onClose,
-  yearCollegeIndex,
+  yearCollegeCampusIndex,
   isTotal = false,
+  campus,
+  budgetData,
 }) {
   const [tab, setTab] = React.useState("budget");
 
-  // Pull people for this (year, college) from the prebuilt index
+  const colleges = React.useMemo(
+    () => budgetData || [],
+    [budgetData]
+  );
+
   const peopleThisYear = React.useMemo(() => {
-    const byYear = yearCollegeIndex?.get(Number(year));
+    const byYear = yearCollegeCampusIndex?.get(Number(year));
     if (!byYear) return [];
 
     if (isTotal) {
-      // All colleges combined for this year
       const arr = [];
-      for (const list of byYear.values()) {
-        if (Array.isArray(list)) arr.push(...list);
+      for (const [key, list] of byYear.entries()) {
+        const [keyCampus] = key.split("|");
+        if (campus === "UI System" || keyCampus === campus) {
+          if (Array.isArray(list)) arr.push(...list);
+        }
       }
       return arr;
     }
 
-    const arr = byYear.get(collegeName) || [];
+    const compositeKey = `${campus}|${collegeName}`;
+    const arr = byYear.get(compositeKey) || [];
     return Array.isArray(arr) ? [...arr] : [];
-  }, [year, collegeName, yearCollegeIndex, isTotal]);
+  }, [year, collegeName, campus, isTotal, yearCollegeCampusIndex]);
 
-  // Consolidate multiple positions for the same person
   const peopleCombined = React.useMemo(() => {
     const map = new Map();
+
     for (const p of peopleThisYear) {
       const key = p.name || "Unknown";
-      const existing = map.get(key) || { name: key, totalSalary: 0, positions: [] };
-      existing.totalSalary += Number(p.salary || 0);
-      if (p.title) existing.positions.push(p.title);
+      const existing =
+        map.get(key) ||
+        {
+          name: key,
+          salary: 0,
+          positions: new Set(),
+        };
+
+      const sVal = Number(p.salary || 0);
+      if (sVal > existing.salary) {
+        existing.salary = sVal;
+      }
+
+      if (Array.isArray(p.titles)) {
+        for (const t of p.titles) {
+          if (t) existing.positions.add(t);
+        }
+      } else if (p.title) {
+        existing.positions.add(p.title);
+      }
+
       map.set(key, existing);
     }
-    return Array.from(map.values());
+
+    return Array.from(map.values()).map((p) => ({
+      ...p,
+      positions: Array.from(p.positions),
+    }));
   }, [peopleThisYear]);
 
-  // Salary values for histogram (based on total salary per person)
   const salaryValues = React.useMemo(
-    () => peopleCombined.map((p) => p.totalSalary ?? 0),
+    () => peopleCombined.map((p) => p.salary ?? 0),
     [peopleCombined]
   );
 
@@ -76,7 +105,6 @@ export function DepartmentPanel({
     let yearlyData = [];
 
     if (isTotal) {
-      // Aggregate budgets across all colleges
       const byYear = new Map();
       for (const c of colleges) {
         for (const b of c.Budgets || []) {
@@ -92,7 +120,6 @@ export function DepartmentPanel({
       budget =
         yearlyData.find((d) => Number(d.year) === Number(year))?.budget ?? 0;
     } else {
-      // College-specific budgets
       const col = colleges.find((c) => c.College === collegeName);
       budget =
         col?.Budgets?.find((b) => Number(b.Year) === Number(year))?.Budget ??
@@ -104,32 +131,54 @@ export function DepartmentPanel({
         .map((r) => ({ year: r.Year, budget: r.Budget }));
     }
 
-    // Employees (unique people)
     const employeesCount = peopleCombined.length;
 
-    // Average salary
     const avgSalary = employeesCount
       ? Math.round(
-          peopleCombined.reduce((s, x) => s + (x.totalSalary || 0), 0) /
+          peopleCombined.reduce((sum, p) => sum + (p.salary || 0), 0) /
             employeesCount
         )
       : 0;
 
-    // Top earners by total salary
     const topEarners = [...peopleCombined]
-      .sort((a, b) => b.totalSalary - a.totalSalary)
+      .sort((a, b) => (b.salary || 0) - (a.salary || 0))
       .slice(0, 3)
       .map((e) => ({
         name: e.name,
         position: e.positions.join(", ") || "—",
-        salary: e.totalSalary,
+        salary: e.salary || 0,
       }));
 
     const topSalary = topEarners[0]?.salary ?? 0;
 
     return { budget, employeesCount, avgSalary, topEarners, yearlyData, topSalary };
-  }, [collegeName, year, peopleCombined, isTotal]);
+  }, [collegeName, year, peopleCombined, isTotal, colleges]);
 
+  const isDataMissing =
+    !isTotal && (stats.yearlyData.length === 0 || stats.budget === 0);
+
+  if (isDataMissing) {
+    return (
+      <div className="h-full flex flex-col items-center justify-center p-8 bg-gray-50 border border-red-300 rounded-lg shadow-inner">
+        <X size={32} className="text-orange-500 mb-4" />
+        <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
+          Data Unavailable
+        </h2>
+        <p className="text-md text-gray-600 text-center">
+          The budget and salary data for <b>{collegeName}</b> in <b>{year}</b>{" "}
+          could not be found in <b>{campus}</b>. This often happens when
+          department names change over time.
+        </p>
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="mt-6 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition duration-150"
+        >
+          Go Back
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="h-full flex flex-col">
@@ -137,15 +186,14 @@ export function DepartmentPanel({
       <div className="flex items-start justify-between mb-4">
         <div>
           <h2 className="text-xl font-semibold">
-            {isTotal ? "Total University" : collegeName}
+            {isTotal ? `Total Budget for ${campus}` : collegeName}
           </h2>
           <p className="text-sm">
-            Budget in <span className="font-medium">{year}</span>: {d3.format("$,.0f")(stats.budget)}
+            Budget in <span className="font-medium">{year}</span>:{" "}
+            {d3.format("$,.0f")(stats.budget)}
           </p>
-          
         </div>
 
-        {/* Only show close button for college-specific views */}
         {!isTotal && (
           <button onClick={onClose} aria-label="Close">
             <X size={22} />
@@ -153,7 +201,7 @@ export function DepartmentPanel({
         )}
       </div>
 
-      {/* Tabs */}
+      {/* Tabs (no histogram for total) */}
       {!isTotal && (
         <div className="flex items-center gap-2 mb-4">
           <button
@@ -173,7 +221,6 @@ export function DepartmentPanel({
 
       {/* Chart */}
       <div className="bg-white border rounded-lg p-4 mb-4 min-h-[300px]">
-        {/* For total university: always show budget chart, no histogram */}
         {isTotal || tab === "budget" ? (
           <BarChart
             data={stats.yearlyData.map((d) => ({
@@ -208,7 +255,7 @@ export function DepartmentPanel({
       <div className="grid grid-cols-3 gap-3 mb-4">
         <StatCard
           label={`Avg Salary (${year})`}
-          value={d3.format("$.2s")(stats.avgSalary)}
+          value={d3.format("$.3s")(stats.avgSalary)}
         />
         <StatCard
           label={`Employees (${year})`}
@@ -216,17 +263,17 @@ export function DepartmentPanel({
         />
         <StatCard
           label={`Top Salary (${year})`}
-          value={d3.format("$.2s")(stats.topSalary)}
+          value={d3.format("$.3s")(stats.topSalary)}
         />
       </div>
 
       {isTotal && (
-          <div className="flex-1 overflow-y-auto">
-            <h2 className="text-xs mt-1">
-              Click on the budget-flow graph to see college-specific breakdowns!
-            </h2>
-          </div>
-          )}
+        <div className="flex-1 overflow-y-auto">
+          <h2 className="text-xs mt-1">
+            Click on the budget-flow graph to see college-specific breakdowns!
+          </h2>
+        </div>
+      )}
 
       {/* Top earners list */}
       {!isTotal && (
