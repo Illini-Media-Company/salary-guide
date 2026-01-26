@@ -1,0 +1,747 @@
+[
+  {
+    "College": "Admin Info Technology Services",
+    "Budgets": [
+      {
+        "Year": 2020,
+        "Budget": 19194324.47,
+        "Employees": 211
+      },
+      {
+        "Year": 2021,
+        "Budget": 19194324.47,
+        "Employees": 211
+      },
+      {
+        "Year": 2022,
+        "Budget": 19874168.05,
+        "Employees": 212
+      },
+      {
+        "Year": 2023,
+        "Budget": 21590004.24,
+        "Employees": 219
+      },
+      {
+        "Year": 2024,
+        "Budget": 22704967.82,
+        "Employees": 223
+      },
+      {
+        "Year": 2025,
+        "Budget": 23004812.14,
+        "Employees": 225
+      }
+    ]
+  },
+  {
+    "College": "Budget & Business Operations",
+    "Budgets": [
+      {
+        "Year": 2024,
+        "Budget": 436595.25,
+        "Employees": 6
+      },
+      {
+        "Year": 2025,
+        "Budget": 440961.2,
+        "Employees": 6
+      }
+    ]
+  },
+  {
+    "College": "Business & Financial Services",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 30881659.02,
+        "Employees": 459
+      },
+      {
+        "Year": 2017,
+        "Budget": 27454385.72,
+        "Employees": 415
+      },
+      {
+        "Year": 2018,
+        "Budget": 18528098.45,
+        "Employees": 273
+      },
+      {
+        "Year": 2019,
+        "Budget": 18921858.04,
+        "Employees": 278
+      },
+      {
+        "Year": 2020,
+        "Budget": 11139350.74,
+        "Employees": 144
+      },
+      {
+        "Year": 2021,
+        "Budget": 11139350.74,
+        "Employees": 144
+      }
+    ]
+  },
+  {
+    "College": "Cap Prgm, Real Est, & Util Svc",
+    "Budgets": [
+      {
+        "Year": 2024,
+        "Budget": 2301862.36,
+        "Employees": 21
+      },
+      {
+        "Year": 2025,
+        "Budget": 2214217.4,
+        "Employees": 20
+      }
+    ]
+  },
+  {
+    "College": "Chief Information Officer",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 19795072.95,
+        "Employees": 235
+      },
+      {
+        "Year": 2017,
+        "Budget": 18969771.65,
+        "Employees": 224
+      }
+    ]
+  },
+  {
+    "College": "Control - Organizations",
+    "Budgets": [
+      {
+        "Year": 2020,
+        "Budget": 65000.0,
+        "Employees": 1
+      },
+      {
+        "Year": 2021,
+        "Budget": 65000.0,
+        "Employees": 1
+      },
+      {
+        "Year": 2024,
+        "Budget": 369125.51,
+        "Employees": 1
+      },
+      {
+        "Year": 2025,
+        "Budget": 370887.46,
+        "Employees": 1
+      }
+    ]
+  },
+  {
+    "College": "Exec VP & VP Academic Affairs",
+    "Budgets": [
+      {
+        "Year": 2018,
+        "Budget": 31260421.3,
+        "Employees": 370
+      },
+      {
+        "Year": 2019,
+        "Budget": 30318072.18,
+        "Employees": 355
+      },
+      {
+        "Year": 2020,
+        "Budget": 15004825.9,
+        "Employees": 172
+      },
+      {
+        "Year": 2021,
+        "Budget": 15004825.9,
+        "Employees": 172
+      },
+      {
+        "Year": 2022,
+        "Budget": 26799325.09,
+        "Employees": 330
+      },
+      {
+        "Year": 2023,
+        "Budget": 23933526.49,
+        "Employees": 253
+      },
+      {
+        "Year": 2024,
+        "Budget": 15890068.98,
+        "Employees": 164
+      },
+      {
+        "Year": 2025,
+        "Budget": 17180313.08,
+        "Employees": 175
+      }
+    ]
+  },
+  {
+    "College": "Executive Offices",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 7739100.5,
+        "Employees": 77
+      },
+      {
+        "Year": 2017,
+        "Budget": 7071656.5,
+        "Employees": 64
+      },
+      {
+        "Year": 2018,
+        "Budget": 8436373.01,
+        "Employees": 75
+      },
+      {
+        "Year": 2019,
+        "Budget": 8674602.92,
+        "Employees": 79
+      },
+      {
+        "Year": 2020,
+        "Budget": 8997092.51,
+        "Employees": 78
+      },
+      {
+        "Year": 2021,
+        "Budget": 8997092.51,
+        "Employees": 78
+      },
+      {
+        "Year": 2022,
+        "Budget": 7329314.66,
+        "Employees": 55
+      },
+      {
+        "Year": 2023,
+        "Budget": 8996783.52,
+        "Employees": 63
+      },
+      {
+        "Year": 2024,
+        "Budget": 13469303.85,
+        "Employees": 97
+      },
+      {
+        "Year": 2025,
+        "Budget": 10296528.59,
+        "Employees": 69
+      }
+    ]
+  },
+  {
+    "College": "Ofc of Procurement Services",
+    "Budgets": [
+      {
+        "Year": 2022,
+        "Budget": 4302400.53,
+        "Employees": 64
+      },
+      {
+        "Year": 2023,
+        "Budget": 5207097.33,
+        "Employees": 71
+      },
+      {
+        "Year": 2024,
+        "Budget": 5082533.86,
+        "Employees": 70
+      },
+      {
+        "Year": 2025,
+        "Budget": 5158573.56,
+        "Employees": 70
+      }
+    ]
+  },
+  {
+    "College": "Office of Business Services",
+    "Budgets": [
+      {
+        "Year": 2022,
+        "Budget": 3392585.79,
+        "Employees": 52
+      },
+      {
+        "Year": 2023,
+        "Budget": 3854594.25,
+        "Employees": 55
+      }
+    ]
+  },
+  {
+    "College": "Office of the Controller",
+    "Budgets": [
+      {
+        "Year": 2020,
+        "Budget": 9193922.21,
+        "Employees": 149
+      },
+      {
+        "Year": 2021,
+        "Budget": 9193922.21,
+        "Employees": 149
+      },
+      {
+        "Year": 2022,
+        "Budget": 7829836.36,
+        "Employees": 113
+      },
+      {
+        "Year": 2023,
+        "Budget": 8375950.37,
+        "Employees": 113
+      },
+      {
+        "Year": 2024,
+        "Budget": 12245199.19,
+        "Employees": 171
+      },
+      {
+        "Year": 2025,
+        "Budget": 12375343.65,
+        "Employees": 170
+      }
+    ]
+  },
+  {
+    "College": "Office of Treasury Operations",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 4257156.17,
+        "Employees": 56
+      },
+      {
+        "Year": 2017,
+        "Budget": 4276106.94,
+        "Employees": 57
+      },
+      {
+        "Year": 2018,
+        "Budget": 3941519.9,
+        "Employees": 52
+      },
+      {
+        "Year": 2019,
+        "Budget": 4077393.11,
+        "Employees": 53
+      },
+      {
+        "Year": 2020,
+        "Budget": 4142701.9,
+        "Employees": 53
+      },
+      {
+        "Year": 2021,
+        "Budget": 4142701.9,
+        "Employees": 53
+      },
+      {
+        "Year": 2022,
+        "Budget": 4131346.07,
+        "Employees": 51
+      },
+      {
+        "Year": 2023,
+        "Budget": 4484870.28,
+        "Employees": 53
+      },
+      {
+        "Year": 2024,
+        "Budget": 4885051.46,
+        "Employees": 60
+      },
+      {
+        "Year": 2025,
+        "Budget": 5049114.43,
+        "Employees": 60
+      }
+    ]
+  },
+  {
+    "College": "Strategic Initiatives",
+    "Budgets": [
+      {
+        "Year": 2025,
+        "Budget": 2589572.36,
+        "Employees": 22
+      }
+    ]
+  },
+  {
+    "College": "UIF and Alumni Association",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 4315027.2,
+        "Employees": 66
+      },
+      {
+        "Year": 2017,
+        "Budget": 3102035.23,
+        "Employees": 53
+      },
+      {
+        "Year": 2018,
+        "Budget": 3151031.23,
+        "Employees": 46
+      },
+      {
+        "Year": 2019,
+        "Budget": 2913978.4,
+        "Employees": 43
+      }
+    ]
+  },
+  {
+    "College": "UIF and UIAA",
+    "Budgets": [
+      {
+        "Year": 2020,
+        "Budget": 2024472.86,
+        "Employees": 26
+      },
+      {
+        "Year": 2021,
+        "Budget": 2024472.86,
+        "Employees": 26
+      },
+      {
+        "Year": 2022,
+        "Budget": 1885675.76,
+        "Employees": 21
+      },
+      {
+        "Year": 2023,
+        "Budget": 1528741.33,
+        "Employees": 13
+      },
+      {
+        "Year": 2024,
+        "Budget": 1303305.56,
+        "Employees": 11
+      },
+      {
+        "Year": 2025,
+        "Budget": 944760.53,
+        "Employees": 10
+      }
+    ]
+  },
+  {
+    "College": "Univ Ofc for Human Resources",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 2472383.12,
+        "Employees": 31
+      },
+      {
+        "Year": 2017,
+        "Budget": 2196608.64,
+        "Employees": 29
+      }
+    ]
+  },
+  {
+    "College": "Univ Ofc Planning & Budgeting",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 1747315.86,
+        "Employees": 18
+      },
+      {
+        "Year": 2017,
+        "Budget": 1257659.8,
+        "Employees": 15
+      }
+    ]
+  },
+  {
+    "College": "University Audits",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 1499227.99,
+        "Employees": 18
+      },
+      {
+        "Year": 2017,
+        "Budget": 1482553.74,
+        "Employees": 18
+      },
+      {
+        "Year": 2018,
+        "Budget": 1543309.68,
+        "Employees": 18
+      },
+      {
+        "Year": 2019,
+        "Budget": 1655635.94,
+        "Employees": 19
+      },
+      {
+        "Year": 2020,
+        "Budget": 1930147.07,
+        "Employees": 21
+      },
+      {
+        "Year": 2021,
+        "Budget": 1930147.07,
+        "Employees": 21
+      },
+      {
+        "Year": 2022,
+        "Budget": 1898061.39,
+        "Employees": 19
+      },
+      {
+        "Year": 2023,
+        "Budget": 2299833.85,
+        "Employees": 22
+      },
+      {
+        "Year": 2024,
+        "Budget": 2372100.2,
+        "Employees": 22
+      },
+      {
+        "Year": 2025,
+        "Budget": 2380451.3,
+        "Employees": 22
+      }
+    ]
+  },
+  {
+    "College": "University Ethics Office",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 438450.0,
+        "Employees": 4
+      },
+      {
+        "Year": 2017,
+        "Budget": 438450.0,
+        "Employees": 4
+      },
+      {
+        "Year": 2018,
+        "Budget": 452396.68,
+        "Employees": 4
+      },
+      {
+        "Year": 2019,
+        "Budget": 461444.61,
+        "Employees": 4
+      },
+      {
+        "Year": 2020,
+        "Budget": 564995.63,
+        "Employees": 5
+      },
+      {
+        "Year": 2021,
+        "Budget": 564995.63,
+        "Employees": 5
+      },
+      {
+        "Year": 2022,
+        "Budget": 586261.43,
+        "Employees": 5
+      },
+      {
+        "Year": 2023,
+        "Budget": 615569.26,
+        "Employees": 5
+      },
+      {
+        "Year": 2024,
+        "Budget": 562123.32,
+        "Employees": 5
+      },
+      {
+        "Year": 2025,
+        "Budget": 588189.3,
+        "Employees": 5
+      }
+    ]
+  },
+  {
+    "College": "Vice Pres Econ Dev and Innov",
+    "Budgets": [
+      {
+        "Year": 2018,
+        "Budget": 5116677.39,
+        "Employees": 55
+      },
+      {
+        "Year": 2019,
+        "Budget": 6034572.82,
+        "Employees": 59
+      },
+      {
+        "Year": 2020,
+        "Budget": 18907402.38,
+        "Employees": 140
+      },
+      {
+        "Year": 2021,
+        "Budget": 18907402.38,
+        "Employees": 140
+      },
+      {
+        "Year": 2022,
+        "Budget": 23330138.68,
+        "Employees": 173
+      },
+      {
+        "Year": 2023,
+        "Budget": 31352546.25,
+        "Employees": 217
+      },
+      {
+        "Year": 2024,
+        "Budget": 35263523.06,
+        "Employees": 247
+      },
+      {
+        "Year": 2025,
+        "Budget": 34297006.77,
+        "Employees": 236
+      }
+    ]
+  },
+  {
+    "College": "Vice Pres External Rel & Comm",
+    "Budgets": [
+      {
+        "Year": 2022,
+        "Budget": 2225437.83,
+        "Employees": 20
+      },
+      {
+        "Year": 2023,
+        "Budget": 2513457.89,
+        "Employees": 23
+      },
+      {
+        "Year": 2024,
+        "Budget": 2504684.43,
+        "Employees": 22
+      },
+      {
+        "Year": 2025,
+        "Budget": 3301347.38,
+        "Employees": 27
+      }
+    ]
+  },
+  {
+    "College": "Vice President for Research",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 6072873.1,
+        "Employees": 63
+      },
+      {
+        "Year": 2017,
+        "Budget": 4704555.41,
+        "Employees": 53
+      }
+    ]
+  },
+  {
+    "College": "VP Chief Financial Officer",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 401599.66,
+        "Employees": 2
+      },
+      {
+        "Year": 2017,
+        "Budget": 401599.66,
+        "Employees": 2
+      },
+      {
+        "Year": 2018,
+        "Budget": 410311.74,
+        "Employees": 2
+      },
+      {
+        "Year": 2019,
+        "Budget": 514418.36,
+        "Employees": 3
+      },
+      {
+        "Year": 2020,
+        "Budget": 662568.08,
+        "Employees": 4
+      },
+      {
+        "Year": 2021,
+        "Budget": 662568.08,
+        "Employees": 4
+      },
+      {
+        "Year": 2022,
+        "Budget": 6412783.91,
+        "Employees": 70
+      },
+      {
+        "Year": 2023,
+        "Budget": 8910532.68,
+        "Employees": 96
+      },
+      {
+        "Year": 2024,
+        "Budget": 8946857.95,
+        "Employees": 97
+      },
+      {
+        "Year": 2025,
+        "Budget": 10554065.03,
+        "Employees": 109
+      }
+    ]
+  },
+  {
+    "College": "VP for Academic Affairs",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 10488293.73,
+        "Employees": 146
+      },
+      {
+        "Year": 2017,
+        "Budget": 8620644.01,
+        "Employees": 113
+      }
+    ]
+  },
+  {
+    "College": "VP for Health Affairs",
+    "Budgets": [
+      {
+        "Year": 2016,
+        "Budget": 4723071.97,
+        "Employees": 28
+      }
+    ]
+  }
+]
