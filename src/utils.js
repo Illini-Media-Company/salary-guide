@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 export const toNum = (v) => (v == null ? 0 : Number(v));
 
 export const CAMPUSES = ["UIUC", "UIC", "UIS", "UI System"];
-export const YEARS = Array.from({ length: 10 }, (_, i) => 2016 + i); // THIS NEEDS TO CHANGE WHEN NEW DATA IS ADDED
+export const YEARS = ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]; // THIS NEEDS TO CHANGE WHEN NEW DATA IS ADDED
 
 export async function loadSalaryData(year, campus) {
   try {

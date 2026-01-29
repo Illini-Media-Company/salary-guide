@@ -41,14 +41,14 @@ export function DepartmentPanel({
   );
 
   const peopleThisYear = React.useMemo(() => {
-    const byYear = yearCollegeCampusIndex?.get(Number(year));
+    const byYear = yearCollegeCampusIndex.get(year);
     if (!byYear) return [];
 
     if (isTotal) {
       const arr = [];
       for (const [key, list] of byYear.entries()) {
         const [keyCampus] = key.split("|");
-        if (campus === "UI System" || keyCampus === campus) {
+        if (keyCampus === campus) {
           if (Array.isArray(list)) arr.push(...list);
         }
       }

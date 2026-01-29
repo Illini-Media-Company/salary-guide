@@ -64,9 +64,9 @@ export default function SalaryVisualization() {
 
   const sankeyAvailableYears = React.useMemo(() => {
     const budgetData = budgetDataMap.get(sankeyCampus) || [];
-    if (!budgetData.length) return YEARS;
+    if (!budgetData.length) return YEARS.map(String);
     const years = new Set();
-    budgetData.forEach((c) => c.Budgets.forEach((b) => years.add(b.Year)));
+    budgetData.forEach((c) => c.Budgets.forEach((b) => years.add(String(b.Year))));
     return Array.from(years).sort();
   }, [sankeyCampus, budgetDataMap]);
 
@@ -82,7 +82,7 @@ export default function SalaryVisualization() {
     error: sankeyError,
   } = useSalaryData(sankeyYear, sankeyCampus);
 
-  // runs only when data changes, loading a sing campus+year data file at a time
+  // runs only when data changes, loading a single campus+year data file at a time
   const yearCollegeCampusIndex = React.useMemo(() => {
     const idx = new Map();
     idx.set(sankeyYear, makeCollegeCampusIndex(sankeyEmployees));
@@ -235,7 +235,7 @@ export default function SalaryVisualization() {
                 <span className="text-slate-600">Year</span>
                 <select
                   value={sankeyYear}
-                  onChange={(e) => setSankeyYear(Number(e.target.value))}
+                  onChange={(e) => setSankeyYear((e.target.value))}
                   className="border rounded-md px-2 py-1 text-sm"
                 >
                   {sankeyAvailableYears.map((y) => (
