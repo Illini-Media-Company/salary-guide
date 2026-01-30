@@ -3,53 +3,53 @@
     "College": "Agr, Consumer & Env Sciences",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 82996937.87,
+        "Year": "2016",
+        "Budget": 85045732.62,
         "Employees": 1486
       },
       {
-        "Year": 2017,
-        "Budget": 81837012.61,
+        "Year": "2017",
+        "Budget": 82628675.38,
         "Employees": 1453
       },
       {
-        "Year": 2018,
-        "Budget": 82952991.33,
+        "Year": "2018",
+        "Budget": 83562759.82,
         "Employees": 1409
       },
       {
-        "Year": 2019,
-        "Budget": 86199992.73,
+        "Year": "2019",
+        "Budget": 87351050.11,
         "Employees": 1434
       },
       {
-        "Year": 2020,
-        "Budget": 91743896.16,
+        "Year": "2020",
+        "Budget": 92505097.46,
         "Employees": 1455
       },
       {
-        "Year": 2021,
-        "Budget": 90417608.33,
+        "Year": "2021",
+        "Budget": 91249360.31,
         "Employees": 1384
       },
       {
-        "Year": 2022,
-        "Budget": 94653601.12,
+        "Year": "2022",
+        "Budget": 95438974.79,
         "Employees": 1363
       },
       {
-        "Year": 2023,
-        "Budget": 102397404.66,
+        "Year": "2023",
+        "Budget": 103505099.62,
         "Employees": 1426
       },
       {
-        "Year": 2024,
-        "Budget": 109415736.69,
+        "Year": "2024",
+        "Budget": 114899712.07,
         "Employees": 1553
       },
       {
-        "Year": 2025,
-        "Budget": 115136753.11,
+        "Year": "2025",
+        "Budget": 116363355.97,
         "Employees": 1555
       }
     ]
@@ -58,53 +58,53 @@
     "College": "Applied Health Sciences",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 14816603.15,
+        "Year": "2016",
+        "Budget": 15081087.23,
         "Employees": 208
       },
       {
-        "Year": 2017,
-        "Budget": 15416469.93,
+        "Year": "2017",
+        "Budget": 15604984.93,
         "Employees": 213
       },
       {
-        "Year": 2018,
-        "Budget": 16233420.76,
+        "Year": "2018",
+        "Budget": 16455151.76,
         "Employees": 208
       },
       {
-        "Year": 2019,
-        "Budget": 16462505.31,
+        "Year": "2019",
+        "Budget": 16695241.13,
         "Employees": 210
       },
       {
-        "Year": 2020,
-        "Budget": 17961575.36,
+        "Year": "2020",
+        "Budget": 18024942.25,
         "Employees": 223
       },
       {
-        "Year": 2021,
-        "Budget": 18259646.86,
+        "Year": "2021",
+        "Budget": 18513336.86,
         "Employees": 232
       },
       {
-        "Year": 2022,
-        "Budget": 18735429.88,
+        "Year": "2022",
+        "Budget": 18976325.68,
         "Employees": 235
       },
       {
-        "Year": 2023,
-        "Budget": 20955972.29,
+        "Year": "2023",
+        "Budget": 21065240.29,
         "Employees": 252
       },
       {
-        "Year": 2024,
-        "Budget": 21999506.81,
+        "Year": "2024",
+        "Budget": 23014990.81,
         "Employees": 271
       },
       {
-        "Year": 2025,
-        "Budget": 24454132.1,
+        "Year": "2025",
+        "Budget": 24585356.42,
         "Employees": 288
       }
     ]
@@ -113,52 +113,52 @@
     "College": "Armed Forces",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 276123.5,
         "Employees": 5
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 278859.22,
         "Employees": 5
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 291241.71,
         "Employees": 5
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 305327.01,
         "Employees": 5
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 316794.05,
         "Employees": 5
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 308589.43,
         "Employees": 5
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 315760.04,
         "Employees": 5
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 172727.25,
         "Employees": 4
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 289836.55,
         "Employees": 5
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 314378.78,
         "Employees": 5
       }
@@ -168,53 +168,53 @@
     "College": "Auxiliary Units",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 51125068.71,
+        "Year": "2016",
+        "Budget": 51365268.71,
         "Employees": 1085
       },
       {
-        "Year": 2017,
-        "Budget": 50782733.75,
+        "Year": "2017",
+        "Budget": 50851933.75,
         "Employees": 1075
       },
       {
-        "Year": 2018,
-        "Budget": 53573991.91,
+        "Year": "2018",
+        "Budget": 53723082.29,
         "Employees": 1112
       },
       {
-        "Year": 2019,
-        "Budget": 55387416.37,
+        "Year": "2019",
+        "Budget": 55539733.4,
         "Employees": 1119
       },
       {
-        "Year": 2020,
-        "Budget": 57980335.18,
+        "Year": "2020",
+        "Budget": 58127384.8,
         "Employees": 1130
       },
       {
-        "Year": 2021,
-        "Budget": 54945820.84,
+        "Year": "2021",
+        "Budget": 55069780.16,
         "Employees": 1029
       },
       {
-        "Year": 2022,
-        "Budget": 60874366.55,
+        "Year": "2022",
+        "Budget": 60976816.55,
         "Employees": 1077
       },
       {
-        "Year": 2023,
-        "Budget": 65240317.18,
+        "Year": "2023",
+        "Budget": 65387694.78,
         "Employees": 1059
       },
       {
-        "Year": 2024,
-        "Budget": 66813635.09,
+        "Year": "2024",
+        "Budget": 67139908.88,
         "Employees": 1095
       },
       {
-        "Year": 2025,
-        "Budget": 72490114.42,
+        "Year": "2025",
+        "Budget": 72741427.07,
         "Employees": 1138
       }
     ]
@@ -223,18 +223,18 @@
     "College": "Campus General Use",
     "Budgets": [
       {
-        "Year": 2020,
-        "Budget": 125000.0,
+        "Year": "2020",
+        "Budget": 622596.5,
         "Employees": 4
       },
       {
-        "Year": 2021,
-        "Budget": 435331.04,
+        "Year": "2021",
+        "Budget": 601985.54,
         "Employees": 4
       },
       {
-        "Year": 2022,
-        "Budget": 20400.0,
+        "Year": "2022",
+        "Budget": 407839.53,
         "Employees": 3
       }
     ]
@@ -243,43 +243,43 @@
     "College": "Carle Illinois Medicine",
     "Budgets": [
       {
-        "Year": 2018,
-        "Budget": 2985981.58,
+        "Year": "2018",
+        "Budget": 3125332.58,
         "Employees": 28
       },
       {
-        "Year": 2019,
-        "Budget": 11299487.45,
+        "Year": "2019",
+        "Budget": 17542021.43,
         "Employees": 199
       },
       {
-        "Year": 2020,
-        "Budget": 25393055.78,
+        "Year": "2020",
+        "Budget": 26340509.12,
         "Employees": 394
       },
       {
-        "Year": 2021,
-        "Budget": 28581476.53,
+        "Year": "2021",
+        "Budget": 29885764.0,
         "Employees": 429
       },
       {
-        "Year": 2022,
-        "Budget": 31763071.15,
+        "Year": "2022",
+        "Budget": 33106741.8,
         "Employees": 431
       },
       {
-        "Year": 2023,
-        "Budget": 35704625.4,
+        "Year": "2023",
+        "Budget": 37221089.95,
         "Employees": 432
       },
       {
-        "Year": 2024,
-        "Budget": 36404957.34,
+        "Year": "2024",
+        "Budget": 38552348.69,
         "Employees": 424
       },
       {
-        "Year": 2025,
-        "Budget": 39267744.23,
+        "Year": "2025",
+        "Budget": 40072955.62,
         "Employees": 418
       }
     ]
@@ -288,53 +288,53 @@
     "College": "Center Innov in Teach Learn",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 3768722.97,
+        "Year": "2016",
+        "Budget": 3773722.97,
         "Employees": 66
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 4708515.28,
         "Employees": 79
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 4473543.58,
         "Employees": 74
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 5114458.87,
         "Employees": 86
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 5416081.1,
         "Employees": 83
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 5466793.12,
         "Employees": 82
       },
       {
-        "Year": 2022,
-        "Budget": 5404582.55,
+        "Year": "2022",
+        "Budget": 5409582.59,
         "Employees": 77
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 5494818.47,
         "Employees": 73
       },
       {
-        "Year": 2024,
-        "Budget": 5230727.34,
+        "Year": "2024",
+        "Budget": 5408338.57,
         "Employees": 66
       },
       {
-        "Year": 2025,
-        "Budget": 5019357.07,
+        "Year": "2025",
+        "Budget": 5095357.07,
         "Employees": 64
       }
     ]
@@ -343,53 +343,53 @@
     "College": "Chancellor",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 15269762.02,
+        "Year": "2016",
+        "Budget": 15279762.02,
         "Employees": 224
       },
       {
-        "Year": 2017,
-        "Budget": 11491387.44,
+        "Year": "2017",
+        "Budget": 11548387.44,
         "Employees": 181
       },
       {
-        "Year": 2018,
-        "Budget": 13384159.05,
+        "Year": "2018",
+        "Budget": 13456447.05,
         "Employees": 201
       },
       {
-        "Year": 2019,
-        "Budget": 17106174.79,
+        "Year": "2019",
+        "Budget": 17179546.79,
         "Employees": 239
       },
       {
-        "Year": 2020,
-        "Budget": 19693845.67,
+        "Year": "2020",
+        "Budget": 19704825.67,
         "Employees": 268
       },
       {
-        "Year": 2021,
-        "Budget": 24502142.65,
+        "Year": "2021",
+        "Budget": 24734142.65,
         "Employees": 323
       },
       {
-        "Year": 2022,
-        "Budget": 14053413.53,
+        "Year": "2022",
+        "Budget": 14375550.45,
         "Employees": 161
       },
       {
-        "Year": 2023,
-        "Budget": 15527336.72,
+        "Year": "2023",
+        "Budget": 15863145.72,
         "Employees": 165
       },
       {
-        "Year": 2024,
-        "Budget": 18006280.28,
+        "Year": "2024",
+        "Budget": 18028780.28,
         "Employees": 192
       },
       {
-        "Year": 2025,
-        "Budget": 19674406.31,
+        "Year": "2025",
+        "Budget": 19709406.31,
         "Employees": 207
       }
     ]
@@ -398,22 +398,22 @@
     "College": "Chief Information Officer",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 18276474.2,
+        "Year": "2016",
+        "Budget": 18286474.2,
         "Employees": 269
       },
       {
-        "Year": 2017,
-        "Budget": 17717798.33,
+        "Year": "2017",
+        "Budget": 17807398.33,
         "Employees": 256
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 18472590.63,
         "Employees": 255
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 19903040.48,
         "Employees": 276
       }
@@ -423,53 +423,53 @@
     "College": "College of Media",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 11205510.04,
+        "Year": "2016",
+        "Budget": 11251510.04,
         "Employees": 140
       },
       {
-        "Year": 2017,
-        "Budget": 11552468.88,
+        "Year": "2017",
+        "Budget": 11600968.88,
         "Employees": 142
       },
       {
-        "Year": 2018,
-        "Budget": 11780739.82,
+        "Year": "2018",
+        "Budget": 11824539.82,
         "Employees": 138
       },
       {
-        "Year": 2019,
-        "Budget": 11921499.23,
+        "Year": "2019",
+        "Budget": 11994299.23,
         "Employees": 139
       },
       {
-        "Year": 2020,
-        "Budget": 12031099.74,
+        "Year": "2020",
+        "Budget": 12092099.74,
         "Employees": 137
       },
       {
-        "Year": 2021,
-        "Budget": 11971992.57,
+        "Year": "2021",
+        "Budget": 12007992.57,
         "Employees": 130
       },
       {
-        "Year": 2022,
-        "Budget": 11669944.5,
+        "Year": "2022",
+        "Budget": 11730944.5,
         "Employees": 126
       },
       {
-        "Year": 2023,
-        "Budget": 11333287.17,
+        "Year": "2023",
+        "Budget": 11435938.93,
         "Employees": 123
       },
       {
-        "Year": 2024,
-        "Budget": 11658154.56,
+        "Year": "2024",
+        "Budget": 11805893.79,
         "Employees": 127
       },
       {
-        "Year": 2025,
-        "Budget": 11572874.5,
+        "Year": "2025",
+        "Budget": 11752515.42,
         "Employees": 128
       }
     ]
@@ -478,52 +478,52 @@
     "College": "Div Intercollegiate Athletics",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 22798693.72,
+        "Year": "2016",
+        "Budget": 22854909.72,
         "Employees": 266
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 25907738.91,
         "Employees": 272
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 30522779.25,
         "Employees": 290
       },
       {
-        "Year": 2019,
-        "Budget": 32586659.34,
+        "Year": "2019",
+        "Budget": 32625059.34,
         "Employees": 301
       },
       {
-        "Year": 2020,
-        "Budget": 35954005.93,
+        "Year": "2020",
+        "Budget": 35959005.97,
         "Employees": 307
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 37356259.81,
         "Employees": 297
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 42050859.98,
         "Employees": 320
       },
       {
-        "Year": 2023,
-        "Budget": 47240549.8,
+        "Year": "2023",
+        "Budget": 47246549.8,
         "Employees": 339
       },
       {
-        "Year": 2024,
-        "Budget": 47537017.56,
+        "Year": "2024",
+        "Budget": 47602017.56,
         "Employees": 321
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 50696913.61,
         "Employees": 318
       }
@@ -533,7 +533,7 @@
     "College": "Division of Exploratory Studies",
     "Budgets": [
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 2036935.17,
         "Employees": 29
       }
@@ -543,47 +543,47 @@
     "College": "Division of General Studies",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 1387104.99,
         "Employees": 25
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 1173801.59,
         "Employees": 22
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 1462332.26,
         "Employees": 28
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 1463580.83,
         "Employees": 26
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 1793244.16,
         "Employees": 30
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 1694769.18,
         "Employees": 28
       },
       {
-        "Year": 2022,
-        "Budget": 1639465.08,
+        "Year": "2022",
+        "Budget": 1668036.48,
         "Employees": 25
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 2015477.66,
         "Employees": 30
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 2058068.61,
         "Employees": 30
       }
@@ -593,53 +593,53 @@
     "College": "Education",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 19945124.21,
+        "Year": "2016",
+        "Budget": 20200122.81,
         "Employees": 265
       },
       {
-        "Year": 2017,
-        "Budget": 17997634.71,
+        "Year": "2017",
+        "Budget": 18569732.67,
         "Employees": 254
       },
       {
-        "Year": 2018,
-        "Budget": 18717592.78,
+        "Year": "2018",
+        "Budget": 19421493.99,
         "Employees": 254
       },
       {
-        "Year": 2019,
-        "Budget": 18960146.23,
+        "Year": "2019",
+        "Budget": 19539934.96,
         "Employees": 245
       },
       {
-        "Year": 2020,
-        "Budget": 20778454.85,
+        "Year": "2020",
+        "Budget": 20929528.73,
         "Employees": 260
       },
       {
-        "Year": 2021,
-        "Budget": 21206396.44,
+        "Year": "2021",
+        "Budget": 21430467.44,
         "Employees": 259
       },
       {
-        "Year": 2022,
-        "Budget": 22747525.11,
+        "Year": "2022",
+        "Budget": 23018915.57,
         "Employees": 272
       },
       {
-        "Year": 2023,
-        "Budget": 24166550.22,
+        "Year": "2023",
+        "Budget": 24666102.23,
         "Employees": 284
       },
       {
-        "Year": 2024,
-        "Budget": 25563789.82,
+        "Year": "2024",
+        "Budget": 26696117.78,
         "Employees": 308
       },
       {
-        "Year": 2025,
-        "Budget": 27584054.78,
+        "Year": "2025",
+        "Budget": 27732786.51,
         "Employees": 313
       }
     ]
@@ -648,52 +648,52 @@
     "College": "Energy Services",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 851258.66,
         "Employees": 7
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 851258.66,
         "Employees": 7
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 876966.68,
         "Employees": 7
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 898210.68,
         "Employees": 7
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 543778.8,
         "Employees": 5
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 728837.88,
         "Employees": 8
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 667006.41,
         "Employees": 6
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 810283.79,
         "Employees": 7
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 827255.95,
         "Employees": 7
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 1062958.24,
         "Employees": 9
       }
@@ -703,53 +703,53 @@
     "College": "Facilities",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 69214119.2,
         "Employees": 1138
       },
       {
-        "Year": 2017,
-        "Budget": 67226698.98,
+        "Year": "2017",
+        "Budget": 67231198.98,
         "Employees": 1095
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 67767004.28,
         "Employees": 1076
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 68536183.09,
         "Employees": 1067
       },
       {
-        "Year": 2020,
-        "Budget": 73421139.11,
+        "Year": "2020",
+        "Budget": 73483221.5,
         "Employees": 1123
       },
       {
-        "Year": 2021,
-        "Budget": 70255225.23,
+        "Year": "2021",
+        "Budget": 70395225.23,
         "Employees": 1055
       },
       {
-        "Year": 2022,
-        "Budget": 71726771.06,
+        "Year": "2022",
+        "Budget": 71809571.06,
         "Employees": 1009
       },
       {
-        "Year": 2023,
-        "Budget": 79745461.43,
+        "Year": "2023",
+        "Budget": 79820320.63,
         "Employees": 1082
       },
       {
-        "Year": 2024,
-        "Budget": 84634639.32,
+        "Year": "2024",
+        "Budget": 84709498.52,
         "Employees": 1133
       },
       {
-        "Year": 2025,
-        "Budget": 87596983.53,
+        "Year": "2025",
+        "Budget": 87674858.73,
         "Employees": 1119
       }
     ]
@@ -758,53 +758,53 @@
     "College": "Fine & Applied Arts",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 30579396.8,
+        "Year": "2016",
+        "Budget": 30685367.54,
         "Employees": 459
       },
       {
-        "Year": 2017,
-        "Budget": 29701009.07,
+        "Year": "2017",
+        "Budget": 29798614.52,
         "Employees": 444
       },
       {
-        "Year": 2018,
-        "Budget": 30631863.84,
+        "Year": "2018",
+        "Budget": 30771865.88,
         "Employees": 442
       },
       {
-        "Year": 2019,
-        "Budget": 30684406.78,
+        "Year": "2019",
+        "Budget": 30882665.17,
         "Employees": 434
       },
       {
-        "Year": 2020,
-        "Budget": 32713491.23,
+        "Year": "2020",
+        "Budget": 32891388.23,
         "Employees": 453
       },
       {
-        "Year": 2021,
-        "Budget": 32019668.78,
+        "Year": "2021",
+        "Budget": 32219617.78,
         "Employees": 434
       },
       {
-        "Year": 2022,
-        "Budget": 33981349.84,
+        "Year": "2022",
+        "Budget": 34489139.46,
         "Employees": 455
       },
       {
-        "Year": 2023,
-        "Budget": 37135383.44,
+        "Year": "2023",
+        "Budget": 37582299.68,
         "Employees": 465
       },
       {
-        "Year": 2024,
-        "Budget": 38053322.15,
+        "Year": "2024",
+        "Budget": 39519769.9,
         "Employees": 480
       },
       {
-        "Year": 2025,
-        "Budget": 39957989.62,
+        "Year": "2025",
+        "Budget": 40263255.41,
         "Employees": 484
       }
     ]
@@ -813,53 +813,53 @@
     "College": "Gies College of Business",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 39227288.16,
+        "Year": "2016",
+        "Budget": 39479374.4,
         "Employees": 326
       },
       {
-        "Year": 2017,
-        "Budget": 41028486.04,
+        "Year": "2017",
+        "Budget": 41656340.32,
         "Employees": 336
       },
       {
-        "Year": 2018,
-        "Budget": 44492405.09,
+        "Year": "2018",
+        "Budget": 44890651.28,
         "Employees": 353
       },
       {
-        "Year": 2019,
-        "Budget": 48746566.2,
+        "Year": "2019",
+        "Budget": 49393198.69,
         "Employees": 384
       },
       {
-        "Year": 2020,
-        "Budget": 56269761.67,
+        "Year": "2020",
+        "Budget": 57906182.3,
         "Employees": 446
       },
       {
-        "Year": 2021,
-        "Budget": 58311212.29,
+        "Year": "2021",
+        "Budget": 59888604.81,
         "Employees": 464
       },
       {
-        "Year": 2022,
-        "Budget": 61671410.4,
+        "Year": "2022",
+        "Budget": 62944639.61,
         "Employees": 481
       },
       {
-        "Year": 2023,
-        "Budget": 65712945.97,
+        "Year": "2023",
+        "Budget": 67959817.45,
         "Employees": 509
       },
       {
-        "Year": 2024,
-        "Budget": 59627690.55,
+        "Year": "2024",
+        "Budget": 73660070.88,
         "Employees": 537
       },
       {
-        "Year": 2025,
-        "Budget": 75159967.34,
+        "Year": "2025",
+        "Budget": 76962352.34,
         "Employees": 557
       }
     ]
@@ -868,52 +868,52 @@
     "College": "Graduate College",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 2632668.39,
+        "Year": "2016",
+        "Budget": 2881947.39,
         "Employees": 49
       },
       {
-        "Year": 2017,
-        "Budget": 2275654.36,
+        "Year": "2017",
+        "Budget": 2403635.01,
         "Employees": 38
       },
       {
-        "Year": 2018,
-        "Budget": 2396424.64,
+        "Year": "2018",
+        "Budget": 2406424.64,
         "Employees": 37
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 2560676.36,
         "Employees": 40
       },
       {
-        "Year": 2020,
-        "Budget": 2879908.15,
+        "Year": "2020",
+        "Budget": 3067717.15,
         "Employees": 45
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 2632165.96,
         "Employees": 39
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 2923685.74,
         "Employees": 39
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 3070289.6,
         "Employees": 38
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 3541646.71,
         "Employees": 44
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 3388548.17,
         "Employees": 41
       }
@@ -923,53 +923,53 @@
     "College": "Grainger Engineering",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 124687769.53,
+        "Year": "2016",
+        "Budget": 126430403.35,
         "Employees": 1424
       },
       {
-        "Year": 2017,
-        "Budget": 125608586.52,
+        "Year": "2017",
+        "Budget": 127902639.79,
         "Employees": 1433
       },
       {
-        "Year": 2018,
-        "Budget": 130240833.61,
+        "Year": "2018",
+        "Budget": 132624896.27,
         "Employees": 1422
       },
       {
-        "Year": 2019,
-        "Budget": 136452739.93,
+        "Year": "2019",
+        "Budget": 138705760.89,
         "Employees": 1438
       },
       {
-        "Year": 2020,
-        "Budget": 150082728.35,
+        "Year": "2020",
+        "Budget": 152602159.15,
         "Employees": 1533
       },
       {
-        "Year": 2021,
-        "Budget": 152727134.28,
+        "Year": "2021",
+        "Budget": 155257634.9,
         "Employees": 1519
       },
       {
-        "Year": 2022,
-        "Budget": 156708466.06,
+        "Year": "2022",
+        "Budget": 160743036.66,
         "Employees": 1511
       },
       {
-        "Year": 2023,
-        "Budget": 175546324.91,
+        "Year": "2023",
+        "Budget": 179432886.42,
         "Employees": 1631
       },
       {
-        "Year": 2024,
-        "Budget": 170651032.76,
+        "Year": "2024",
+        "Budget": 195437815.63,
         "Employees": 1751
       },
       {
-        "Year": 2025,
-        "Budget": 197659709.16,
+        "Year": "2025",
+        "Budget": 202460853.37,
         "Employees": 1778
       }
     ]
@@ -978,54 +978,59 @@
     "College": "Illinois International",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 3867930.5,
-        "Employees": 76
-      },
-      {
-        "Year": 2017,
-        "Budget": 3844432.79,
+        "Year": "2017",
+        "Budget": 4076004.34,
         "Employees": 71
       },
       {
-        "Year": 2018,
-        "Budget": 3556410.12,
+        "Year": "2018",
+        "Budget": 3914164.27,
         "Employees": 67
       },
       {
-        "Year": 2019,
-        "Budget": 4031169.75,
+        "Year": "2019",
+        "Budget": 4255092.73,
         "Employees": 73
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 4015602.57,
         "Employees": 70
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 3726229.05,
         "Employees": 62
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 4046137.23,
         "Employees": 59
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 4545507.67,
         "Employees": 63
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 5327937.36,
         "Employees": 77
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 4872874.01,
         "Employees": 64
+      }
+    ]
+  },
+  {
+    "College": "International Prgms & Studies",
+    "Budgets": [
+      {
+        "Year": "2016",
+        "Budget": 4195739.4,
+        "Employees": 76
       }
     ]
   },
@@ -1033,53 +1038,53 @@
     "College": "Law",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 16161480.77,
+        "Year": "2016",
+        "Budget": 16276980.77,
         "Employees": 168
       },
       {
-        "Year": 2017,
-        "Budget": 14376233.49,
+        "Year": "2017",
+        "Budget": 14423858.46,
         "Employees": 156
       },
       {
-        "Year": 2018,
-        "Budget": 13825840.21,
+        "Year": "2018",
+        "Budget": 13857840.21,
         "Employees": 146
       },
       {
-        "Year": 2019,
-        "Budget": 15344429.25,
+        "Year": "2019",
+        "Budget": 15494564.25,
         "Employees": 150
       },
       {
-        "Year": 2020,
-        "Budget": 15542563.06,
+        "Year": "2020",
+        "Budget": 15667563.1,
         "Employees": 143
       },
       {
-        "Year": 2021,
-        "Budget": 16052143.53,
+        "Year": "2021",
+        "Budget": 16117143.57,
         "Employees": 148
       },
       {
-        "Year": 2022,
-        "Budget": 16542333.53,
+        "Year": "2022",
+        "Budget": 16734316.53,
         "Employees": 149
       },
       {
-        "Year": 2023,
-        "Budget": 16736493.81,
+        "Year": "2023",
+        "Budget": 16971109.58,
         "Employees": 157
       },
       {
-        "Year": 2024,
-        "Budget": 16661323.86,
+        "Year": "2024",
+        "Budget": 17226885.8,
         "Employees": 153
       },
       {
-        "Year": 2025,
-        "Budget": 17179083.53,
+        "Year": "2025",
+        "Budget": 17610350.17,
         "Employees": 160
       }
     ]
@@ -1088,54 +1093,64 @@
     "College": "Liberal Arts & Sciences",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 151123963.11,
+        "Year": "2016",
+        "Budget": 152404192.59,
         "Employees": 1890
       },
       {
-        "Year": 2017,
-        "Budget": 146142477.51,
+        "Year": "2017",
+        "Budget": 146952592.0,
         "Employees": 1821
       },
       {
-        "Year": 2018,
-        "Budget": 148815036.1,
+        "Year": "2018",
+        "Budget": 150226252.92,
         "Employees": 1776
       },
       {
-        "Year": 2019,
-        "Budget": 148212591.54,
+        "Year": "2019",
+        "Budget": 149839597.87,
         "Employees": 1713
       },
       {
-        "Year": 2020,
-        "Budget": 155114544.54,
+        "Year": "2020",
+        "Budget": 156933049.2,
         "Employees": 1773
       },
       {
-        "Year": 2021,
-        "Budget": 155213715.18,
+        "Year": "2021",
+        "Budget": 156552477.74,
         "Employees": 1732
       },
       {
-        "Year": 2022,
-        "Budget": 173720907.09,
+        "Year": "2022",
+        "Budget": 175266174.03,
         "Employees": 1791
       },
       {
-        "Year": 2023,
-        "Budget": 199042234.68,
+        "Year": "2023",
+        "Budget": 202868928.47,
         "Employees": 1951
       },
       {
-        "Year": 2024,
-        "Budget": 212090166.84,
+        "Year": "2024",
+        "Budget": 223468618.75,
         "Employees": 2114
       },
       {
-        "Year": 2025,
-        "Budget": 223343920.38,
+        "Year": "2025",
+        "Budget": 226577232.82,
         "Employees": 2093
+      }
+    ]
+  },
+  {
+    "College": "Library & Information Science",
+    "Budgets": [
+      {
+        "Year": "2016",
+        "Budget": 8088541.55,
+        "Employees": 109
       }
     ]
   },
@@ -1143,47 +1158,47 @@
     "College": "Medicine at UIUC",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 14379180.15,
+        "Year": "2016",
+        "Budget": 14786982.26,
         "Employees": 521
       },
       {
-        "Year": 2017,
-        "Budget": 13609625.03,
+        "Year": "2017",
+        "Budget": 14192982.74,
         "Employees": 523
       },
       {
-        "Year": 2018,
-        "Budget": 11933811.86,
+        "Year": "2018",
+        "Budget": 12504033.06,
         "Employees": 508
       },
       {
-        "Year": 2019,
-        "Budget": 10066309.38,
+        "Year": "2019",
+        "Budget": 10549797.56,
         "Employees": 450
       },
       {
-        "Year": 2020,
-        "Budget": 6713340.45,
+        "Year": "2020",
+        "Budget": 7173416.87,
         "Employees": 385
       },
       {
-        "Year": 2021,
-        "Budget": 3724529.8,
+        "Year": "2021",
+        "Budget": 4624930.83,
         "Employees": 262
       },
       {
-        "Year": 2022,
-        "Budget": 259795.24,
+        "Year": "2022",
+        "Budget": 532156.7,
         "Employees": 3
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 340045.84,
         "Employees": 1
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 346854.88,
         "Employees": 1
       }
@@ -1193,52 +1208,52 @@
     "College": "Ofc VC Inst Advancement",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 10177951.62,
         "Employees": 105
       },
       {
-        "Year": 2017,
-        "Budget": 9564256.12,
+        "Year": "2017",
+        "Budget": 9576256.12,
         "Employees": 104
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 9501092.59,
         "Employees": 96
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 9633145.15,
         "Employees": 97
       },
       {
-        "Year": 2020,
-        "Budget": 10749778.27,
+        "Year": "2020",
+        "Budget": 10795035.67,
         "Employees": 101
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 10479784.89,
         "Employees": 96
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 11436163.82,
         "Employees": 98
       },
       {
-        "Year": 2023,
-        "Budget": 12950778.62,
+        "Year": "2023",
+        "Budget": 12991178.72,
         "Employees": 108
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 14157569.39,
         "Employees": 119
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 14301170.35,
         "Employees": 123
       }
@@ -1248,33 +1263,33 @@
     "College": "OVCRI Institutes",
     "Budgets": [
       {
-        "Year": 2020,
-        "Budget": 137828685.79,
+        "Year": "2020",
+        "Budget": 139978447.1,
         "Employees": 1562
       },
       {
-        "Year": 2021,
-        "Budget": 144991636.72,
+        "Year": "2021",
+        "Budget": 147160755.93,
         "Employees": 1605
       },
       {
-        "Year": 2022,
-        "Budget": 154690845.01,
+        "Year": "2022",
+        "Budget": 158163664.88,
         "Employees": 1659
       },
       {
-        "Year": 2023,
-        "Budget": 169704561.23,
+        "Year": "2023",
+        "Budget": 172618963.68,
         "Employees": 1707
       },
       {
-        "Year": 2024,
-        "Budget": 181833712.27,
+        "Year": "2024",
+        "Budget": 187740650.42,
         "Employees": 1827
       },
       {
-        "Year": 2025,
-        "Budget": 191741451.57,
+        "Year": "2025",
+        "Budget": 195633802.67,
         "Employees": 1852
       }
     ]
@@ -1283,8 +1298,8 @@
     "College": "Provost & Executive VC",
     "Budgets": [
       {
-        "Year": 2025,
-        "Budget": 31508358.11,
+        "Year": "2025",
+        "Budget": 32601797.63,
         "Employees": 346
       }
     ]
@@ -1293,48 +1308,48 @@
     "College": "Provost & VC Acad Affairs",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 23804268.48,
+        "Year": "2016",
+        "Budget": 24251309.03,
         "Employees": 358
       },
       {
-        "Year": 2017,
-        "Budget": 27457527.05,
+        "Year": "2017",
+        "Budget": 28249795.37,
         "Employees": 369
       },
       {
-        "Year": 2018,
-        "Budget": 28359560.18,
+        "Year": "2018",
+        "Budget": 29542702.95,
         "Employees": 369
       },
       {
-        "Year": 2019,
-        "Budget": 26339391.48,
+        "Year": "2019",
+        "Budget": 26567734.48,
         "Employees": 314
       },
       {
-        "Year": 2020,
-        "Budget": 26452787.67,
+        "Year": "2020",
+        "Budget": 28624600.9,
         "Employees": 333
       },
       {
-        "Year": 2021,
-        "Budget": 26117501.64,
+        "Year": "2021",
+        "Budget": 26631923.23,
         "Employees": 297
       },
       {
-        "Year": 2022,
-        "Budget": 26280337.53,
+        "Year": "2022",
+        "Budget": 26597343.79,
         "Employees": 296
       },
       {
-        "Year": 2023,
-        "Budget": 27777443.21,
+        "Year": "2023",
+        "Budget": 28240671.59,
         "Employees": 303
       },
       {
-        "Year": 2024,
-        "Budget": 28433916.92,
+        "Year": "2024",
+        "Budget": 29238817.45,
         "Employees": 318
       }
     ]
@@ -1343,22 +1358,22 @@
     "College": "Provost Academic Programs",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 1066666.61,
         "Employees": 10
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 748433.09,
         "Employees": 9
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 913108.77,
         "Employees": 10
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 840249.66,
         "Employees": 8
       }
@@ -1368,27 +1383,27 @@
     "College": "Public Affairs",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 2263037.1,
         "Employees": 34
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 2152521.67,
         "Employees": 31
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 2426870.92,
         "Employees": 33
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 2669552.55,
         "Employees": 37
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 2304252.42,
         "Employees": 30
       }
@@ -1398,52 +1413,52 @@
     "College": "Public Safety",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 3113706.55,
         "Employees": 51
       },
       {
-        "Year": 2017,
-        "Budget": 3145637.67,
+        "Year": "2017",
+        "Budget": 3151437.67,
         "Employees": 52
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 3181414.98,
         "Employees": 50
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 3461312.48,
         "Employees": 55
       },
       {
-        "Year": 2020,
-        "Budget": 3874128.45,
+        "Year": "2020",
+        "Budget": 3879778.8,
         "Employees": 60
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 4194653.69,
         "Employees": 63
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 4258997.26,
         "Employees": 60
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 4589305.34,
         "Employees": 60
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 5035229.92,
         "Employees": 64
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 4994024.08,
         "Employees": 62
       }
@@ -1453,53 +1468,48 @@
     "College": "School of Information Sciences",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 8049420.81,
-        "Employees": 109
-      },
-      {
-        "Year": 2017,
-        "Budget": 8345109.71,
+        "Year": "2017",
+        "Budget": 8370109.71,
         "Employees": 113
       },
       {
-        "Year": 2018,
-        "Budget": 9001864.81,
+        "Year": "2018",
+        "Budget": 9014364.81,
         "Employees": 117
       },
       {
-        "Year": 2019,
-        "Budget": 10111426.44,
+        "Year": "2019",
+        "Budget": 10148926.44,
         "Employees": 133
       },
       {
-        "Year": 2020,
-        "Budget": 14034939.33,
+        "Year": "2020",
+        "Budget": 14104939.36,
         "Employees": 158
       },
       {
-        "Year": 2021,
-        "Budget": 14703232.78,
+        "Year": "2021",
+        "Budget": 14856145.12,
         "Employees": 169
       },
       {
-        "Year": 2022,
-        "Budget": 15776631.24,
+        "Year": "2022",
+        "Budget": 15922381.24,
         "Employees": 170
       },
       {
-        "Year": 2023,
-        "Budget": 18046892.3,
+        "Year": "2023",
+        "Budget": 18106410.98,
         "Employees": 191
       },
       {
-        "Year": 2024,
-        "Budget": 18768689.23,
+        "Year": "2024",
+        "Budget": 18871445.23,
         "Employees": 197
       },
       {
-        "Year": 2025,
-        "Budget": 21022292.39,
+        "Year": "2025",
+        "Budget": 21370742.39,
         "Employees": 217
       }
     ]
@@ -1508,52 +1518,52 @@
     "College": "School of Labor & Empl. Rel.",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 4561800.03,
         "Employees": 47
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 4183616.24,
         "Employees": 46
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 4708011.29,
         "Employees": 47
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 4558004.11,
         "Employees": 44
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 4953647.44,
         "Employees": 47
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 5288574.65,
         "Employees": 47
       },
       {
-        "Year": 2022,
-        "Budget": 5871982.65,
+        "Year": "2022",
+        "Budget": 5896982.65,
         "Employees": 48
       },
       {
-        "Year": 2023,
-        "Budget": 6286212.75,
+        "Year": "2023",
+        "Budget": 6326212.75,
         "Employees": 47
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 7113611.29,
         "Employees": 57
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 7075187.42,
         "Employees": 57
       }
@@ -1563,53 +1573,53 @@
     "College": "School of Social Work",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 5215178.33,
+        "Year": "2016",
+        "Budget": 5231678.33,
         "Employees": 86
       },
       {
-        "Year": 2017,
-        "Budget": 7787948.34,
+        "Year": "2017",
+        "Budget": 7864148.34,
         "Employees": 134
       },
       {
-        "Year": 2018,
-        "Budget": 11549306.42,
+        "Year": "2018",
+        "Budget": 11622282.42,
         "Employees": 197
       },
       {
-        "Year": 2019,
-        "Budget": 12777536.97,
+        "Year": "2019",
+        "Budget": 12897299.73,
         "Employees": 217
       },
       {
-        "Year": 2020,
-        "Budget": 15066936.1,
+        "Year": "2020",
+        "Budget": 15148758.6,
         "Employees": 245
       },
       {
-        "Year": 2021,
-        "Budget": 17382965.89,
+        "Year": "2021",
+        "Budget": 17402965.89,
         "Employees": 272
       },
       {
-        "Year": 2022,
-        "Budget": 19229631.6,
+        "Year": "2022",
+        "Budget": 19285219.24,
         "Employees": 289
       },
       {
-        "Year": 2023,
-        "Budget": 20675320.21,
+        "Year": "2023",
+        "Budget": 20707320.21,
         "Employees": 294
       },
       {
-        "Year": 2024,
-        "Budget": 22127497.38,
+        "Year": "2024",
+        "Budget": 22420624.94,
         "Employees": 313
       },
       {
-        "Year": 2025,
-        "Budget": 21333737.87,
+        "Year": "2025",
+        "Budget": 21353737.87,
         "Employees": 298
       }
     ]
@@ -1618,22 +1628,22 @@
     "College": "Services",
     "Budgets": [
       {
-        "Year": 2016,
+        "Year": "2016",
         "Budget": 1008996.61,
         "Employees": 19
       },
       {
-        "Year": 2017,
+        "Year": "2017",
         "Budget": 292513.56,
         "Employees": 3
       },
       {
-        "Year": 2018,
+        "Year": "2018",
         "Budget": 165386.5,
         "Employees": 1
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 88842.41,
         "Employees": 1
       }
@@ -1643,32 +1653,32 @@
     "College": "Technology Services",
     "Budgets": [
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 21633317.04,
         "Employees": 289
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 22108067.87,
         "Employees": 287
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 24682022.62,
         "Employees": 303
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 26676164.32,
         "Employees": 319
       },
       {
-        "Year": 2024,
-        "Budget": 28721520.15,
+        "Year": "2024",
+        "Budget": 28855002.74,
         "Employees": 323
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 29785826.51,
         "Employees": 325
       }
@@ -1678,53 +1688,53 @@
     "College": "University Library",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 19078958.54,
+        "Year": "2016",
+        "Budget": 19085958.54,
         "Employees": 330
       },
       {
-        "Year": 2017,
-        "Budget": 18999211.24,
+        "Year": "2017",
+        "Budget": 19006211.24,
         "Employees": 325
       },
       {
-        "Year": 2018,
-        "Budget": 18721622.66,
+        "Year": "2018",
+        "Budget": 18723622.66,
         "Employees": 313
       },
       {
-        "Year": 2019,
-        "Budget": 18947344.17,
+        "Year": "2019",
+        "Budget": 18949344.17,
         "Employees": 311
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 19200813.8,
         "Employees": 306
       },
       {
-        "Year": 2021,
-        "Budget": 19198706.07,
+        "Year": "2021",
+        "Budget": 19204118.41,
         "Employees": 299
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 19955961.75,
         "Employees": 292
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 20886825.54,
         "Employees": 293
       },
       {
-        "Year": 2024,
-        "Budget": 21203262.78,
+        "Year": "2024",
+        "Budget": 21277626.01,
         "Employees": 295
       },
       {
-        "Year": 2025,
-        "Budget": 21591130.47,
+        "Year": "2025",
+        "Budget": 21697047.97,
         "Employees": 286
       }
     ]
@@ -1733,22 +1743,22 @@
     "College": "VC Admin and Operations",
     "Budgets": [
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 14586436.98,
         "Employees": 186
       },
       {
-        "Year": 2023,
+        "Year": "2023",
         "Budget": 17920520.96,
         "Employees": 223
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 18875717.52,
         "Employees": 223
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 18220142.45,
         "Employees": 208
       }
@@ -1758,33 +1768,33 @@
     "College": "VC for Research and Innovation",
     "Budgets": [
       {
-        "Year": 2020,
-        "Budget": 19897379.39,
+        "Year": "2020",
+        "Budget": 20767483.4,
         "Employees": 254
       },
       {
-        "Year": 2021,
-        "Budget": 20950205.05,
+        "Year": "2021",
+        "Budget": 21484763.65,
         "Employees": 252
       },
       {
-        "Year": 2022,
-        "Budget": 22307552.75,
+        "Year": "2022",
+        "Budget": 23511780.09,
         "Employees": 254
       },
       {
-        "Year": 2023,
-        "Budget": 24739102.48,
+        "Year": "2023",
+        "Budget": 25724255.42,
         "Employees": 271
       },
       {
-        "Year": 2024,
-        "Budget": 26361379.16,
+        "Year": "2024",
+        "Budget": 27035888.89,
         "Employees": 279
       },
       {
-        "Year": 2025,
-        "Budget": 28202389.88,
+        "Year": "2025",
+        "Budget": 29282738.43,
         "Employees": 289
       }
     ]
@@ -1793,53 +1803,53 @@
     "College": "VC Student Affairs",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 9284281.39,
+        "Year": "2016",
+        "Budget": 9297781.39,
         "Employees": 159
       },
       {
-        "Year": 2017,
-        "Budget": 9216951.61,
+        "Year": "2017",
+        "Budget": 9255351.61,
         "Employees": 157
       },
       {
-        "Year": 2018,
-        "Budget": 9729439.39,
+        "Year": "2018",
+        "Budget": 9768839.39,
         "Employees": 160
       },
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 9978626.43,
         "Employees": 161
       },
       {
-        "Year": 2020,
-        "Budget": 11234141.3,
+        "Year": "2020",
+        "Budget": 11293395.26,
         "Employees": 177
       },
       {
-        "Year": 2021,
-        "Budget": 10436410.23,
+        "Year": "2021",
+        "Budget": 10441410.23,
         "Employees": 163
       },
       {
-        "Year": 2022,
-        "Budget": 11389515.87,
+        "Year": "2022",
+        "Budget": 11468115.87,
         "Employees": 167
       },
       {
-        "Year": 2023,
-        "Budget": 13190182.57,
+        "Year": "2023",
+        "Budget": 13281718.0,
         "Employees": 175
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 14773926.85,
         "Employees": 190
       },
       {
-        "Year": 2025,
-        "Budget": 16168602.63,
+        "Year": "2025",
+        "Budget": 16240564.63,
         "Employees": 201
       }
     ]
@@ -1848,53 +1858,53 @@
     "College": "Veterinary Medicine",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 24828565.36,
+        "Year": "2016",
+        "Budget": 24843565.36,
         "Employees": 350
       },
       {
-        "Year": 2017,
-        "Budget": 24668075.92,
+        "Year": "2017",
+        "Budget": 24726071.92,
         "Employees": 361
       },
       {
-        "Year": 2018,
-        "Budget": 26824914.62,
+        "Year": "2018",
+        "Budget": 26850664.62,
         "Employees": 371
       },
       {
-        "Year": 2019,
-        "Budget": 27332369.57,
+        "Year": "2019",
+        "Budget": 27352369.61,
         "Employees": 382
       },
       {
-        "Year": 2020,
-        "Budget": 33021883.85,
+        "Year": "2020",
+        "Budget": 33069359.9,
         "Employees": 444
       },
       {
-        "Year": 2021,
-        "Budget": 34865076.31,
+        "Year": "2021",
+        "Budget": 35125521.56,
         "Employees": 473
       },
       {
-        "Year": 2022,
-        "Budget": 35547082.18,
+        "Year": "2022",
+        "Budget": 35920243.42,
         "Employees": 457
       },
       {
-        "Year": 2023,
-        "Budget": 38518813.07,
+        "Year": "2023",
+        "Budget": 38611308.21,
         "Employees": 477
       },
       {
-        "Year": 2024,
-        "Budget": 39726105.61,
+        "Year": "2024",
+        "Budget": 42139734.79,
         "Employees": 496
       },
       {
-        "Year": 2025,
-        "Budget": 45699330.15,
+        "Year": "2025",
+        "Budget": 45758293.24,
         "Employees": 532
       }
     ]
@@ -1903,23 +1913,23 @@
     "College": "Vice Chanc Research Institutes",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 107267428.36,
+        "Year": "2016",
+        "Budget": 108723846.35,
         "Employees": 1368
       },
       {
-        "Year": 2017,
-        "Budget": 116004377.16,
+        "Year": "2017",
+        "Budget": 117759875.42,
         "Employees": 1452
       },
       {
-        "Year": 2018,
-        "Budget": 122397064.6,
+        "Year": "2018",
+        "Budget": 124225770.41,
         "Employees": 1464
       },
       {
-        "Year": 2019,
-        "Budget": 128795023.35,
+        "Year": "2019",
+        "Budget": 130653356.81,
         "Employees": 1484
       }
     ]
@@ -1928,37 +1938,37 @@
     "College": "Vice Chancellor for Diversity",
     "Budgets": [
       {
-        "Year": 2019,
+        "Year": "2019",
         "Budget": 1280013.0,
         "Employees": 18
       },
       {
-        "Year": 2020,
+        "Year": "2020",
         "Budget": 2926844.38,
         "Employees": 32
       },
       {
-        "Year": 2021,
+        "Year": "2021",
         "Budget": 3347138.46,
         "Employees": 35
       },
       {
-        "Year": 2022,
+        "Year": "2022",
         "Budget": 3560400.67,
         "Employees": 36
       },
       {
-        "Year": 2023,
-        "Budget": 3607528.06,
+        "Year": "2023",
+        "Budget": 3720550.06,
         "Employees": 37
       },
       {
-        "Year": 2024,
+        "Year": "2024",
         "Budget": 3924557.8,
         "Employees": 41
       },
       {
-        "Year": 2025,
+        "Year": "2025",
         "Budget": 3787295.4,
         "Employees": 39
       }
@@ -1968,23 +1978,23 @@
     "College": "Vice Chancellor for Research",
     "Budgets": [
       {
-        "Year": 2016,
-        "Budget": 19665665.97,
+        "Year": "2016",
+        "Budget": 20374203.1,
         "Employees": 229
       },
       {
-        "Year": 2017,
-        "Budget": 13083855.89,
+        "Year": "2017",
+        "Budget": 14087264.42,
         "Employees": 190
       },
       {
-        "Year": 2018,
-        "Budget": 15839167.45,
+        "Year": "2018",
+        "Budget": 16651824.9,
         "Employees": 227
       },
       {
-        "Year": 2019,
-        "Budget": 17064259.73,
+        "Year": "2019",
+        "Budget": 17538685.36,
         "Employees": 232
       }
     ]
