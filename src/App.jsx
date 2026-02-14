@@ -99,9 +99,11 @@ export default function SalaryVisualization() {
     error: tableError,
   } = useSalaryData(tableYear, tableCampus);
 
+  // Search filters with college and department
   const [search, setSearch] = React.useState({
     firstName: "",
     lastName: "",
+    college: "",
     department: "",
   });
 
@@ -112,7 +114,7 @@ export default function SalaryVisualization() {
   const pageSize = 5;
 
   React.useEffect(() => {
-    setSearch({ firstName: "", lastName: "", department: "" });
+    setSearch({ firstName: "", lastName: "", college: "", department: "" });
     setSelectedPerson(null);
     setPage(1);
   }, [tableCampus, tableYear]);
@@ -139,10 +141,25 @@ export default function SalaryVisualization() {
     });
   }, [tableEmployees, tableCampus]);
 
-  const departments = React.useMemo(
-    () => Array.from(new Set(staffRows.map((d) => d.department))).sort(),
+  const colleges = React.useMemo(
+    () => Array.from(new Set(staffRows.map((d) => d.college))).filter(Boolean).sort(),
     [staffRows]
   );
+
+  // Unique departments - filtered by selected college if one is chosen
+  const departments = React.useMemo(() => {
+    const rows = search.college
+      ? staffRows.filter((d) => d.college === search.college)
+      : staffRows;
+    return Array.from(new Set(rows.map((d) => d.department))).filter(Boolean).sort();
+  }, [staffRows, search.college]);
+
+  // Reset department when college changes (if department not in new list)
+  React.useEffect(() => {
+    if (search.department && !departments.includes(search.department)) {
+      setSearch((s) => ({ ...s, department: "" }));
+    }
+  }, [departments, search.department]);
 
   const filtered = React.useMemo(() => {
     const f = (s) => s.toLowerCase();
@@ -150,6 +167,7 @@ export default function SalaryVisualization() {
       (p) =>
         p.firstName.toLowerCase().includes(f(search.firstName)) &&
         p.lastName.toLowerCase().includes(f(search.lastName)) &&
+        (!search.college || p.college === search.college) &&
         (!search.department || p.department === search.department)
     );
   }, [staffRows, search]);
@@ -310,7 +328,7 @@ export default function SalaryVisualization() {
               <span className="text-slate-600 font-medium">Year</span>
               <select
                 value={tableYear}
-                onChange={(e) => setTableYear(Number(e.target.value))}
+                onChange={(e) => setTableYear(e.target.value)}
                 className="border rounded-md px-2 py-1 text-sm font-medium"
               >
                 {YEARS.map((y) => (
@@ -322,7 +340,7 @@ export default function SalaryVisualization() {
         </div>
 
         {/* Text filters */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
           <input
             type="text"
             placeholder="First Name"
@@ -344,6 +362,20 @@ export default function SalaryVisualization() {
             }}
             className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
+
+          <select
+            value={search.college}
+            onChange={(e) => {
+              setSearch((s) => ({ ...s, college: e.target.value, department: "" }));
+              resetPage();
+            }}
+            className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="">All Colleges</option>
+            {colleges.map((c) => (
+              <option key={c} value={c}>{c}</option>
+            ))}
+          </select>
 
           <select
             value={search.department}

@@ -4,6 +4,7 @@ import * as d3 from "d3";
 import { BarChart } from "./BarChart";
 import { Histogram } from "./Histogram";
 import { X } from "lucide-react";
+import {fetchPrevYearEmployeeCount} from "../utils"
 
 function formatBudget(d) {
   return d3.format("$.3s")(d).replace("G", "B");
@@ -34,48 +35,79 @@ export function DepartmentPanel({
   budgetData,
 }) {
   const [tab, setTab] = React.useState("budget");
+  const [prevYearEmployeeCount, setPrevYearEmployeeCount] = React.useState(null);
 
+  // Fetch previous year's employee count for YoY calculation
+  React.useEffect(() => {
+    let cancelled = false;
+
+    async function loadPrevYearData() {
+      setPrevYearEmployeeCount(null);
+      const count = await fetchPrevYearEmployeeCount(year, campus, collegeName, isTotal);
+      if (!cancelled) {
+        setPrevYearEmployeeCount(count);
+      }
+    }
+
+    loadPrevYearData();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [year, campus, collegeName, isTotal]);
+
+  // Use the passed budget data for this campus
   const colleges = React.useMemo(
     () => budgetData || [],
     [budgetData]
   );
 
+  // 1) Pull people for this (year, campus, college) from the index
   const peopleThisYear = React.useMemo(() => {
-    const byYear = yearCollegeCampusIndex.get(year);
+    const byYear = yearCollegeCampusIndex?.get(Number(year)) || yearCollegeCampusIndex?.get(String(year));
     if (!byYear) return [];
 
     if (isTotal) {
+      // Total: all campus|college combos that match this campus or UI System
       const arr = [];
       for (const [key, list] of byYear.entries()) {
         const [keyCampus] = key.split("|");
-        if (keyCampus === campus) {
+        if (campus === "UI System" || keyCampus === campus) {
           if (Array.isArray(list)) arr.push(...list);
         }
       }
       return arr;
     }
 
+    // College-specific: campus|college composite key
     const compositeKey = `${campus}|${collegeName}`;
     const arr = byYear.get(compositeKey) || [];
     return Array.isArray(arr) ? [...arr] : [];
   }, [year, collegeName, campus, isTotal, yearCollegeCampusIndex]);
 
+  // 2) Consolidate multiple entries per person
+  //    For department view: use collegeSalary (sum of positions in this college)
+  //    For total view: use collegeSalary summed across all their college appearances
   const peopleCombined = React.useMemo(() => {
     const map = new Map();
 
     for (const p of peopleThisYear) {
       const key = p.name || "Unknown";
-      const existing =
-        map.get(key) ||
-        {
-          name: key,
-          salary: 0,
-          positions: new Set(),
-        };
+      const existing = map.get(key) || {
+        name: key,
+        collegeSalary: 0,  // salary from positions in this college/these colleges
+        totalSalary: 0,    // total salary across all positions
+        positions: new Set(),
+      };
 
-      const sVal = Number(p.salary || 0);
-      if (sVal > existing.salary) {
-        existing.salary = sVal;
+      // Use collegeSalary (department-specific) instead of totalSalary
+      const collegeSalaryVal = Number(p.collegeSalary || 0);
+      existing.collegeSalary += collegeSalaryVal;
+
+      // Keep track of total salary (max, since same person may appear multiple times)
+      const totalSalaryVal = Number(p.totalSalary || 0);
+      if (totalSalaryVal > existing.totalSalary) {
+        existing.totalSalary = totalSalaryVal;
       }
 
       if (Array.isArray(p.titles)) {
@@ -95,16 +127,23 @@ export function DepartmentPanel({
     }));
   }, [peopleThisYear]);
 
+  // 3) Salary values for histogram - use collegeSalary (department-specific)
   const salaryValues = React.useMemo(
-    () => peopleCombined.map((p) => p.salary ?? 0),
+    () => peopleCombined.map((p) => p.collegeSalary ?? 0).filter(s => s > 0),
     [peopleCombined]
   );
 
+  // 4) Compute stats + budget series
   const stats = React.useMemo(() => {
     let budget = 0;
+    let prevBudget = 0;
     let yearlyData = [];
 
+    const currentYear = Number(year);
+    const prevYear = currentYear - 1;
+
     if (isTotal) {
+      // Aggregate budgets across all colleges for this campus (or system)
       const byYear = new Map();
       for (const c of colleges) {
         for (const b of c.Budgets || []) {
@@ -117,13 +156,15 @@ export function DepartmentPanel({
         .sort((a, b) => a[0] - b[0])
         .map(([y, val]) => ({ year: y, budget: val }));
 
-      budget =
-        yearlyData.find((d) => Number(d.year) === Number(year))?.budget ?? 0;
+      budget = byYear.get(currentYear) ?? 0;
+      prevBudget = byYear.get(prevYear) ?? 0;
     } else {
+      // College-specific budgets
       const col = colleges.find((c) => c.College === collegeName);
       budget =
-        col?.Budgets?.find((b) => Number(b.Year) === Number(year))?.Budget ??
-        0;
+        col?.Budgets?.find((b) => Number(b.Year) === currentYear)?.Budget ?? 0;
+      prevBudget =
+        col?.Budgets?.find((b) => Number(b.Year) === prevYear)?.Budget ?? 0;
 
       yearlyData = (col?.Budgets ?? [])
         .slice()
@@ -133,26 +174,65 @@ export function DepartmentPanel({
 
     const employeesCount = peopleCombined.length;
 
-    const avgSalary = employeesCount
-      ? Math.round(
-          peopleCombined.reduce((sum, p) => sum + (p.salary || 0), 0) /
-            employeesCount
-        )
+    // Use collegeSalary for calculations (department-specific portion)
+    const salaries = peopleCombined
+      .map((p) => p.collegeSalary || 0)
+      .filter((s) => s > 0)
+      .sort((a, b) => a - b);
+
+    const totalCollegeSalary = salaries.reduce((sum, s) => sum + s, 0);
+    
+    const avgSalary = salaries.length
+      ? Math.round(totalCollegeSalary / salaries.length)
       : 0;
 
+    // Median salary
+    let medianSalary = 0;
+    if (salaries.length > 0) {
+      const mid = Math.floor(salaries.length / 2);
+      medianSalary = salaries.length % 2 === 0
+        ? Math.round((salaries[mid - 1] + salaries[mid]) / 2)
+        : salaries[mid];
+    }
+
+    // Top earners by collegeSalary (what they earn from THIS department)
     const topEarners = [...peopleCombined]
-      .sort((a, b) => (b.salary || 0) - (a.salary || 0))
+      .sort((a, b) => (b.collegeSalary || 0) - (a.collegeSalary || 0))
       .slice(0, 3)
       .map((e) => ({
         name: e.name,
         position: e.positions.join(", ") || "—",
-        salary: e.salary || 0,
+        collegeSalary: e.collegeSalary || 0,
+        totalSalary: e.totalSalary || 0,
       }));
 
-    const topSalary = topEarners[0]?.salary ?? 0;
+    const topSalary = topEarners[0]?.collegeSalary ?? 0;
 
-    return { budget, employeesCount, avgSalary, topEarners, yearlyData, topSalary };
-  }, [collegeName, year, peopleCombined, isTotal, colleges]);
+    // YoY budget/department percentage increase
+    let budgetYoY = null;
+    if (prevBudget > 0 && budget > 0) {
+      budgetYoY = ((budget - prevBudget) / prevBudget) * 100;
+    }
+
+    // YoY employee count increase
+    let employeeYoY = null;
+    if (prevYearEmployeeCount !== null && prevYearEmployeeCount > 0 && employeesCount > 0) {
+      employeeYoY = ((employeesCount - prevYearEmployeeCount) / prevYearEmployeeCount) * 100;
+    }
+
+    return {
+      budget,
+      prevBudget,
+      employeesCount,
+      avgSalary,
+      medianSalary,
+      topEarners,
+      yearlyData,
+      topSalary,
+      budgetYoY,
+      employeeYoY,
+    };
+  }, [collegeName, year, peopleCombined, isTotal, colleges, prevYearEmployeeCount]);
 
   const isDataMissing =
     !isTotal && (stats.yearlyData.length === 0 || stats.budget === 0);
@@ -251,19 +331,42 @@ export function DepartmentPanel({
         )}
       </div>
 
-      {/* Summary cards */}
-      <div className="grid grid-cols-3 gap-3 mb-4">
+      {/* Summary cards*/}
+      <div className="grid grid-cols-3 gap-3 mb-2">
         <StatCard
           label={`Avg Salary (${year})`}
           value={d3.format("$.3s")(stats.avgSalary)}
         />
         <StatCard
-          label={`Employees (${year})`}
+          label={`Employee Count (${year})`}
           value={stats.employeesCount}
         />
         <StatCard
           label={`Top Salary (${year})`}
           value={d3.format("$.3s")(stats.topSalary)}
+        />
+      </div>
+
+      <div className="grid grid-cols-3 gap-3 mb-4">
+        <StatCard
+          label={`Median Salary (${year})`}
+          value={stats.medianSalary > 0 ? d3.format("$.3s")(stats.medianSalary) : "—"}
+        />
+        <StatCard
+          label="Employee Count YoY"
+          value={
+            stats.employeeYoY !== null
+              ? `${stats.employeeYoY >= 0 ? "+" : ""}${stats.employeeYoY.toFixed(1)}%`
+              : "—"
+          }
+        />
+        <StatCard
+          label="Total Budget Change YoY"
+          value={
+            stats.budgetYoY !== null
+              ? `${stats.budgetYoY >= 0 ? "+" : ""}${stats.budgetYoY.toFixed(1)}%`
+              : "—"
+          }
         />
       </div>
 
@@ -289,10 +392,17 @@ export function DepartmentPanel({
               >
                 <div>
                   <div className="font-medium">{p.name}</div>
-                  <div className="text-sm">{p.position}</div>
+                  <div className="text-sm text-slate-600">{p.position}</div>
                 </div>
-                <div className="font-semibold">
-                  {d3.format("$.3s")(p.salary)}
+                <div className="text-right">
+                  <div className="font-semibold">
+                    {d3.format("$.3s")(p.collegeSalary)}
+                  </div>
+                  {p.totalSalary > p.collegeSalary && (
+                    <div className="text-xs text-slate-500">
+                      Total: {d3.format("$.3s")(p.totalSalary)}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

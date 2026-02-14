@@ -128,10 +128,8 @@ export function makeCollegeCampusIndex(employees) {
     const personName = emp.name;
     const totalSalary = getSalary(emp);
 
-    if (totalSalary <= 0) continue;
-
-    // Track unique Campus|College keys for this person
-    const keysForPerson = new Map();
+    // Group positions by Campus|College for this person
+    const positionsByKey = new Map();
 
     for (const p of emp.positions || []) {
       const campus = p.campus;
@@ -140,29 +138,86 @@ export function makeCollegeCampusIndex(employees) {
 
       const compositeKey = `${campus}|${college}`;
 
-      let entry = keysForPerson.get(compositeKey);
-      if (!entry) {
-        entry = { titles: new Set() };
-        keysForPerson.set(compositeKey, entry);
+      if (!positionsByKey.has(compositeKey)) {
+        positionsByKey.set(compositeKey, []);
       }
-      if (p.title) entry.titles.add(p.title);
+      positionsByKey.get(compositeKey).push(p);
     }
 
-    for (const [compositeKey, { titles }] of keysForPerson.entries()) {
+    // Add entry to index for each college this person has positions in
+    for (const [compositeKey, positions] of positionsByKey.entries()) {
+      // Sum salary for positions in THIS college only
+      const collegeSalary = positions.reduce(
+        (sum, p) => sum + toNum(p.positionSalary),
+        0
+      );
+
+      // Skip if no paid positions in this college
+      if (collegeSalary <= 0) continue;
+
       if (!idx.has(compositeKey)) {
         idx.set(compositeKey, []);
       }
 
       idx.get(compositeKey).push({
         name: personName,
-        salary: totalSalary,
-        titles: Array.from(titles),
+        collegeSalary,           // salary from THIS college only
+        totalSalary,             // total salary across all positions
+        titles: positions.map(p => p.title).filter(Boolean),
+        positions,               // full position objects for this college
       });
     }
   }
 
   return idx;
 }
+
+/**
+ * Counts number of employees in the previous year for a given campus and possibly college
+ * Returns: Int
+ */
+export async function fetchPrevYearEmployeeCount(year, campus, collegeName, isTotal) {
+  const prevYear = Number(year) - 1;
+  if (prevYear < 2016) return null; // No data before 2016
+
+  try {
+    const folderCampus = campus === "UI System" ? "UI_System" : campus;
+    const response = await fetch(`/salary-guide/data/${prevYear}/${folderCampus}.json`);
+    if (!response.ok) return null;
+
+    const employees = await response.json();
+
+    // Count unique employees for the department or total
+    const uniqueEmployees = new Set();
+
+    for (const emp of employees) {
+      for (const pos of emp.positions || []) {
+        const posCollege = pos.college;
+        const posCampus = pos.campus;
+        const posSalary = Number(pos.positionSalary || 0);
+
+        if (posSalary <= 0) continue;
+
+        if (isTotal) {
+          // For total, include all employees matching this campus
+          if (campus === "UI System" || posCampus === campus) {
+            uniqueEmployees.add(emp.name);
+          }
+        } else {
+          // For specific college
+          if (posCollege === collegeName && posCampus === campus) {
+            uniqueEmployees.add(emp.name);
+          }
+        }
+      }
+    }
+
+    return uniqueEmployees.size;
+  } catch {
+    return null;
+  }
+}
+
 
 export function useResizeObserver() {
   const ref = useRef(null);
