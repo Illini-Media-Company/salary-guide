@@ -4,8 +4,43 @@
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 3115221.32,
+        "Budget": 3090561.3199999994,
         "Employees": 39
+      }
+    ]
+  },
+  {
+    "College": "AVP Advising Development",
+    "Budgets": [
+      {
+        "Year": "2024",
+        "Budget": 343533.81,
+        "Employees": 3
+      }
+    ]
+  },
+  {
+    "College": "AVP Enrollment Management",
+    "Budgets": [
+      {
+        "Year": "2023",
+        "Budget": 9457976.589999998,
+        "Employees": 136
+      }
+    ]
+  },
+  {
+    "College": "AVP Student Success & Belonging",
+    "Budgets": [
+      {
+        "Year": "2023",
+        "Budget": 3112095.2700000005,
+        "Employees": 42
+      },
+      {
+        "Year": "2024",
+        "Budget": 3702289.309999999,
+        "Employees": 52
       }
     ]
   },
@@ -14,7 +49,7 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 7496093.84,
+        "Budget": 7523932.84,
         "Employees": 112
       },
       {
@@ -24,17 +59,17 @@
       },
       {
         "Year": "2018",
-        "Budget": 7274391.41,
+        "Budget": 7274391.410000001,
         "Employees": 102
       },
       {
         "Year": "2019",
-        "Budget": 8015676.2,
+        "Budget": 7878818.6,
         "Employees": 109
       },
       {
         "Year": "2020",
-        "Budget": 8800125.13,
+        "Budget": 8758379.530000001,
         "Employees": 110
       }
     ]
@@ -44,53 +79,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 20904669.67,
-        "Employees": 315
-      },
-      {
-        "Year": "2017",
-        "Budget": 20630256.44,
-        "Employees": 299
-      },
-      {
-        "Year": "2018",
-        "Budget": 21029675.11,
-        "Employees": 290
-      },
-      {
-        "Year": "2019",
-        "Budget": 21861483.55,
-        "Employees": 299
-      },
-      {
-        "Year": "2020",
-        "Budget": 22710811.29,
-        "Employees": 285
-      },
-      {
-        "Year": "2021",
-        "Budget": 23766518.53,
-        "Employees": 291
-      },
-      {
-        "Year": "2022",
-        "Budget": 25008112.42,
+        "Budget": 18993907.299999993,
         "Employees": 305
       },
       {
+        "Year": "2017",
+        "Budget": 18619632.87999999,
+        "Employees": 289
+      },
+      {
+        "Year": "2018",
+        "Budget": 18779302.419999998,
+        "Employees": 279
+      },
+      {
+        "Year": "2019",
+        "Budget": 19743249.810000014,
+        "Employees": 287
+      },
+      {
+        "Year": "2020",
+        "Budget": 20705944.369999994,
+        "Employees": 274
+      },
+      {
+        "Year": "2021",
+        "Budget": 22038839.65000001,
+        "Employees": 283
+      },
+      {
+        "Year": "2022",
+        "Budget": 23146636.749999993,
+        "Employees": 295
+      },
+      {
         "Year": "2023",
-        "Budget": 27333616.51,
-        "Employees": 304
+        "Budget": 25335557.940000005,
+        "Employees": 294
       },
       {
         "Year": "2024",
-        "Budget": 29353632.08,
-        "Employees": 313
+        "Budget": 27332091.230000008,
+        "Employees": 304
       },
       {
         "Year": "2025",
-        "Budget": 30447856.53,
-        "Employees": 325
+        "Budget": 28619114.680000007,
+        "Employees": 316
       }
     ]
   },
@@ -99,53 +134,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 10766256.45,
-        "Employees": 183
+        "Budget": 10296807.690000003,
+        "Employees": 180
       },
       {
         "Year": "2017",
-        "Budget": 11345727.0,
-        "Employees": 196
+        "Budget": 10843768.550000006,
+        "Employees": 193
       },
       {
         "Year": "2018",
-        "Budget": 12282966.42,
-        "Employees": 199
+        "Budget": 11700107.330000008,
+        "Employees": 196
       },
       {
         "Year": "2019",
-        "Budget": 12680013.21,
-        "Employees": 216
+        "Budget": 12143863.120000005,
+        "Employees": 214
       },
       {
         "Year": "2020",
-        "Budget": 13908040.3,
-        "Employees": 217
+        "Budget": 13540208.410000004,
+        "Employees": 216
       },
       {
         "Year": "2021",
-        "Budget": 14580606.22,
-        "Employees": 228
+        "Budget": 14131412.690000013,
+        "Employees": 227
       },
       {
         "Year": "2022",
-        "Budget": 14833403.12,
-        "Employees": 220
+        "Budget": 14472912.150000013,
+        "Employees": 219
       },
       {
         "Year": "2023",
-        "Budget": 17446660.91,
-        "Employees": 235
+        "Budget": 16767194.000000006,
+        "Employees": 234
       },
       {
         "Year": "2024",
-        "Budget": 18367757.71,
-        "Employees": 256
+        "Budget": 17969269.910000008,
+        "Employees": 255
       },
       {
         "Year": "2025",
-        "Budget": 19278434.75,
-        "Employees": 248
+        "Budget": 18781780.18,
+        "Employees": 247
       }
     ]
   },
@@ -180,56 +215,21 @@
     ]
   },
   {
-    "College": "AVP Advising Development",
-    "Budgets": [
-      {
-        "Year": "2024",
-        "Budget": 343533.81,
-        "Employees": 3
-      }
-    ]
-  },
-  {
-    "College": "AVP Enrollment Management",
-    "Budgets": [
-      {
-        "Year": "2023",
-        "Budget": 9523867.59,
-        "Employees": 136
-      }
-    ]
-  },
-  {
-    "College": "AVP Student Success & Belonging",
-    "Budgets": [
-      {
-        "Year": "2023",
-        "Budget": 3112095.27,
-        "Employees": 42
-      },
-      {
-        "Year": "2024",
-        "Budget": 3702289.31,
-        "Employees": 52
-      }
-    ]
-  },
-  {
     "College": "Budget & Financial Admin",
     "Budgets": [
       {
         "Year": "2018",
-        "Budget": 3693707.48,
+        "Budget": 3670535.48,
         "Employees": 39
       },
       {
         "Year": "2019",
-        "Budget": 7965934.03,
+        "Budget": 7832509.35,
         "Employees": 101
       },
       {
         "Year": "2020",
-        "Budget": 8253542.19,
+        "Budget": 8253542.1899999995,
         "Employees": 103
       }
     ]
@@ -239,7 +239,7 @@
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 8860099.86,
+        "Budget": 8959099.86,
         "Employees": 106
       }
     ]
@@ -249,52 +249,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 18728259.09,
-        "Employees": 198
+        "Budget": 18259838.79,
+        "Employees": 195
       },
       {
         "Year": "2017",
-        "Budget": 20124767.92,
-        "Employees": 194
+        "Budget": 19762462.279999994,
+        "Employees": 191
       },
       {
         "Year": "2018",
-        "Budget": 20578561.46,
-        "Employees": 181
+        "Budget": 20076840.36,
+        "Employees": 178
       },
       {
         "Year": "2019",
-        "Budget": 22808934.04,
-        "Employees": 204
+        "Budget": 22457754.869999994,
+        "Employees": 202
       },
       {
         "Year": "2020",
-        "Budget": 29116256.07,
-        "Employees": 224
+        "Budget": 28852511.07,
+        "Employees": 223
       },
       {
         "Year": "2021",
-        "Budget": 29476193.97,
-        "Employees": 217
+        "Budget": 28766367.969999984,
+        "Employees": 215
       },
       {
         "Year": "2022",
-        "Budget": 31316534.29,
-        "Employees": 243
+        "Budget": 30612034.28499999,
+        "Employees": 242
       },
       {
         "Year": "2023",
-        "Budget": 35656286.64,
+        "Budget": 35592706.63999999,
         "Employees": 262
       },
       {
         "Year": "2024",
-        "Budget": 37132066.98,
+        "Budget": 37062534.13999999,
         "Employees": 259
       },
       {
         "Year": "2025",
-        "Budget": 36096749.44,
+        "Budget": 36020158.9,
         "Employees": 236
       }
     ]
@@ -304,52 +304,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 12141272.95,
+        "Budget": 11946295.05000001,
         "Employees": 264
       },
       {
         "Year": "2017",
-        "Budget": 12612640.26,
+        "Budget": 12452933.96000001,
         "Employees": 266
       },
       {
         "Year": "2018",
-        "Budget": 12669957.14,
+        "Budget": 12504616.639999999,
         "Employees": 266
       },
       {
         "Year": "2019",
-        "Budget": 12403922.26,
+        "Budget": 12234001.860000001,
         "Employees": 251
       },
       {
         "Year": "2020",
-        "Budget": 12649246.34,
+        "Budget": 12374403.63999999,
         "Employees": 245
       },
       {
         "Year": "2021",
-        "Budget": 12674965.16,
+        "Budget": 12389931.06,
         "Employees": 236
       },
       {
         "Year": "2022",
-        "Budget": 11657840.38,
+        "Budget": 11355566.979999999,
         "Employees": 209
       },
       {
         "Year": "2023",
-        "Budget": 12794342.52,
-        "Employees": 204
+        "Budget": 12366388.919999992,
+        "Employees": 203
       },
       {
         "Year": "2024",
-        "Budget": 15152333.59,
+        "Budget": 14886381.790000023,
         "Employees": 241
       },
       {
         "Year": "2025",
-        "Budget": 12546970.56,
+        "Budget": 12331543.360000005,
         "Employees": 202
       }
     ]
@@ -359,52 +359,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 2110623.44,
-        "Employees": 20
+        "Budget": 1669373.44,
+        "Employees": 18
       },
       {
         "Year": "2017",
-        "Budget": 3577601.19,
-        "Employees": 35
+        "Budget": 3191758.81,
+        "Employees": 34
       },
       {
         "Year": "2018",
-        "Budget": 1890017.11,
+        "Budget": 1770372.82,
         "Employees": 18
       },
       {
         "Year": "2019",
-        "Budget": 2137747.04,
-        "Employees": 19
+        "Budget": 1813818.94,
+        "Employees": 18
       },
       {
         "Year": "2020",
-        "Budget": 2829239.48,
-        "Employees": 27
+        "Budget": 2420281.85,
+        "Employees": 26
       },
       {
         "Year": "2021",
-        "Budget": 2636850.23,
-        "Employees": 17
+        "Budget": 1978441.1299999997,
+        "Employees": 16
       },
       {
         "Year": "2022",
-        "Budget": 2131422.24,
+        "Budget": 1264670.96,
         "Employees": 15
       },
       {
         "Year": "2023",
-        "Budget": 2418568.56,
+        "Budget": 2000299.54,
         "Employees": 15
       },
       {
         "Year": "2024",
-        "Budget": 2715159.66,
+        "Budget": 2306665.5,
         "Employees": 15
       },
       {
         "Year": "2025",
-        "Budget": 2808106.83,
+        "Budget": 2359149.38,
         "Employees": 16
       }
     ]
@@ -414,53 +414,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 36422202.46,
-        "Employees": 382
+        "Budget": 24806206.84000001,
+        "Employees": 338
       },
       {
         "Year": "2017",
-        "Budget": 40140882.13,
-        "Employees": 495
+        "Budget": 27743216.680000007,
+        "Employees": 449
       },
       {
         "Year": "2018",
-        "Budget": 44205992.42,
-        "Employees": 515
+        "Budget": 29170959.64,
+        "Employees": 462
       },
       {
         "Year": "2019",
-        "Budget": 45542820.7,
-        "Employees": 508
+        "Budget": 30309154.099999983,
+        "Employees": 453
       },
       {
         "Year": "2020",
-        "Budget": 46887813.21,
-        "Employees": 499
+        "Budget": 31745671.38999999,
+        "Employees": 445
       },
       {
         "Year": "2021",
-        "Budget": 47080977.57,
-        "Employees": 466
+        "Budget": 31974368.23999998,
+        "Employees": 414
       },
       {
         "Year": "2022",
-        "Budget": 47338792.54,
-        "Employees": 442
+        "Budget": 32150161.18,
+        "Employees": 387
       },
       {
         "Year": "2023",
-        "Budget": 50691050.5,
-        "Employees": 444
+        "Budget": 34958836.930000015,
+        "Employees": 387
       },
       {
         "Year": "2024",
-        "Budget": 55025375.41,
-        "Employees": 459
+        "Budget": 37109460.43,
+        "Employees": 396
       },
       {
         "Year": "2025",
-        "Budget": 56010052.41,
-        "Employees": 453
+        "Budget": 36986807.92,
+        "Employees": 385
       }
     ]
   },
@@ -469,53 +469,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 177589960.78,
-        "Employees": 1709
+        "Budget": 157639050.90999976,
+        "Employees": 1544
       },
       {
         "Year": "2017",
-        "Budget": 186887595.72,
-        "Employees": 1776
+        "Budget": 165931110.89000002,
+        "Employees": 1611
       },
       {
         "Year": "2018",
-        "Budget": 196636071.58,
-        "Employees": 1795
+        "Budget": 175136192.12999976,
+        "Employees": 1627
       },
       {
         "Year": "2019",
-        "Budget": 212283164.76,
-        "Employees": 1866
+        "Budget": 190822705.76000002,
+        "Employees": 1705
       },
       {
         "Year": "2020",
-        "Budget": 220166890.97,
-        "Employees": 1852
+        "Budget": 198254367.29000014,
+        "Employees": 1693
       },
       {
         "Year": "2021",
-        "Budget": 230085383.06,
-        "Employees": 1873
+        "Budget": 206689803.75000018,
+        "Employees": 1715
       },
       {
         "Year": "2022",
-        "Budget": 239569636.53,
-        "Employees": 1889
+        "Budget": 215607229.15999988,
+        "Employees": 1720
       },
       {
         "Year": "2023",
-        "Budget": 258435617.7,
-        "Employees": 1912
+        "Budget": 230640253.97000015,
+        "Employees": 1733
       },
       {
         "Year": "2024",
-        "Budget": 278328619.67,
-        "Employees": 2016
+        "Budget": 249123478.05000007,
+        "Employees": 1826
       },
       {
         "Year": "2025",
-        "Budget": 291341531.5,
-        "Employees": 2057
+        "Budget": 259593804.39000013,
+        "Employees": 1876
       }
     ]
   },
@@ -524,108 +524,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 17218441.96,
-        "Employees": 167
+        "Budget": 13126249.539999995,
+        "Employees": 163
       },
       {
         "Year": "2017",
-        "Budget": 17302915.1,
-        "Employees": 166
+        "Budget": 13113197.869999995,
+        "Employees": 162
       },
       {
         "Year": "2018",
-        "Budget": 19996546.24,
-        "Employees": 183
+        "Budget": 14515635.71,
+        "Employees": 176
       },
       {
         "Year": "2019",
-        "Budget": 18480709.05,
-        "Employees": 168
+        "Budget": 12756098.6,
+        "Employees": 160
       },
       {
         "Year": "2020",
-        "Budget": 23058853.22,
-        "Employees": 198
+        "Budget": 15795945.780000001,
+        "Employees": 194
       },
       {
         "Year": "2021",
-        "Budget": 25572654.67,
-        "Employees": 210
+        "Budget": 17249970.84,
+        "Employees": 207
       },
       {
         "Year": "2022",
-        "Budget": 25659720.3,
-        "Employees": 204
+        "Budget": 17712105.799999993,
+        "Employees": 201
       },
       {
         "Year": "2023",
-        "Budget": 29971550.69,
-        "Employees": 218
+        "Budget": 18840543.389999993,
+        "Employees": 213
       },
       {
         "Year": "2024",
-        "Budget": 34585044.39,
-        "Employees": 256
+        "Budget": 22032667.54999999,
+        "Employees": 249
       },
       {
         "Year": "2025",
-        "Budget": 34760663.32,
-        "Employees": 256
-      }
-    ]
-  },
-  {
-    "College": "College of Medicine at Peoria",
-    "Budgets": [
-      {
-        "Year": "2016",
-        "Budget": 27999981.88,
-        "Employees": 395
-      },
-      {
-        "Year": "2017",
-        "Budget": 30028567.95,
-        "Employees": 419
-      },
-      {
-        "Year": "2018",
-        "Budget": 33358648.02,
-        "Employees": 440
-      },
-      {
-        "Year": "2019",
-        "Budget": 34387969.06,
-        "Employees": 454
-      },
-      {
-        "Year": "2020",
-        "Budget": 37890392.83,
-        "Employees": 480
-      },
-      {
-        "Year": "2021",
-        "Budget": 39883368.72,
-        "Employees": 482
-      },
-      {
-        "Year": "2022",
-        "Budget": 41094503.38,
-        "Employees": 469
-      },
-      {
-        "Year": "2023",
-        "Budget": 43850655.1,
-        "Employees": 481
-      },
-      {
-        "Year": "2024",
-        "Budget": 67766656.86,
-        "Employees": 510
-      },
-      {
-        "Year": "2025",
-        "Budget": 69147939.8,
-        "Employees": 512
+        "Budget": 22989229.800000004,
+        "Employees": 249
       }
     ]
   },
@@ -634,53 +579,108 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 12228032.07,
-        "Employees": 316
+        "Budget": 11745072.100000005,
+        "Employees": 279
       },
       {
         "Year": "2017",
-        "Budget": 12895137.21,
-        "Employees": 317
+        "Budget": 12260157.139999999,
+        "Employees": 267
       },
       {
         "Year": "2018",
-        "Budget": 13320666.54,
-        "Employees": 323
+        "Budget": 12812714.87,
+        "Employees": 260
       },
       {
         "Year": "2019",
-        "Budget": 13892830.17,
-        "Employees": 325
+        "Budget": 13246543.319999997,
+        "Employees": 251
       },
       {
         "Year": "2020",
-        "Budget": 15088492.39,
-        "Employees": 321
+        "Budget": 13914131.009999998,
+        "Employees": 250
       },
       {
         "Year": "2021",
-        "Budget": 14714093.14,
-        "Employees": 298
+        "Budget": 13173641.680000005,
+        "Employees": 234
       },
       {
         "Year": "2022",
-        "Budget": 15580934.79,
-        "Employees": 304
+        "Budget": 13975557.83,
+        "Employees": 238
       },
       {
         "Year": "2023",
-        "Budget": 17561736.04,
-        "Employees": 298
+        "Budget": 15374135.250000002,
+        "Employees": 242
       },
       {
         "Year": "2024",
-        "Budget": 18321866.66,
-        "Employees": 305
+        "Budget": 16240703.769999996,
+        "Employees": 250
       },
       {
         "Year": "2025",
-        "Budget": 18762789.5,
-        "Employees": 303
+        "Budget": 16390993.080000002,
+        "Employees": 245
+      }
+    ]
+  },
+  {
+    "College": "College of Medicine at Peoria",
+    "Budgets": [
+      {
+        "Year": "2016",
+        "Budget": 27939844.72,
+        "Employees": 393
+      },
+      {
+        "Year": "2017",
+        "Budget": 29859067.949999996,
+        "Employees": 417
+      },
+      {
+        "Year": "2018",
+        "Budget": 33177566.830000006,
+        "Employees": 438
+      },
+      {
+        "Year": "2019",
+        "Budget": 34302387.86999998,
+        "Employees": 452
+      },
+      {
+        "Year": "2020",
+        "Budget": 37364228.57000002,
+        "Employees": 476
+      },
+      {
+        "Year": "2021",
+        "Budget": 39388039.249999985,
+        "Employees": 477
+      },
+      {
+        "Year": "2022",
+        "Budget": 40622461.50999999,
+        "Employees": 465
+      },
+      {
+        "Year": "2023",
+        "Budget": 43337550.37999997,
+        "Employees": 477
+      },
+      {
+        "Year": "2024",
+        "Budget": 66782350.63999993,
+        "Employees": 505
+      },
+      {
+        "Year": "2025",
+        "Budget": 68001647.47999993,
+        "Employees": 507
       }
     ]
   },
@@ -704,12 +704,12 @@
       },
       {
         "Year": "2019",
-        "Budget": 2019041.44,
+        "Budget": 2019041.4400000004,
         "Employees": 39
       },
       {
         "Year": "2020",
-        "Budget": 2071405.74,
+        "Budget": 2071405.7400000005,
         "Employees": 39
       },
       {
@@ -719,12 +719,12 @@
       },
       {
         "Year": "2022",
-        "Budget": 2272748.43,
+        "Budget": 2272748.4299999997,
         "Employees": 36
       },
       {
         "Year": "2023",
-        "Budget": 2461997.14,
+        "Budget": 2461997.139999999,
         "Employees": 38
       },
       {
@@ -734,7 +734,7 @@
       },
       {
         "Year": "2025",
-        "Budget": 2752974.99,
+        "Budget": 2752974.9899999998,
         "Employees": 40
       }
     ]
@@ -744,53 +744,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 26328620.8,
-        "Employees": 363
+        "Budget": 25586595.039999988,
+        "Employees": 359
       },
       {
         "Year": "2017",
-        "Budget": 28646811.96,
-        "Employees": 391
+        "Budget": 27811348.63999999,
+        "Employees": 385
       },
       {
         "Year": "2018",
-        "Budget": 29728692.26,
-        "Employees": 391
+        "Budget": 28878377.680000026,
+        "Employees": 384
       },
       {
         "Year": "2019",
-        "Budget": 32567974.45,
-        "Employees": 410
+        "Budget": 31256518.539999988,
+        "Employees": 400
       },
       {
         "Year": "2020",
-        "Budget": 34065393.46,
-        "Employees": 412
+        "Budget": 32538907.39999999,
+        "Employees": 405
       },
       {
         "Year": "2021",
-        "Budget": 33548189.46,
-        "Employees": 389
+        "Budget": 32277828.631999988,
+        "Employees": 383
       },
       {
         "Year": "2022",
-        "Budget": 34909885.89,
-        "Employees": 403
-      },
-      {
-        "Year": "2023",
-        "Budget": 37201349.15,
+        "Budget": 33857053.15000002,
         "Employees": 397
       },
       {
+        "Year": "2023",
+        "Budget": 35976455.17999999,
+        "Employees": 389
+      },
+      {
         "Year": "2024",
-        "Budget": 42078346.16,
-        "Employees": 438
+        "Budget": 40588963.39000002,
+        "Employees": 431
       },
       {
         "Year": "2025",
-        "Budget": 42526963.7,
-        "Employees": 439
+        "Budget": 40983621.72000004,
+        "Employees": 433
       }
     ]
   },
@@ -799,12 +799,12 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 12556833.96,
+        "Budget": 12395237.909999998,
         "Employees": 248
       },
       {
         "Year": "2017",
-        "Budget": 12970175.27,
+        "Budget": 12891902.269999998,
         "Employees": 262
       },
       {
@@ -814,12 +814,12 @@
       },
       {
         "Year": "2019",
-        "Budget": 14172070.91,
+        "Budget": 14144184.85,
         "Employees": 268
       },
       {
         "Year": "2020",
-        "Budget": 18495723.44,
+        "Budget": 18467123.720000003,
         "Employees": 347
       },
       {
@@ -829,12 +829,12 @@
       },
       {
         "Year": "2022",
-        "Budget": 21482130.25,
+        "Budget": 21482130.250000004,
         "Employees": 365
       },
       {
         "Year": "2023",
-        "Budget": 23339901.65,
+        "Budget": 23339901.64999999,
         "Employees": 389
       },
       {
@@ -844,7 +844,7 @@
       },
       {
         "Year": "2025",
-        "Budget": 23878065.98,
+        "Budget": 23878065.980000008,
         "Employees": 373
       }
     ]
@@ -854,53 +854,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 12426399.29,
-        "Employees": 175
-      },
-      {
-        "Year": "2017",
-        "Budget": 12679092.42,
-        "Employees": 172
-      },
-      {
-        "Year": "2018",
-        "Budget": 13083741.9,
-        "Employees": 176
-      },
-      {
-        "Year": "2019",
-        "Budget": 12486501.8,
+        "Budget": 10745474.370000001,
         "Employees": 166
       },
       {
-        "Year": "2020",
-        "Budget": 12389219.19,
-        "Employees": 156
-      },
-      {
-        "Year": "2021",
-        "Budget": 12886335.58,
-        "Employees": 158
-      },
-      {
-        "Year": "2022",
-        "Budget": 13435393.07,
-        "Employees": 156
-      },
-      {
-        "Year": "2023",
-        "Budget": 14827471.27,
-        "Employees": 153
-      },
-      {
-        "Year": "2024",
-        "Budget": 15855159.38,
+        "Year": "2017",
+        "Budget": 10620973.269999996,
         "Employees": 161
       },
       {
+        "Year": "2018",
+        "Budget": 11244699.680000002,
+        "Employees": 166
+      },
+      {
+        "Year": "2019",
+        "Budget": 10895796.83,
+        "Employees": 157
+      },
+      {
+        "Year": "2020",
+        "Budget": 10925397.800000003,
+        "Employees": 148
+      },
+      {
+        "Year": "2021",
+        "Budget": 11437965.360000001,
+        "Employees": 150
+      },
+      {
+        "Year": "2022",
+        "Budget": 11963790.500000004,
+        "Employees": 148
+      },
+      {
+        "Year": "2023",
+        "Budget": 13490683.080000008,
+        "Employees": 147
+      },
+      {
+        "Year": "2024",
+        "Budget": 14600699.379999992,
+        "Employees": 155
+      },
+      {
         "Year": "2025",
-        "Budget": 16829573.97,
-        "Employees": 159
+        "Budget": 15267101.499999996,
+        "Employees": 152
       }
     ]
   },
@@ -909,53 +909,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 37706419.23,
-        "Employees": 352
+        "Budget": 25168777.83999998,
+        "Employees": 285
       },
       {
         "Year": "2017",
-        "Budget": 41507541.89,
-        "Employees": 387
+        "Budget": 27819347.84999999,
+        "Employees": 316
       },
       {
         "Year": "2018",
-        "Budget": 42650921.33,
-        "Employees": 378
+        "Budget": 29511280.530000005,
+        "Employees": 313
       },
       {
         "Year": "2019",
-        "Budget": 44072255.59,
-        "Employees": 381
+        "Budget": 31069288.42000001,
+        "Employees": 315
       },
       {
         "Year": "2020",
-        "Budget": 53104704.91,
-        "Employees": 431
+        "Budget": 37744232.59,
+        "Employees": 359
       },
       {
         "Year": "2021",
-        "Budget": 55942611.32,
-        "Employees": 438
+        "Budget": 39320689.74999996,
+        "Employees": 364
       },
       {
         "Year": "2022",
-        "Budget": 55924752.08,
-        "Employees": 424
+        "Budget": 39350344.61999995,
+        "Employees": 354
       },
       {
         "Year": "2023",
-        "Budget": 61337872.07,
-        "Employees": 428
+        "Budget": 44544395.190000005,
+        "Employees": 361
       },
       {
         "Year": "2024",
-        "Budget": 66650754.65,
-        "Employees": 461
+        "Budget": 48171790.69,
+        "Employees": 391
       },
       {
         "Year": "2025",
-        "Budget": 71371597.1,
-        "Employees": 478
+        "Budget": 53853100.23999998,
+        "Employees": 414
       }
     ]
   },
@@ -964,17 +964,17 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 56828477.18,
+        "Budget": 56423573.70999985,
         "Employees": 969
       },
       {
         "Year": "2017",
-        "Budget": 55075425.99,
+        "Budget": 54659275.71999997,
         "Employees": 944
       },
       {
         "Year": "2018",
-        "Budget": 55045543.04,
+        "Budget": 54621072.56000008,
         "Employees": 926
       }
     ]
@@ -984,52 +984,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 1747986.44,
+        "Budget": 1349394.44,
         "Employees": 26
       },
       {
         "Year": "2017",
-        "Budget": 1539291.17,
+        "Budget": 1259593.1700000002,
         "Employees": 23
       },
       {
         "Year": "2018",
-        "Budget": 1757157.0,
+        "Budget": 1352082.9799999997,
         "Employees": 26
       },
       {
         "Year": "2019",
-        "Budget": 1566948.99,
+        "Budget": 1192738.19,
         "Employees": 20
       },
       {
         "Year": "2020",
-        "Budget": 1899986.87,
+        "Budget": 1352926.25,
         "Employees": 23
       },
       {
         "Year": "2021",
-        "Budget": 1858930.24,
+        "Budget": 1281032.43,
         "Employees": 21
       },
       {
         "Year": "2022",
-        "Budget": 2055805.4,
+        "Budget": 1478524.22,
         "Employees": 21
       },
       {
         "Year": "2023",
-        "Budget": 2413202.78,
+        "Budget": 1608882.03,
         "Employees": 20
       },
       {
         "Year": "2024",
-        "Budget": 2245484.69,
+        "Budget": 1879525.8100000003,
         "Employees": 24
       },
       {
         "Year": "2025",
-        "Budget": 2394496.95,
+        "Budget": 1770853.6600000001,
         "Employees": 23
       }
     ]
@@ -1039,53 +1039,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 13315395.28,
-        "Employees": 158
+        "Budget": 9962525.049999999,
+        "Employees": 148
       },
       {
         "Year": "2017",
-        "Budget": 13392705.38,
-        "Employees": 158
+        "Budget": 10192290.569999997,
+        "Employees": 150
       },
       {
         "Year": "2018",
-        "Budget": 13541583.29,
-        "Employees": 162
+        "Budget": 10716720.48,
+        "Employees": 154
       },
       {
         "Year": "2019",
-        "Budget": 13963828.86,
-        "Employees": 156
+        "Budget": 11214059.260000002,
+        "Employees": 149
       },
       {
         "Year": "2020",
-        "Budget": 22115803.9,
-        "Employees": 245
+        "Budget": 16777916.510000005,
+        "Employees": 220
       },
       {
         "Year": "2021",
-        "Budget": 25331317.48,
-        "Employees": 269
+        "Budget": 19148349.440000005,
+        "Employees": 242
       },
       {
         "Year": "2022",
-        "Budget": 27794262.54,
-        "Employees": 282
+        "Budget": 21270658.110000007,
+        "Employees": 254
       },
       {
         "Year": "2023",
-        "Budget": 30840631.22,
-        "Employees": 288
+        "Budget": 23490859.880000003,
+        "Employees": 263
       },
       {
         "Year": "2024",
-        "Budget": 31999819.93,
-        "Employees": 296
+        "Budget": 25477258.84000001,
+        "Employees": 279
       },
       {
         "Year": "2025",
-        "Budget": 34130904.92,
-        "Employees": 321
+        "Budget": 28332061.49599999,
+        "Employees": 309
       }
     ]
   },
@@ -1094,52 +1094,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 234607744.02,
-        "Employees": 3245
+        "Budget": 225544521.92000103,
+        "Employees": 3242
       },
       {
         "Year": "2017",
-        "Budget": 244932272.15,
-        "Employees": 3334
+        "Budget": 235261539.30000144,
+        "Employees": 3331
       },
       {
         "Year": "2018",
-        "Budget": 258120653.45,
-        "Employees": 3456
+        "Budget": 249485442.94000053,
+        "Employees": 3454
       },
       {
         "Year": "2019",
-        "Budget": 278187710.59,
+        "Budget": 269264076.2899998,
         "Employees": 3618
       },
       {
         "Year": "2020",
-        "Budget": 307762785.88,
+        "Budget": 298821103.1700007,
         "Employees": 3910
       },
       {
         "Year": "2021",
-        "Budget": 345221477.4,
+        "Budget": 335682558.43000036,
         "Employees": 4192
       },
       {
         "Year": "2022",
-        "Budget": 366296100.64,
-        "Employees": 4204
+        "Budget": 356010324.86,
+        "Employees": 4202
       },
       {
         "Year": "2023",
-        "Budget": 412580174.92,
-        "Employees": 4557
+        "Budget": 401750055.8599996,
+        "Employees": 4555
       },
       {
         "Year": "2024",
-        "Budget": 457224339.77,
-        "Employees": 4848
+        "Budget": 444183951.3699977,
+        "Employees": 4847
       },
       {
         "Year": "2025",
-        "Budget": 507277911.15,
+        "Budget": 493463236.0899991,
         "Employees": 5075
       }
     ]
@@ -1149,53 +1149,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 22933807.74,
-        "Employees": 198
+        "Budget": 1001756.74,
+        "Employees": 22
       },
       {
         "Year": "2017",
-        "Budget": 31216170.57,
-        "Employees": 261
+        "Budget": 734361.2500000001,
+        "Employees": 16
       },
       {
         "Year": "2018",
-        "Budget": 33915261.61,
-        "Employees": 282
+        "Budget": 978238.83,
+        "Employees": 25
       },
       {
         "Year": "2019",
-        "Budget": 39325034.17,
-        "Employees": 321
+        "Budget": 1017077.9600000001,
+        "Employees": 24
       },
       {
         "Year": "2020",
-        "Budget": 38140497.17,
-        "Employees": 285
+        "Budget": 1201870.32,
+        "Employees": 29
       },
       {
         "Year": "2021",
-        "Budget": 37731832.27,
-        "Employees": 269
+        "Budget": 1200243.7300000002,
+        "Employees": 25
       },
       {
         "Year": "2022",
-        "Budget": 36380073.03,
-        "Employees": 256
+        "Budget": 1352523.95,
+        "Employees": 27
       },
       {
         "Year": "2023",
-        "Budget": 37999466.22,
-        "Employees": 243
+        "Budget": 1490202.2399999998,
+        "Employees": 27
       },
       {
         "Year": "2024",
-        "Budget": 37921654.02,
-        "Employees": 236
+        "Budget": 1317541.59,
+        "Employees": 31
       },
       {
         "Year": "2025",
-        "Budget": 36718004.63,
-        "Employees": 223
+        "Budget": 1541218.4700000002,
+        "Employees": 32
       }
     ]
   },
@@ -1204,27 +1204,27 @@
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 1561553.12,
+        "Budget": 964996.57,
         "Employees": 15
       },
       {
         "Year": "2022",
-        "Budget": 1322000.54,
+        "Budget": 941516.88,
         "Employees": 11
       },
       {
         "Year": "2023",
-        "Budget": 1853395.09,
+        "Budget": 1139050.07,
         "Employees": 13
       },
       {
         "Year": "2024",
-        "Budget": 1853777.15,
+        "Budget": 1205930.3699999999,
         "Employees": 15
       },
       {
         "Year": "2025",
-        "Budget": 1798988.1,
+        "Budget": 1244233.6700000002,
         "Employees": 14
       }
     ]
@@ -1239,27 +1239,27 @@
       },
       {
         "Year": "2017",
-        "Budget": 4811338.58,
+        "Budget": 4776002.779999999,
         "Employees": 79
       },
       {
         "Year": "2018",
-        "Budget": 4942021.5,
+        "Budget": 4857550.999999999,
         "Employees": 77
       },
       {
         "Year": "2019",
-        "Budget": 4987434.04,
+        "Budget": 4902963.54,
         "Employees": 79
       },
       {
         "Year": "2020",
-        "Budget": 5745265.54,
+        "Budget": 5631438.220000001,
         "Employees": 83
       },
       {
         "Year": "2021",
-        "Budget": 5092462.53,
+        "Budget": 5092462.529999999,
         "Employees": 70
       },
       {
@@ -1269,17 +1269,17 @@
       },
       {
         "Year": "2023",
-        "Budget": 6518664.33,
+        "Budget": 6518664.330000001,
         "Employees": 81
       },
       {
         "Year": "2024",
-        "Budget": 6228437.98,
+        "Budget": 6228437.9799999995,
         "Employees": 75
       },
       {
         "Year": "2025",
-        "Budget": 6263698.07,
+        "Budget": 6263698.069999998,
         "Employees": 73
       }
     ]
@@ -1289,8 +1289,8 @@
     "Budgets": [
       {
         "Year": "2020",
-        "Budget": 17311948.5,
-        "Employees": 229
+        "Budget": 16885548.5,
+        "Employees": 228
       }
     ]
   },
@@ -1299,53 +1299,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 70047621.03,
-        "Employees": 900
+        "Budget": 61317602.31999999,
+        "Employees": 853
       },
       {
         "Year": "2017",
-        "Budget": 72412181.43,
-        "Employees": 892
+        "Budget": 62122854.81999998,
+        "Employees": 839
       },
       {
         "Year": "2018",
-        "Budget": 74566115.94,
-        "Employees": 897
+        "Budget": 64180484.8,
+        "Employees": 844
       },
       {
         "Year": "2019",
-        "Budget": 76072586.6,
-        "Employees": 921
+        "Budget": 66189389.389999986,
+        "Employees": 874
       },
       {
         "Year": "2020",
-        "Budget": 91954827.48,
-        "Employees": 920
+        "Budget": 80978193.60000001,
+        "Employees": 871
       },
       {
         "Year": "2021",
-        "Budget": 87851277.66,
-        "Employees": 909
+        "Budget": 76546415.51000002,
+        "Employees": 857
       },
       {
         "Year": "2022",
-        "Budget": 92387963.11,
-        "Employees": 973
+        "Budget": 81635385.28000002,
+        "Employees": 928
       },
       {
         "Year": "2023",
-        "Budget": 103436064.98,
-        "Employees": 990
+        "Budget": 91446186.85,
+        "Employees": 941
       },
       {
         "Year": "2024",
-        "Budget": 107008135.71,
-        "Employees": 995
+        "Budget": 94782507.49000002,
+        "Employees": 942
       },
       {
         "Year": "2025",
-        "Budget": 106442061.29,
-        "Employees": 935
+        "Budget": 94726541.63000001,
+        "Employees": 887
       }
     ]
   },
@@ -1354,53 +1354,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 7699616.42,
+        "Budget": 7699616.420000002,
         "Employees": 141
       },
       {
         "Year": "2017",
-        "Budget": 7253329.76,
+        "Budget": 7253329.760000002,
         "Employees": 131
       },
       {
         "Year": "2018",
-        "Budget": 7733736.0,
+        "Budget": 7733735.999999999,
         "Employees": 136
       },
       {
         "Year": "2019",
-        "Budget": 7545537.68,
+        "Budget": 7545537.679999998,
         "Employees": 131
       },
       {
         "Year": "2020",
-        "Budget": 8817459.54,
-        "Employees": 138
+        "Budget": 8061536.539999999,
+        "Employees": 133
       },
       {
         "Year": "2021",
-        "Budget": 8551211.09,
-        "Employees": 128
+        "Budget": 8033621.220000002,
+        "Employees": 123
       },
       {
         "Year": "2022",
-        "Budget": 7677204.17,
-        "Employees": 112
+        "Budget": 7253156.590000001,
+        "Employees": 108
       },
       {
         "Year": "2023",
-        "Budget": 8966940.95,
-        "Employees": 118
+        "Budget": 8452359.31,
+        "Employees": 113
       },
       {
         "Year": "2024",
-        "Budget": 9464538.07,
-        "Employees": 117
+        "Budget": 9021607.39,
+        "Employees": 112
       },
       {
         "Year": "2025",
-        "Budget": 10076003.76,
-        "Employees": 119
+        "Budget": 9537634.1,
+        "Employees": 114
       }
     ]
   },
@@ -1409,53 +1409,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 20449339.6,
-        "Employees": 323
-      },
-      {
-        "Year": "2017",
-        "Budget": 21181858.58,
-        "Employees": 323
-      },
-      {
-        "Year": "2018",
-        "Budget": 20000979.19,
-        "Employees": 303
-      },
-      {
-        "Year": "2019",
-        "Budget": 20460411.5,
+        "Budget": 18340589.540000003,
         "Employees": 307
       },
       {
+        "Year": "2017",
+        "Budget": 19224337.95,
+        "Employees": 309
+      },
+      {
+        "Year": "2018",
+        "Budget": 18514049.669999983,
+        "Employees": 293
+      },
+      {
+        "Year": "2019",
+        "Budget": 18898109.759999994,
+        "Employees": 298
+      },
+      {
         "Year": "2020",
-        "Budget": 21465239.46,
-        "Employees": 286
+        "Budget": 20053520.02,
+        "Employees": 278
       },
       {
         "Year": "2021",
-        "Budget": 23505307.78,
-        "Employees": 303
+        "Budget": 21938548.270000007,
+        "Employees": 294
       },
       {
         "Year": "2022",
-        "Budget": 24853895.01,
-        "Employees": 321
+        "Budget": 22845025.609999992,
+        "Employees": 311
       },
       {
         "Year": "2023",
-        "Budget": 26200914.54,
-        "Employees": 325
+        "Budget": 23827412.87000001,
+        "Employees": 314
       },
       {
         "Year": "2024",
-        "Budget": 28344051.36,
-        "Employees": 324
+        "Budget": 25844691.109999996,
+        "Employees": 313
       },
       {
         "Year": "2025",
-        "Budget": 28296070.77,
-        "Employees": 318
+        "Budget": 26264193.650000006,
+        "Employees": 309
       }
     ]
   },
@@ -1479,7 +1479,7 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 4505387.66,
+        "Budget": 4465430.859999999,
         "Employees": 90
       }
     ]
@@ -1489,47 +1489,47 @@
     "Budgets": [
       {
         "Year": "2017",
-        "Budget": 4885778.91,
+        "Budget": 4704228.91,
         "Employees": 46
       },
       {
         "Year": "2018",
-        "Budget": 5110673.03,
+        "Budget": 4925268.65,
         "Employees": 48
       },
       {
         "Year": "2019",
-        "Budget": 4758512.08,
+        "Budget": 4577412.080000001,
         "Employees": 43
       },
       {
         "Year": "2020",
-        "Budget": 6353597.23,
+        "Budget": 6062103.649999999,
         "Employees": 55
       },
       {
         "Year": "2021",
-        "Budget": 5190973.74,
+        "Budget": 4889150.29,
         "Employees": 45
       },
       {
         "Year": "2022",
-        "Budget": 5010938.04,
+        "Budget": 4717638.04,
         "Employees": 40
       },
       {
         "Year": "2023",
-        "Budget": 6687181.46,
+        "Budget": 6326849.56,
         "Employees": 52
       },
       {
         "Year": "2024",
-        "Budget": 9101248.19,
+        "Budget": 8791191.75,
         "Employees": 74
       },
       {
         "Year": "2025",
-        "Budget": 9752349.03,
+        "Budget": 9664322.150000002,
         "Employees": 85
       }
     ]
@@ -1539,48 +1539,48 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 45354018.71,
-        "Employees": 513
+        "Budget": 41624558.91999995,
+        "Employees": 469
       },
       {
         "Year": "2017",
-        "Budget": 46542179.35,
-        "Employees": 516
+        "Budget": 42331866.80000001,
+        "Employees": 469
       },
       {
         "Year": "2018",
-        "Budget": 48693616.09,
-        "Employees": 514
+        "Budget": 44879278.40999997,
+        "Employees": 468
       },
       {
         "Year": "2019",
-        "Budget": 49839831.68,
-        "Employees": 519
+        "Budget": 45998253.040000044,
+        "Employees": 474
       },
       {
         "Year": "2020",
-        "Budget": 52868783.83,
-        "Employees": 506
+        "Budget": 48809672.16999992,
+        "Employees": 493
       },
       {
         "Year": "2021",
-        "Budget": 54970538.11,
-        "Employees": 514
+        "Budget": 50740464.630000025,
+        "Employees": 501
       },
       {
         "Year": "2022",
-        "Budget": 62192742.57,
-        "Employees": 508
+        "Budget": 57520937.78999995,
+        "Employees": 496
       },
       {
         "Year": "2023",
-        "Budget": 69719944.21,
-        "Employees": 541
+        "Budget": 62571771.459999934,
+        "Employees": 520
       },
       {
         "Year": "2024",
-        "Budget": 74080012.5,
-        "Employees": 565
+        "Budget": 66005623.96000002,
+        "Employees": 544
       }
     ]
   },
@@ -1589,42 +1589,42 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 11167513.67,
+        "Budget": 10340891.28,
         "Employees": 139
       },
       {
         "Year": "2017",
-        "Budget": 8350144.48,
+        "Budget": 6920700.739999999,
         "Employees": 97
       },
       {
         "Year": "2018",
-        "Budget": 8957942.49,
-        "Employees": 105
-      },
-      {
-        "Year": "2019",
-        "Budget": 8890136.5,
+        "Budget": 7097697.659999997,
         "Employees": 104
       },
       {
+        "Year": "2019",
+        "Budget": 7191541.279999998,
+        "Employees": 103
+      },
+      {
         "Year": "2020",
-        "Budget": 10918355.5,
-        "Employees": 134
+        "Budget": 9468582.089999998,
+        "Employees": 133
       },
       {
         "Year": "2021",
-        "Budget": 1242693.95,
+        "Budget": 1076063.3699999999,
         "Employees": 9
       },
       {
         "Year": "2022",
-        "Budget": 1829902.48,
+        "Budget": 1324526.6,
         "Employees": 11
       },
       {
         "Year": "2023",
-        "Budget": 1241165.16,
+        "Budget": 784527.69,
         "Employees": 6
       },
       {
@@ -1634,7 +1634,7 @@
       },
       {
         "Year": "2025",
-        "Budget": 1281896.67,
+        "Budget": 914616.0,
         "Employees": 5
       }
     ]
@@ -1644,7 +1644,7 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 2784423.86,
+        "Budget": 2703454.06,
         "Employees": 32
       },
       {
@@ -1654,17 +1654,17 @@
       },
       {
         "Year": "2018",
-        "Budget": 2277342.36,
+        "Budget": 2277342.3600000003,
         "Employees": 27
       },
       {
         "Year": "2019",
-        "Budget": 1951074.41,
+        "Budget": 1951074.4100000001,
         "Employees": 22
       },
       {
         "Year": "2020",
-        "Budget": 2237529.32,
+        "Budget": 2237529.3200000003,
         "Employees": 23
       }
     ]
@@ -1674,8 +1674,18 @@
     "Budgets": [
       {
         "Year": "2025",
-        "Budget": 73630793.21,
-        "Employees": 548
+        "Budget": 66466204.640000015,
+        "Employees": 527
+      }
+    ]
+  },
+  {
+    "College": "SVP for Acad Prog, Stud.Success,Eff",
+    "Budgets": [
+      {
+        "Year": "2025",
+        "Budget": 5920437.99,
+        "Employees": 72
       }
     ]
   },
@@ -1684,7 +1694,7 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 2622693.7,
+        "Budget": 2525309.7000000007,
         "Employees": 43
       }
     ]
@@ -1694,53 +1704,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 30865490.5,
-        "Employees": 400
+        "Budget": 25491209.79999998,
+        "Employees": 377
       },
       {
         "Year": "2017",
-        "Budget": 31952747.08,
-        "Employees": 400
+        "Budget": 25750125.19999999,
+        "Employees": 373
       },
       {
         "Year": "2018",
-        "Budget": 31379245.48,
-        "Employees": 386
+        "Budget": 25950430.13999999,
+        "Employees": 363
       },
       {
         "Year": "2019",
-        "Budget": 33283442.57,
-        "Employees": 441
+        "Budget": 27834271.346999988,
+        "Employees": 418
       },
       {
         "Year": "2020",
-        "Budget": 28767775.76,
-        "Employees": 327
+        "Budget": 23277508.07899999,
+        "Employees": 308
       },
       {
         "Year": "2021",
-        "Budget": 28563226.72,
-        "Employees": 315
+        "Budget": 23385795.199999984,
+        "Employees": 294
       },
       {
         "Year": "2022",
-        "Budget": 30110345.53,
-        "Employees": 323
+        "Budget": 24055239.399999984,
+        "Employees": 301
       },
       {
         "Year": "2023",
-        "Budget": 33699300.75,
-        "Employees": 346
+        "Budget": 27267364.97399999,
+        "Employees": 325
       },
       {
         "Year": "2024",
-        "Budget": 33643514.97,
-        "Employees": 337
+        "Budget": 27223147.110000007,
+        "Employees": 317
       },
       {
         "Year": "2025",
-        "Budget": 32457487.15,
-        "Employees": 322
+        "Budget": 26227832.372999992,
+        "Employees": 301
       }
     ]
   },
@@ -1749,28 +1759,28 @@
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 650762.29,
+        "Budget": 433607.57999999996,
         "Employees": 6
       },
       {
         "Year": "2022",
-        "Budget": 595563.6,
+        "Budget": 373770.89,
         "Employees": 5
       },
       {
         "Year": "2023",
-        "Budget": 808891.26,
+        "Budget": 553694.72,
         "Employees": 7
       },
       {
         "Year": "2024",
-        "Budget": 1043319.07,
-        "Employees": 9
+        "Budget": 716034.51,
+        "Employees": 8
       },
       {
         "Year": "2025",
-        "Budget": 877282.15,
-        "Employees": 7
+        "Budget": 544607.8099999999,
+        "Employees": 6
       }
     ]
   },
@@ -1779,52 +1789,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 6120585.33,
-        "Employees": 116
+        "Budget": 5759434.87,
+        "Employees": 115
       },
       {
         "Year": "2017",
-        "Budget": 6312622.58,
-        "Employees": 114
+        "Budget": 5877004.159999998,
+        "Employees": 113
       },
       {
         "Year": "2018",
-        "Budget": 5549205.31,
+        "Budget": 5536340.889999998,
         "Employees": 106
       },
       {
         "Year": "2019",
-        "Budget": 3914350.86,
+        "Budget": 3901097.9400000023,
         "Employees": 63
       },
       {
         "Year": "2020",
-        "Budget": 4211168.1,
+        "Budget": 4211168.1000000015,
         "Employees": 68
       },
       {
         "Year": "2021",
-        "Budget": 4292372.37,
+        "Budget": 4292372.369999999,
         "Employees": 63
       },
       {
         "Year": "2022",
-        "Budget": 4906466.98,
+        "Budget": 4906466.979999999,
         "Employees": 68
       },
       {
         "Year": "2023",
-        "Budget": 6367677.61,
+        "Budget": 6305677.61,
         "Employees": 80
       },
       {
         "Year": "2024",
-        "Budget": 6453332.42,
+        "Budget": 6453332.420000003,
         "Employees": 83
       },
       {
         "Year": "2025",
-        "Budget": 6924359.86,
+        "Budget": 6924359.859999999,
         "Employees": 80
       }
     ]
@@ -1844,12 +1854,12 @@
       },
       {
         "Year": "2023",
-        "Budget": 2115929.78,
+        "Budget": 2115929.7800000003,
         "Employees": 19
       },
       {
         "Year": "2024",
-        "Budget": 3010328.27,
+        "Budget": 3010328.2699999996,
         "Employees": 28
       },
       {
@@ -1894,7 +1904,7 @@
       },
       {
         "Year": "2022",
-        "Budget": 1111058.83,
+        "Budget": 1111058.8299999998,
         "Employees": 17
       },
       {
@@ -1910,41 +1920,31 @@
     ]
   },
   {
-    "College": "SVP for Acad Prog, Stud.Success,Eff",
-    "Budgets": [
-      {
-        "Year": "2025",
-        "Budget": 5944237.99,
-        "Employees": 72
-      }
-    ]
-  },
-  {
     "College": "Technology Solutions",
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 9205837.22,
+        "Budget": 9163155.620000001,
         "Employees": 105
       },
       {
         "Year": "2022",
-        "Budget": 9550663.59,
+        "Budget": 9491612.389999999,
         "Employees": 104
       },
       {
         "Year": "2023",
-        "Budget": 11781687.8,
+        "Budget": 11713255.8,
         "Employees": 121
       },
       {
         "Year": "2024",
-        "Budget": 12529498.07,
+        "Budget": 12394714.07,
         "Employees": 128
       },
       {
         "Year": "2025",
-        "Budget": 15032425.51,
+        "Budget": 14894271.910000002,
         "Employees": 148
       }
     ]
@@ -1954,33 +1954,33 @@
     "Budgets": [
       {
         "Year": "2020",
-        "Budget": 12264748.86,
-        "Employees": 102
+        "Budget": 7028879.8,
+        "Employees": 98
       },
       {
         "Year": "2021",
-        "Budget": 12705849.79,
-        "Employees": 102
+        "Budget": 7564815.960000002,
+        "Employees": 100
       },
       {
         "Year": "2022",
-        "Budget": 13627404.73,
-        "Employees": 111
+        "Budget": 8316092.760000003,
+        "Employees": 110
       },
       {
         "Year": "2023",
-        "Budget": 16824584.69,
-        "Employees": 133
+        "Budget": 10009000.410000002,
+        "Employees": 132
       },
       {
         "Year": "2024",
-        "Budget": 18981443.04,
-        "Employees": 140
+        "Budget": 10665218.740000002,
+        "Employees": 139
       },
       {
         "Year": "2025",
-        "Budget": 18045530.03,
-        "Employees": 137
+        "Budget": 10711389.150000004,
+        "Employees": 136
       }
     ]
   },
@@ -1989,7 +1989,7 @@
     "Budgets": [
       {
         "Year": "2017",
-        "Budget": 2430796.85,
+        "Budget": 2420241.29,
         "Employees": 36
       },
       {
@@ -2004,7 +2004,7 @@
       },
       {
         "Year": "2020",
-        "Budget": 1027148.59,
+        "Budget": 912148.5900000001,
         "Employees": 11
       },
       {
@@ -2024,12 +2024,12 @@
       },
       {
         "Year": "2024",
-        "Budget": 1539959.18,
+        "Budget": 1539959.1800000002,
         "Employees": 16
       },
       {
         "Year": "2025",
-        "Budget": 2029954.79,
+        "Budget": 1966459.7899999998,
         "Employees": 22
       }
     ]
@@ -2039,17 +2039,17 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 4484890.17,
+        "Budget": 4356707.57,
         "Employees": 59
       },
       {
         "Year": "2017",
-        "Budget": 4327984.64,
+        "Budget": 4199802.04,
         "Employees": 60
       },
       {
         "Year": "2018",
-        "Budget": 4099937.36,
+        "Budget": 3968638.65,
         "Employees": 58
       }
     ]
@@ -2094,28 +2094,28 @@
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 17311665.2,
-        "Employees": 239
+        "Budget": 17051665.199999977,
+        "Employees": 238
       },
       {
         "Year": "2022",
-        "Budget": 16363460.54,
-        "Employees": 218
+        "Budget": 16035160.539999979,
+        "Employees": 217
       },
       {
         "Year": "2023",
-        "Budget": 17039324.94,
-        "Employees": 214
+        "Budget": 16693071.93999998,
+        "Employees": 213
       },
       {
         "Year": "2024",
-        "Budget": 17595206.42,
-        "Employees": 234
+        "Budget": 17218746.920000017,
+        "Employees": 233
       },
       {
         "Year": "2025",
-        "Budget": 17532092.2,
-        "Employees": 232
+        "Budget": 17096407.200000018,
+        "Employees": 230
       }
     ]
   },
@@ -2124,53 +2124,53 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 8893897.63,
-        "Employees": 115
+        "Budget": 8552785.047,
+        "Employees": 114
       },
       {
         "Year": "2017",
-        "Budget": 8262990.51,
-        "Employees": 115
-      },
-      {
-        "Year": "2018",
-        "Budget": 8637480.05,
-        "Employees": 102
-      },
-      {
-        "Year": "2019",
-        "Budget": 9074784.7,
-        "Employees": 104
-      },
-      {
-        "Year": "2020",
-        "Budget": 9854568.16,
-        "Employees": 102
-      },
-      {
-        "Year": "2021",
-        "Budget": 9973436.89,
-        "Employees": 101
-      },
-      {
-        "Year": "2022",
-        "Budget": 10540392.55,
-        "Employees": 108
-      },
-      {
-        "Year": "2023",
-        "Budget": 11411133.45,
-        "Employees": 107
-      },
-      {
-        "Year": "2024",
-        "Budget": 11798082.18,
+        "Budget": 7857295.807,
         "Employees": 113
       },
       {
+        "Year": "2018",
+        "Budget": 8208651.910000001,
+        "Employees": 100
+      },
+      {
+        "Year": "2019",
+        "Budget": 8069887.316000001,
+        "Employees": 99
+      },
+      {
+        "Year": "2020",
+        "Budget": 8060822.67,
+        "Employees": 96
+      },
+      {
+        "Year": "2021",
+        "Budget": 8016832.899999999,
+        "Employees": 94
+      },
+      {
+        "Year": "2022",
+        "Budget": 8582073.1,
+        "Employees": 99
+      },
+      {
+        "Year": "2023",
+        "Budget": 9410041.030000001,
+        "Employees": 99
+      },
+      {
+        "Year": "2024",
+        "Budget": 9853137.060000002,
+        "Employees": 105
+      },
+      {
         "Year": "2025",
-        "Budget": 11464431.01,
-        "Employees": 107
+        "Budget": 9786217.760000002,
+        "Employees": 100
       }
     ]
   },
@@ -2189,12 +2189,12 @@
       },
       {
         "Year": "2018",
-        "Budget": 1094908.09,
+        "Budget": 1089908.0899999999,
         "Employees": 13
       },
       {
         "Year": "2019",
-        "Budget": 1161435.47,
+        "Budget": 1156435.47,
         "Employees": 13
       },
       {
@@ -2204,7 +2204,7 @@
       },
       {
         "Year": "2021",
-        "Budget": 1078139.07,
+        "Budget": 1078139.0699999998,
         "Employees": 13
       },
       {
@@ -2214,7 +2214,7 @@
       },
       {
         "Year": "2023",
-        "Budget": 1146733.82,
+        "Budget": 1146733.8199999998,
         "Employees": 10
       },
       {
@@ -2239,7 +2239,7 @@
       },
       {
         "Year": "2023",
-        "Budget": 12740596.88,
+        "Budget": 12704729.36,
         "Employees": 141
       }
     ]
@@ -2249,7 +2249,7 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 4277953.04,
+        "Budget": 4096403.04,
         "Employees": 39
       }
     ]
@@ -2259,48 +2259,173 @@
     "Budgets": [
       {
         "Year": "2017",
-        "Budget": 4415168.14,
-        "Employees": 23
+        "Budget": 2853440.24,
+        "Employees": 19
       },
       {
         "Year": "2018",
-        "Budget": 5501811.69,
-        "Employees": 29
+        "Budget": 3819575.9400000004,
+        "Employees": 27
       },
       {
         "Year": "2019",
-        "Budget": 6700638.85,
-        "Employees": 35
+        "Budget": 4059948.09,
+        "Employees": 33
       },
       {
         "Year": "2020",
-        "Budget": 6624915.21,
-        "Employees": 41
+        "Budget": 4626520.9,
+        "Employees": 38
       },
       {
         "Year": "2021",
-        "Budget": 7777641.14,
-        "Employees": 45
+        "Budget": 5214648.279999998,
+        "Employees": 41
       },
       {
         "Year": "2022",
-        "Budget": 8645700.19,
-        "Employees": 54
+        "Budget": 6658550.620000001,
+        "Employees": 50
       },
       {
         "Year": "2023",
-        "Budget": 10271713.7,
+        "Budget": 7412934.54,
+        "Employees": 55
+      },
+      {
+        "Year": "2024",
+        "Budget": 10134020.65,
+        "Employees": 73
+      },
+      {
+        "Year": "2025",
+        "Budget": 10841503.52,
+        "Employees": 84
+      }
+    ]
+  },
+  {
+    "College": "VP Academic & Enrollment Svcs",
+    "Budgets": [
+      {
+        "Year": "2017",
+        "Budget": 6753586.169999999,
+        "Employees": 124
+      },
+      {
+        "Year": "2018",
+        "Budget": 6168102.099999999,
+        "Employees": 111
+      },
+      {
+        "Year": "2019",
+        "Budget": 6376824.920000002,
+        "Employees": 113
+      },
+      {
+        "Year": "2020",
+        "Budget": 7108748.349999997,
+        "Employees": 118
+      },
+      {
+        "Year": "2021",
+        "Budget": 6927968.479999999,
+        "Employees": 112
+      },
+      {
+        "Year": "2022",
+        "Budget": 6959956.6099999985,
+        "Employees": 110
+      }
+    ]
+  },
+  {
+    "College": "VP Enrollment Management",
+    "Budgets": [
+      {
+        "Year": "2024",
+        "Budget": 9811458.310000002,
+        "Employees": 134
+      },
+      {
+        "Year": "2025",
+        "Budget": 9681809.71,
+        "Employees": 128
+      }
+    ]
+  },
+  {
+    "College": "VP Undrgrd Affrs & Acdmc Prgms",
+    "Budgets": [
+      {
+        "Year": "2021",
+        "Budget": 4194927.680000002,
+        "Employees": 62
+      },
+      {
+        "Year": "2022",
+        "Budget": 4134357.0999999996,
+        "Employees": 59
+      }
+    ]
+  },
+  {
+    "College": "VP for Acdmc Prgrms and Effectness",
+    "Budgets": [
+      {
+        "Year": "2023",
+        "Budget": 1716089.7000000002,
+        "Employees": 20
+      },
+      {
+        "Year": "2024",
+        "Budget": 2043318.35,
+        "Employees": 23
+      }
+    ]
+  },
+  {
+    "College": "VP for Global Engagement",
+    "Budgets": [
+      {
+        "Year": "2018",
+        "Budget": 2850811.6399999997,
+        "Employees": 44
+      },
+      {
+        "Year": "2019",
+        "Budget": 3107063.6799999997,
+        "Employees": 47
+      },
+      {
+        "Year": "2020",
+        "Budget": 3823049.5800000015,
+        "Employees": 57
+      },
+      {
+        "Year": "2021",
+        "Budget": 3668702.0,
+        "Employees": 53
+      },
+      {
+        "Year": "2022",
+        "Budget": 3959833.36,
+        "Employees": 56
+      },
+      {
+        "Year": "2023",
+        "Budget": 4403876.75,
         "Employees": 58
       },
       {
         "Year": "2024",
-        "Budget": 12621344.09,
-        "Employees": 76
+        "Budget": 4339500.010000001,
+        "Employees": 55
       },
       {
         "Year": "2025",
-        "Budget": 13778237.58,
-        "Employees": 86
+        "Budget": 4114317.19,
+        "Employees": 51
       }
     ]
   },
@@ -2309,52 +2434,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 11867248.38,
+        "Budget": 11813121.470000006,
         "Employees": 172
       },
       {
         "Year": "2017",
-        "Budget": 11839843.88,
+        "Budget": 11785716.970000008,
         "Employees": 174
       },
       {
         "Year": "2018",
-        "Budget": 12915524.45,
+        "Budget": 12860179.200000003,
         "Employees": 188
       },
       {
         "Year": "2019",
-        "Budget": 72717501.73,
+        "Budget": 72315556.53000008,
         "Employees": 1156
       },
       {
         "Year": "2020",
-        "Budget": 78604904.27,
+        "Budget": 77902820.07000017,
         "Employees": 1197
       },
       {
         "Year": "2021",
-        "Budget": 77228912.87,
+        "Budget": 76498975.04000004,
         "Employees": 1130
       },
       {
         "Year": "2022",
-        "Budget": 77113049.44,
+        "Budget": 76265606.4299996,
         "Employees": 1041
       },
       {
         "Year": "2023",
-        "Budget": 81348197.97,
+        "Budget": 80458894.57000016,
         "Employees": 1018
       },
       {
         "Year": "2024",
-        "Budget": 89720930.45,
+        "Budget": 88830410.22999993,
         "Employees": 1066
       },
       {
         "Year": "2025",
-        "Budget": 95477132.54,
+        "Budget": 94746081.12000042,
         "Employees": 1118
       }
     ]
@@ -2364,17 +2489,17 @@
     "Budgets": [
       {
         "Year": "2022",
-        "Budget": 3364905.99,
+        "Budget": 3192158.9899999998,
         "Employees": 40
       },
       {
         "Year": "2023",
-        "Budget": 3346818.4,
+        "Budget": 3153145.4000000004,
         "Employees": 36
       },
       {
         "Year": "2024",
-        "Budget": 3159804.57,
+        "Budget": 2962597.57,
         "Employees": 36
       }
     ]
@@ -2384,7 +2509,7 @@
     "Budgets": [
       {
         "Year": "2025",
-        "Budget": 3254509.13,
+        "Budget": 2882135.13,
         "Employees": 33
       }
     ]
@@ -2394,17 +2519,17 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 8162279.08,
+        "Budget": 8162279.079999998,
         "Employees": 139
       },
       {
         "Year": "2017",
-        "Budget": 7864698.98,
+        "Budget": 7864698.979999998,
         "Employees": 131
       },
       {
         "Year": "2018",
-        "Budget": 6812122.45,
+        "Budget": 6812122.449999998,
         "Employees": 114
       },
       {
@@ -2414,22 +2539,22 @@
       },
       {
         "Year": "2020",
-        "Budget": 6647315.98,
+        "Budget": 6647315.9799999995,
         "Employees": 98
       },
       {
         "Year": "2021",
-        "Budget": 6336050.24,
+        "Budget": 6259298.24,
         "Employees": 90
       },
       {
         "Year": "2022",
-        "Budget": 6365610.98,
+        "Budget": 6365610.979999998,
         "Employees": 89
       },
       {
         "Year": "2023",
-        "Budget": 5597125.42,
+        "Budget": 5368430.42,
         "Employees": 71
       },
       {
@@ -2439,7 +2564,7 @@
       },
       {
         "Year": "2025",
-        "Budget": 12830309.86,
+        "Budget": 12774734.859999998,
         "Employees": 166
       }
     ]
@@ -2449,12 +2574,12 @@
     "Budgets": [
       {
         "Year": "2024",
-        "Budget": 14211001.42,
+        "Budget": 14166335.500000006,
         "Employees": 150
       },
       {
         "Year": "2025",
-        "Budget": 15279882.32,
+        "Budget": 15233400.560000006,
         "Employees": 160
       }
     ]
@@ -2464,7 +2589,7 @@
     "Budgets": [
       {
         "Year": "2020",
-        "Budget": 2001246.55,
+        "Budget": 1899246.55,
         "Employees": 18
       },
       {
@@ -2479,17 +2604,17 @@
       },
       {
         "Year": "2023",
-        "Budget": 2372393.8,
+        "Budget": 2372393.8000000003,
         "Employees": 22
       },
       {
         "Year": "2024",
-        "Budget": 3298921.1,
+        "Budget": 2953487.9,
         "Employees": 30
       },
       {
         "Year": "2025",
-        "Budget": 2881643.17,
+        "Budget": 2528321.7499999995,
         "Employees": 25
       }
     ]
@@ -2499,52 +2624,52 @@
     "Budgets": [
       {
         "Year": "2016",
-        "Budget": 20056572.32,
-        "Employees": 255
-      },
-      {
-        "Year": "2017",
-        "Budget": 21589356.51,
-        "Employees": 261
-      },
-      {
-        "Year": "2018",
-        "Budget": 21918456.71,
-        "Employees": 264
-      },
-      {
-        "Year": "2019",
-        "Budget": 22183246.69,
-        "Employees": 269
-      },
-      {
-        "Year": "2020",
-        "Budget": 22686997.14,
-        "Employees": 262
-      },
-      {
-        "Year": "2021",
-        "Budget": 23705047.98,
-        "Employees": 263
-      },
-      {
-        "Year": "2022",
-        "Budget": 24112841.55,
+        "Budget": 16209011.719999995,
         "Employees": 252
       },
       {
+        "Year": "2017",
+        "Budget": 16759060.33,
+        "Employees": 257
+      },
+      {
+        "Year": "2018",
+        "Budget": 17316211.499999996,
+        "Employees": 260
+      },
+      {
+        "Year": "2019",
+        "Budget": 17739574.32999999,
+        "Employees": 263
+      },
+      {
+        "Year": "2020",
+        "Budget": 17713891.86000001,
+        "Employees": 255
+      },
+      {
+        "Year": "2021",
+        "Budget": 18575352.719999995,
+        "Employees": 257
+      },
+      {
+        "Year": "2022",
+        "Budget": 18905193.159999993,
+        "Employees": 247
+      },
+      {
         "Year": "2023",
-        "Budget": 26049408.42,
-        "Employees": 254
+        "Budget": 20155886.330000002,
+        "Employees": 249
       },
       {
         "Year": "2024",
-        "Budget": 26570899.27,
-        "Employees": 265
+        "Budget": 21726983.260000005,
+        "Employees": 262
       },
       {
         "Year": "2025",
-        "Budget": 29352823.74,
+        "Budget": 23689485.37,
         "Employees": 289
       }
     ]
@@ -2554,153 +2679,28 @@
     "Budgets": [
       {
         "Year": "2021",
-        "Budget": 2358764.45,
+        "Budget": 1801856.83,
         "Employees": 25
       },
       {
         "Year": "2022",
-        "Budget": 3324886.54,
+        "Budget": 2589599.11,
         "Employees": 33
       },
       {
         "Year": "2023",
-        "Budget": 3146341.59,
-        "Employees": 30
+        "Budget": 2357607.98,
+        "Employees": 29
       },
       {
         "Year": "2024",
-        "Budget": 3963347.93,
-        "Employees": 36
+        "Budget": 3132324.3600000003,
+        "Employees": 35
       },
       {
         "Year": "2025",
-        "Budget": 4066647.72,
-        "Employees": 39
-      }
-    ]
-  },
-  {
-    "College": "VP Academic & Enrollment Svcs",
-    "Budgets": [
-      {
-        "Year": "2017",
-        "Budget": 6793542.97,
-        "Employees": 124
-      },
-      {
-        "Year": "2018",
-        "Budget": 6226349.3,
-        "Employees": 111
-      },
-      {
-        "Year": "2019",
-        "Budget": 6475246.62,
-        "Employees": 113
-      },
-      {
-        "Year": "2020",
-        "Budget": 7108748.35,
-        "Employees": 118
-      },
-      {
-        "Year": "2021",
-        "Budget": 6980468.48,
-        "Employees": 112
-      },
-      {
-        "Year": "2022",
-        "Budget": 7013956.61,
-        "Employees": 110
-      }
-    ]
-  },
-  {
-    "College": "VP Enrollment Management",
-    "Budgets": [
-      {
-        "Year": "2024",
-        "Budget": 9811458.31,
-        "Employees": 134
-      },
-      {
-        "Year": "2025",
-        "Budget": 9681809.71,
-        "Employees": 128
-      }
-    ]
-  },
-  {
-    "College": "VP for Acdmc Prgrms and Effectness",
-    "Budgets": [
-      {
-        "Year": "2023",
-        "Budget": 1736895.7,
-        "Employees": 20
-      },
-      {
-        "Year": "2024",
-        "Budget": 2064540.35,
-        "Employees": 23
-      }
-    ]
-  },
-  {
-    "College": "VP for Global Engagement",
-    "Budgets": [
-      {
-        "Year": "2018",
-        "Budget": 2850811.64,
-        "Employees": 44
-      },
-      {
-        "Year": "2019",
-        "Budget": 3107063.68,
-        "Employees": 47
-      },
-      {
-        "Year": "2020",
-        "Budget": 3965049.58,
-        "Employees": 58
-      },
-      {
-        "Year": "2021",
-        "Budget": 3813302.0,
-        "Employees": 54
-      },
-      {
-        "Year": "2022",
-        "Budget": 4108743.36,
-        "Employees": 57
-      },
-      {
-        "Year": "2023",
-        "Budget": 4635876.75,
-        "Employees": 59
-      },
-      {
-        "Year": "2024",
-        "Budget": 4506540.01,
-        "Employees": 56
-      },
-      {
-        "Year": "2025",
-        "Budget": 4282907.19,
-        "Employees": 52
-      }
-    ]
-  },
-  {
-    "College": "VP Undrgrd Affrs & Acdmc Prgms",
-    "Budgets": [
-      {
-        "Year": "2021",
-        "Budget": 4418497.68,
-        "Employees": 63
-      },
-      {
-        "Year": "2022",
-        "Budget": 4280402.1,
-        "Employees": 59
+        "Budget": 3239663.77,
+        "Employees": 38
       }
     ]
   }

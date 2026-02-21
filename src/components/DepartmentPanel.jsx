@@ -252,7 +252,7 @@ export function DepartmentPanel({
         <button
           onClick={onClose}
           aria-label="Close"
-          className="mt-6 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition duration-150"
+          className="mt-6 px-4 py-2 bg-blue-500 text-gray-800 rounded-lg shadow hover:bg-blue-600 transition duration-150"
         >
           Go Back
         </button>
